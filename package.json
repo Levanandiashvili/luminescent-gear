@@ -1,0 +1,15 @@
+{
+  "name": "luminescent-gear",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "Dealer website with catalog, bank-transfer invoices and admin panel. No dependencies.",
+  "engines": {
+    "node": ">=22.13"
+  },
+  "scripts": {
+    "start": "node --env-file-if-exists=.env --disable-warning=ExperimentalWarning server.js",
+    "dev": "node --env-file-if-exists=.env --disable-warning=ExperimentalWarning --watch server.js",
+    "load-catalog": "node --env-file-if-exists=.env --disable-warning=ExperimentalWarning scripts/load-catalog.js"
+  }
+}

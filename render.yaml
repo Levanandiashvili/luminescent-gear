@@ -1,0 +1,23 @@
+# One-click setup on Render: New → Blueprint → pick this repository.
+# Creates the website, a 1 GB disk for products/photos/orders, and asks for your admin password.
+services:
+  - type: web
+    name: luminescent-gear
+    runtime: docker
+    plan: starter
+    region: frankfurt
+    healthCheckPath: /healthz
+    disk:
+      name: shop-data
+      mountPath: /data
+      sizeGB: 1
+    envVars:
+      - key: ADMIN_PASSWORD
+        sync: false
+      - key: SESSION_SECRET
+        generateValue: true
+      - key: DATA_DIR
+        value: /data
+    domains:
+      - luminescentgear.ge
+      - www.luminescentgear.ge
