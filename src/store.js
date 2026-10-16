@@ -43,9 +43,6 @@ function home(req, res) {
     if (featured.length > 4 && featured.length % 4) featured = featured.slice(0, featured.length - (featured.length % 4));
   }
   const lead = featured[0] || listProducts({ limit: 1 })[0];
-  const steps = c.ordering
-    ? ['Choose your gear and add it to the cart.', 'Enter your details — the invoice is created on the spot.', 'Pay by bank transfer, in lari or euro.', 'We confirm the order and deliver in Tbilisi or the regions.']
-    : ['Find the unit or desk you want — prices shown are estimates in lari or euro.', 'Send us a quote request on WhatsApp or by email.', 'We reply with the final price, lead time and delivery terms.', 'We deliver in Tbilisi or the regions and help you set up.'];
   const body = html`
   <section class="hero">
     <div class="wrap hero-grid">
@@ -76,12 +73,7 @@ function home(req, res) {
   ${featured.length ? html`<section class="wrap section">
     <div class="section-head"><h2>Selected units</h2><a class="link" href="/catalog">${c.t('all_products')}</a></div>
     ${grid(c, featured)}
-  </section>` : ''}
-
-  <section class="wrap section how">
-    <h2>How buying works</h2>
-    <ol class="steps">${steps.map((s) => html`<li>${s}</li>`)}</ol>
-  </section>`;
+  </section>` : ''}`;
   send(res, 200, page(c, { body }));
 }
 
