@@ -5,7 +5,7 @@ import { db, listProducts, getProduct, listBrands, getBrand, listCategories, get
 import { ctx, page, priceBlock, fmtMoney } from './layout.js';
 import { loc } from './i18n.js';
 import { placeholderSvg } from './placeholder.js';
-import { priceIn, currentRate, gelPrice } from './rates.js';
+import { priceIn, listPriceIn, discountPct, currentRate, gelPrice } from './rates.js';
 import { invoicePage } from './invoice.js';
 
 const AVAIL = ['in_stock', 'order', 'preorder', 'on_request'];
@@ -188,7 +188,7 @@ function productPage(req, res, slug) {
         </div>
         ${p.variantList.length > 1 ? html`<section class="variants" aria-label="${c.t('options')}">
           <h2>${c.t('options')}</h2>
-          <table>${p.variantList.map((v) => html`<tr><th scope="row">${v.label}</th><td>${v.price > 0 ? fmtMoney(variantPrice(c, p, v), c.cur) : c.t('price_on_request')}</td></tr>`)}</table>
+          <table>${p.variantList.map((v) => html`<tr><th scope="row">${v.label}</th><td>${v.price > 0 ? html`${discountPct() ? html`<s class="price-old">${fmtMoney(variantListPrice(c, p, v), c.cur)}</s> ` : ''}${fmtMoney(variantPrice(c, p, v), c.cur)}` : c.t('price_on_request')}</td></tr>`)}</table>
         </section>` : ''}
         <dl class="facts">
           <div><dt>${c.t('status')}</dt><dd><span class="avail avail-${p.availability}">${c.t(p.availability)}</span></dd></div>
@@ -222,12 +222,15 @@ function productPage(req, res, slug) {
 /** Price of one option in the current (or the other) currency. */
 function variantPrice(c, p, v, other = false) {
   const cur = other ? (c.cur === 'GEL' ? 'EUR' : 'GEL') : c.cur;
-  return cur === 'EUR' ? v.price : gelPrice({ price_eur: v.price }, c.rate.rate);
+  return priceIn({ price_eur: v.price }, cur, c.rate.rate);
+}
+function variantListPrice(c, p, v) {
+  return listPriceIn({ price_eur: v.price }, c.cur, c.rate.rate);
 }
 function lineFor(p, vIndex, currency, rate) {
   const v = p.variantList.length > 1 ? p.variantList[vIndex] : null;
   if (p.variantList.length > 1 && !v) return null;
-  const unit = v ? (currency === 'EUR' ? v.price : gelPrice({ price_eur: v.price }, rate)) : priceIn(p, currency, rate);
+  const unit = v ? priceIn({ price_eur: v.price }, currency, rate) : priceIn(p, currency, rate);
   return { unit, label: v ? v.label : '' };
 }
 

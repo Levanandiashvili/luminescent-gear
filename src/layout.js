@@ -1,6 +1,6 @@
 import { html, raw } from './http.js';
 import { allSettings, listBrands } from './db.js';
-import { currentRate, priceIn } from './rates.js';
+import { currentRate, priceIn, listPriceIn, discountPct } from './rates.js';
 import { translator } from './i18n.js';
 
 export function fmtMoney(n, cur) {
@@ -25,10 +25,12 @@ export function priceBlock(c, p, { size = 'sm' } = {}) {
   if (!(Number(p.price_eur) > 0) && !(Number(p.price_gel_fixed) > 0)) {
     return html`<span class="price price-${size}"><span class="price-main">${c.t('price_on_request')}</span></span>`;
   }
-  const other = c.cur === 'GEL' ? 'EUR' : 'GEL';
-  const main = priceIn(p, c.cur, c.rate.rate), alt = priceIn(p, other, c.rate.rate);
-  return html`<span class="price price-${size}">
+  const main = priceIn(p, c.cur, c.rate.rate), list = listPriceIn(p, c.cur, c.rate.rate);
+  const d = discountPct();
+  const onSale = d && list > main;
+  return html`<span class="price price-${size}${onSale ? ' on-sale' : ''}">
     ${p.price_from ? html`<span class="price-from">${c.t('from')} </span>` : ''}<span class="price-main">${fmtMoney(main, c.cur)}</span>
+    ${onSale ? html`<s class="price-old"><span class="sr">Regular price </span>${fmtMoney(list, c.cur)}</s><span class="price-badge">−${d}%</span>` : ''}
   </span>`;
 }
 
@@ -47,7 +49,7 @@ export function page(c, { title, body, description = '', bodyClass = '' }) {
 ${s.site_url ? html`<link rel="canonical" href="${s.site_url.replace(/\/$/, '') + (c.path || '/').split('?')[0]}">
 <meta property="og:site_name" content="${s.company_name}"><meta property="og:title" content="${fullTitle}"><meta property="og:url" content="${s.site_url.replace(/\/$/, '') + (c.path || '/').split('?')[0]}">` : ''}
 <link rel="icon" href="/static/favicon.svg" type="image/svg+xml">
-<link rel="stylesheet" href="/static/site.css?v=10">
+<link rel="stylesheet" href="/static/site.css?v=12">
 </head>
 <body class="${bodyClass}">
 <a class="skip" href="#main">Skip to content</a>

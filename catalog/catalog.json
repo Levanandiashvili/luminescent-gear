@@ -154,6 +154,10 @@
   {
    "name": "Sessiondesk",
    "logo": ""
+  },
+  {
+   "name": "Elysia",
+   "logo": ""
   }
  ],
  "categories": [
@@ -173,8 +177,23 @@
    "gear"
   ],
   [
+   "Preamps",
+   "",
+   "gear"
+  ],
+  [
    "Saturation & clipping",
    "სატურაცია და კლიპინგი",
+   "gear"
+  ],
+  [
+   "Transient shapers",
+   "",
+   "gear"
+  ],
+  [
+   "Headphone amps & monitoring",
+   "",
    "gear"
   ],
   [
@@ -999,6 +1018,548 @@
    "availability": "order",
    "featured": 0,
    "slug": "sessiondesk-key-big"
+  },
+  {
+   "brand": "Elysia",
+   "category": "Compressors",
+   "name": "alpha compressor",
+   "sku": "",
+   "summary": "The analog mastering tool — elysia's stereo and M/S mastering compressor, a modern classic since 2008.",
+   "description": "The analog mastering tool. Since its release in 2008, the elysia alpha compressor has been a modern classic and a powerful tool for professional dynamics processing — an industry-leading compressor for mixing and above all mastering, with compression that stays inaudible even at high gain reduction.\nFeatures:\n- Mastering compressor for stereo and M/S operation\n- Class-A technology with discrete circuit designs\n- Switchable modes: feed forward or feedback\n- Parallel compression with built-in blend function\n- Sidechain filter with blend function\n- Tilt equalizer for tone control\n- Soft Clip Limiter to keep A/D converters from clipping",
+   "specs": "Format: 19\" rack, 3 RU\nType: stereo / M/S mastering compressor\nFrequency response: <10 Hz – 200 kHz (−0.5 dB)\nTHD+N @ +15 dBu: 0.0039 % (stereo, direct), 0.009 % (stereo, compressed)\nNoise floor (A-weighted): −95.8 dBu (stereo, direct)\nDynamic range: 122 dB (stereo), 118 dB (M/S)\nMax. input level: +28 dBu (stereo)\nMax. output level: +27 dBu (stereo), +28 dBu (M/S)\nImpedance: input 10 kΩ, output 68 Ω\nPotentiometers: 21-step\nDimensions: 483 × 133 × 405 mm\nWeight: 16 kg\nPower consumption: 85 W\nMade in: Germany",
+   "price_eur": 11290,
+   "price_from": 0,
+   "images": [
+    "elysia-alpha-compressor-1.jpg",
+    "elysia-alpha-compressor-2.jpg",
+    "elysia-alpha-compressor-3.jpg"
+   ],
+   "featured": 1,
+   "lead_time": "",
+   "variants": "",
+   "availability": "order",
+   "slug": "elysia-alpha-compressor"
+  },
+  {
+   "brand": "Elysia",
+   "category": "Compressors",
+   "name": "xpressor neo",
+   "sku": "",
+   "summary": "Stereo VCA compressor for recording, mixing and mastering — fast, energetic, wide.",
+   "description": "xpressor|neo is elysia's stereo VCA compressor for recording, mixing and mastering — the ultimate dynamics tool for transparent and powerful audio processing, with a clear and open sound, punchy, fast transients and a three-dimensional stereo field with powerful low-end energy.\nFeatures:\n- Class-A technology with discrete circuit designs\n- Soft knee compressor with smooth control response (RMS detector)\n- Dual release curves: logarithmic and linear\n- Auto Fast: shortens the attack automatically on fast, loud transients\n- Warm Mode for a second flavor, by limiting the slew rate\n- Sidechain low-cut filter to reduce the influence of low frequencies on the compression\n- Gain Reduction Limiter and negative ratios\n- Parallel compression with the built-in Mix control\n- External sidechain (19\" version only): buffered mono-sum send, activated via EXT 1",
+   "specs": "Format: 19\" rack, 1 RU\nType: stereo compressor\nFrequency response: <10 Hz – 400 kHz (−3 dB)\nTHD+N @ 0 dBu: 0.003 % (Mix 0 %), 0.007 % (Mix 100 %)\nNoise floor (A-weighted): −91 dB\nDynamic range: 112 dB\nMax. input / output level: +21 dBu\nImpedance: input 10 kΩ, output 68 Ω\nPotentiometers: 41-step detented\nDimensions: 483 × 44.45 × 238 mm\nWeight: 1.76 kg\nPower consumption: 9 W\nMade in: Germany",
+   "price_eur": 1490,
+   "price_from": 0,
+   "images": [
+    "elysia-xpressor-neo-1.jpg",
+    "elysia-xpressor-neo-2.jpg",
+    "elysia-xpressor-neo-3.jpg",
+    "elysia-xpressor-neo-4.jpg"
+   ],
+   "featured": 1,
+   "lead_time": "",
+   "variants": "",
+   "availability": "order",
+   "slug": "elysia-xpressor-neo"
+  },
+  {
+   "brand": "Elysia",
+   "category": "Compressors",
+   "name": "xpressor neo 500",
+   "sku": "",
+   "summary": "Stereo VCA compressor for recording, mixing and mastering — fast, energetic, wide. 500 series module.",
+   "description": "xpressor|neo is elysia's stereo VCA compressor for recording, mixing and mastering — the ultimate dynamics tool for transparent and powerful audio processing, with a clear and open sound, punchy, fast transients and a three-dimensional stereo field with powerful low-end energy.\nA 500 series module for API-compatible racks. elysia states that the sound is identical across all formats (19\" rack, 500 series and qube).\nFeatures:\n- Class-A technology with discrete circuit designs\n- Soft knee compressor with smooth control response (RMS detector)\n- Dual release curves: logarithmic and linear\n- Auto Fast: shortens the attack automatically on fast, loud transients\n- Warm Mode for a second flavor, by limiting the slew rate\n- Sidechain low-cut filter to reduce the influence of low frequencies on the compression\n- Gain Reduction Limiter and negative ratios\n- Parallel compression with the built-in Mix control",
+   "specs": "Format: 500 series module\nType: stereo compressor\nFrequency response: <10 Hz – 400 kHz (−3 dB)\nTHD+N @ 0 dBu: 0.003 % (Mix 0 %), 0.007 % (Mix 100 %)\nNoise floor (A-weighted): −91 dB\nDynamic range: 112 dB\nMax. input / output level: +21 dBu\nImpedance: input 10 kΩ, output 68 Ω\nPotentiometers: 41-step detented\nCurrent draw: 130 mA\nMade in: Germany",
+   "price_eur": 929,
+   "price_from": 0,
+   "images": [
+    "elysia-xpressor-neo-500-1.jpg",
+    "elysia-xpressor-neo-500-2.jpg",
+    "elysia-xpressor-neo-500-3.jpg"
+   ],
+   "featured": 0,
+   "lead_time": "",
+   "variants": "",
+   "availability": "order",
+   "slug": "elysia-xpressor-neo-500"
+  },
+  {
+   "brand": "Elysia",
+   "category": "Compressors",
+   "name": "xpressor neo qube",
+   "sku": "",
+   "summary": "Stereo VCA compressor for recording, mixing and mastering — fast, energetic, wide. In the portable qube case.",
+   "description": "xpressor|neo is elysia's stereo VCA compressor for recording, mixing and mastering — the ultimate dynamics tool for transparent and powerful audio processing, with a clear and open sound, punchy, fast transients and a three-dimensional stereo field with powerful low-end energy.\nThe qube is the travel-ready version: selected 500 series modules in a rugged, lightweight aluminium case with its own power supply, for the studio, the rehearsal room, songwriting sessions and the stage. elysia states that the sound is identical across all formats.\nFeatures:\n- Class-A technology with discrete circuit designs\n- Soft knee compressor with smooth control response (RMS detector)\n- Dual release curves: logarithmic and linear\n- Auto Fast: shortens the attack automatically on fast, loud transients\n- Warm Mode for a second flavor, by limiting the slew rate\n- Sidechain low-cut filter to reduce the influence of low frequencies on the compression\n- Gain Reduction Limiter and negative ratios\n- Parallel compression with the built-in Mix control",
+   "specs": "Format: qube (desktop aluminium case)\nType: stereo compressor\nFrequency response: <10 Hz – 400 kHz (−3 dB)\nTHD+N @ 0 dBu: 0.003 % (Mix 0 %), 0.007 % (Mix 100 %)\nNoise floor (A-weighted): −91 dB\nDynamic range: 112 dB\nMax. input / output level: +21 dBu\nImpedance: input 10 kΩ, output 68 Ω\nPotentiometers: 41-step detented\nDimensions: 104 × 137 × 212 mm\nWeight: 1.46 kg\nPower consumption: 6 W\nMade in: Germany",
+   "price_eur": 1139,
+   "price_from": 0,
+   "images": [
+    "elysia-xpressor-neo-qube-1.jpg",
+    "elysia-xpressor-neo-qube-2.jpg",
+    "elysia-xpressor-neo-qube-3.jpg",
+    "elysia-xpressor-neo-qube-4.jpg"
+   ],
+   "featured": 0,
+   "lead_time": "",
+   "variants": "",
+   "availability": "order",
+   "slug": "elysia-xpressor-neo-qube"
+  },
+  {
+   "brand": "Elysia",
+   "category": "Compressors",
+   "name": "xmax",
+   "sku": "",
+   "summary": "Master bus processor with internal Mid/Side multiband compression — dynamic, transparent, exciting.",
+   "description": "xmax is a master bus processor with internal Mid/Side processing, built in class-A technology with discrete circuit designs for mixing, mastering and live sound. It aims for pristine audio quality without compromising the natural integrity of your mix.\nFeatures:\n- Masterbus processor with internal Mid/Side processing\n- Multiband compressor with low, mid and side controls\n- Adjustable crossover frequency between the low and mid bands\n- Tone control to add just the right amount of \"air\"\n- Soft Clip Limiter, derived from the alpha compressor\n- Vari Link: from unlinked to fully linked thresholds\n- Class-A technology with discrete circuit designs",
+   "specs": "Format: 19\" rack, 1 RU\nType: stereo master bus processor (multiband compressor, M/S)\nFrequency response: <10 Hz – 180 kHz (−3 dB)\nTHD+N @ 0 dBu: 0.01 %\nNoise floor (A-weighted): −91.3 dBu\nDynamic range: 112 dB\nMax. input level: +21 dBu\nMax. output level: +22 dBu\nImpedance: input 20 kΩ, output 68 Ω\nPotentiometers: 41-step detented\nDimensions: 483 × 44.45 × 232 mm\nWeight: 1.76 kg\nPower consumption: 12 W\nMade in: Germany",
+   "price_eur": 1739,
+   "price_from": 0,
+   "images": [
+    "elysia-xmax-1.jpg",
+    "elysia-xmax-2.jpg",
+    "elysia-xmax-3.jpg",
+    "elysia-xmax-4.jpg"
+   ],
+   "featured": 1,
+   "lead_time": "",
+   "variants": "",
+   "availability": "order",
+   "slug": "elysia-xmax"
+  },
+  {
+   "brand": "Elysia",
+   "category": "Compressors",
+   "name": "xmax 500",
+   "sku": "",
+   "summary": "Master bus processor with internal Mid/Side multiband compression — dynamic, transparent, exciting. 500 series module.",
+   "description": "xmax is a master bus processor with internal Mid/Side processing, built in class-A technology with discrete circuit designs for mixing, mastering and live sound. It aims for pristine audio quality without compromising the natural integrity of your mix.\nA 500 series module for API-compatible racks. elysia states that the sound is identical across all formats (19\" rack, 500 series and qube).\nFeatures:\n- Masterbus processor with internal Mid/Side processing\n- Multiband compressor with low, mid and side controls\n- Adjustable crossover frequency between the low and mid bands\n- Tone control to add just the right amount of \"air\"\n- Soft Clip Limiter, derived from the alpha compressor\n- Vari Link: from unlinked to fully linked thresholds\n- Class-A technology with discrete circuit designs",
+   "specs": "Format: 500 series module\nType: stereo master bus processor (multiband compressor, M/S)\nFrequency response: <10 Hz – 180 kHz (−3 dB)\nTHD+N @ 0 dBu: 0.01 %\nNoise floor (A-weighted): −91.3 dBu\nDynamic range: 112 dB\nMax. input level: +21 dBu\nMax. output level: +22 dBu\nImpedance: input 20 kΩ, output 68 Ω\nPotentiometers: 41-step detented\nCurrent draw: 205 mA\nMade in: Germany",
+   "price_eur": 1129,
+   "price_from": 0,
+   "images": [
+    "elysia-xmax-500-1.jpg",
+    "elysia-xmax-500-2.jpg",
+    "elysia-xmax-500-3.jpg"
+   ],
+   "featured": 0,
+   "lead_time": "",
+   "variants": "",
+   "availability": "order",
+   "slug": "elysia-xmax-500"
+  },
+  {
+   "brand": "Elysia",
+   "category": "Compressors",
+   "name": "xmax qube",
+   "sku": "",
+   "summary": "Master bus processor with internal Mid/Side multiband compression — dynamic, transparent, exciting. In the portable qube case.",
+   "description": "xmax is a master bus processor with internal Mid/Side processing, built in class-A technology with discrete circuit designs for mixing, mastering and live sound. It aims for pristine audio quality without compromising the natural integrity of your mix.\nThe qube is the travel-ready version: selected 500 series modules in a rugged, lightweight aluminium case with its own power supply, for the studio, the rehearsal room, songwriting sessions and the stage. elysia states that the sound is identical across all formats.\nFeatures:\n- Masterbus processor with internal Mid/Side processing\n- Multiband compressor with low, mid and side controls\n- Adjustable crossover frequency between the low and mid bands\n- Tone control to add just the right amount of \"air\"\n- Soft Clip Limiter, derived from the alpha compressor\n- Vari Link: from unlinked to fully linked thresholds\n- Class-A technology with discrete circuit designs",
+   "specs": "Format: qube (desktop aluminium case)\nType: stereo master bus processor (multiband compressor, M/S)\nFrequency response: <10 Hz – 180 kHz (−3 dB)\nTHD+N @ 0 dBu: 0.01 %\nNoise floor (A-weighted): −91.3 dBu\nDynamic range: 112 dB\nMax. input level: +21 dBu\nMax. output level: +22 dBu\nImpedance: input 20 kΩ, output 68 Ω\nPotentiometers: 41-step detented\nDimensions: 104 × 137 × 205 mm\nWeight: 1.46 kg\nPower consumption: 9 W\nMade in: Germany",
+   "price_eur": 1259,
+   "price_from": 0,
+   "images": [
+    "elysia-xmax-qube-1.jpg",
+    "elysia-xmax-qube-2.jpg",
+    "elysia-xmax-qube-3.jpg",
+    "elysia-xmax-qube-4.jpg"
+   ],
+   "featured": 0,
+   "lead_time": "",
+   "variants": "",
+   "availability": "order",
+   "slug": "elysia-xmax-qube"
+  },
+  {
+   "brand": "Elysia",
+   "category": "Compressors",
+   "name": "mpressor 500",
+   "sku": "",
+   "summary": "The creative compressor: Anti-Log release, negative ratios and THD Boost. 500 series module.",
+   "description": "mpressor is elysia's creative compressor: precise, versatile control over dynamics, from gentle shaping to heavy, characterful compression — transparent and musical, with unusual tools like Anti-Log release, negative ratios and the Gain Reduction Limiter.\nThe 500 module packs the same audio quality as the larger mpressor into a compact format.\nFeatures:\n- Auto Fast: shortens the attack on fast, loud impulses to catch peaks without distortion\n- Anti Log Release: reverses the usual release curve for a different compression feel\n- THD Boost: more saturation, while the compression behaviour stays the same\n- Negative ratios: louder input produces lower output, for creative effects\n- Gain Reduction Limiter in the control path, set with GR Limit\n- Analog Dynamic Meter with LED brightness for intermediate values\n- Class-A technology with discrete circuit designs",
+   "specs": "Format: 500 series module\nType: compressor\nFrequency response: <10 Hz – 390 kHz (−3 dB)\nTHD+N @ 0 dBu: 0.04 % (0.24 % with THD Boost)\nNoise floor (A-weighted): −79 dBu\nDynamic range: 99 dB\nMax. input level: +21 dBu\nMax. output level: +22 dBu\nImpedance: input 10 kΩ, output 68 Ω\nPotentiometers: 41-step detented\nCurrent draw: 70 mA\nMade in: Germany",
+   "price_eur": 599,
+   "price_from": 0,
+   "images": [
+    "elysia-mpressor-500-1.jpg",
+    "elysia-mpressor-500-2.jpg",
+    "elysia-mpressor-500-3.jpg"
+   ],
+   "featured": 0,
+   "lead_time": "",
+   "variants": "",
+   "availability": "order",
+   "slug": "elysia-mpressor-500"
+  },
+  {
+   "brand": "Elysia",
+   "category": "Compressors",
+   "name": "mpressor² qube",
+   "sku": "",
+   "summary": "The creative compressor: Anti-Log release, negative ratios and THD Boost. In the portable qube case.",
+   "description": "mpressor is elysia's creative compressor: precise, versatile control over dynamics, from gentle shaping to heavy, characterful compression — transparent and musical, with unusual tools like Anti-Log release, negative ratios and the Gain Reduction Limiter.\nThe qube is the travel-ready version: selected 500 series modules in a rugged, lightweight aluminium case with its own power supply, for the studio, the rehearsal room, songwriting sessions and the stage. elysia states that the sound is identical across all formats.\nFeatures:\n- Auto Fast: shortens the attack on fast, loud impulses to catch peaks without distortion\n- Anti Log Release: reverses the usual release curve for a different compression feel\n- THD Boost: more saturation, while the compression behaviour stays the same\n- Negative ratios: louder input produces lower output, for creative effects\n- Gain Reduction Limiter in the control path, set with GR Limit\n- Analog Dynamic Meter with LED brightness for intermediate values\n- Class-A technology with discrete circuit designs",
+   "specs": "Format: qube (desktop aluminium case)\nType: compressor\nFrequency response: <10 Hz – 390 kHz (−3 dB)\nTHD+N @ 0 dBu: 0.04 % (0.24 % with THD Boost)\nNoise floor (A-weighted): −79 dBu\nDynamic range: 99 dB\nMax. input level: +21 dBu\nMax. output level: +22 dBu\nImpedance: input 10 kΩ, output 68 Ω\nPotentiometers: 41-step detented\nDimensions: 104 × 137 × 205 mm\nWeight: 1.38 kg\nPower consumption: 6 W\nMade in: Germany",
+   "price_eur": 1333,
+   "price_from": 0,
+   "images": [
+    "elysia-mpressor2-qube-1.jpg",
+    "elysia-mpressor2-qube-2.jpg",
+    "elysia-mpressor2-qube-3.jpg",
+    "elysia-mpressor2-qube-4.jpg"
+   ],
+   "featured": 0,
+   "lead_time": "",
+   "variants": "",
+   "availability": "order",
+   "slug": "elysia-mpressor2-qube"
+  },
+  {
+   "brand": "Elysia",
+   "category": "Equalizers",
+   "name": "xfilter",
+   "sku": "",
+   "summary": "Analog 4-band stereo equalizer with Passive Massage — precise, open, versatile.",
+   "description": "xfilter is elysia's analog 4-band stereo equalizer for recording, mixing and mastering — delivering precision, warmth and an open sound, with four individual bands for precise frequency control.\nFeatures:\n- Four bands; the outer bands switch from shelves to 12 dB/octave cuts with variable resonance\n- Two parametric mid bands with switchable Q (0.5 wide / 1.0 narrow)\n- Passive Massage: a switchable passive LC high-band filter with a slight resonance peak at 12 kHz, for a second sound\n- True Stereo Link with selected dual/quad potentiometers and low-tolerance capacitors for matched channels\n- Every potentiometer measured and selected on an Audio Precision system, 41-step detented\n- Class-A technology; dedicated ground shield layer under the audio traces against hum",
+   "specs": "Format: 19\" rack, 1 RU\nType: 4-band stereo equalizer\nFrequency response: <10 Hz – 400 kHz (−3 dB)\nTHD+N @ 0 dBu: 0.006 %\nTHD+N @ +10 dBu: 0.01 %\nNoise floor (A-weighted): −98 dBu\nDynamic range: 112 dB\nMax. input / output level: +21 dBu\nImpedance: input 10 kΩ, output 68 Ω\nPotentiometers: 41-step detented\nDimensions: 483 × 44.45 × 238 mm\nWeight: 1.76 kg\nMade in: Germany",
+   "price_eur": 1159,
+   "price_from": 0,
+   "images": [
+    "elysia-xfilter-1.jpg",
+    "elysia-xfilter-2.jpg",
+    "elysia-xfilter-3.jpg",
+    "elysia-xfilter-4.jpg"
+   ],
+   "featured": 0,
+   "lead_time": "",
+   "variants": "",
+   "availability": "order",
+   "slug": "elysia-xfilter"
+  },
+  {
+   "brand": "Elysia",
+   "category": "Equalizers",
+   "name": "xfilter 500",
+   "sku": "",
+   "summary": "Analog 4-band stereo equalizer with Passive Massage — precise, open, versatile. 500 series module.",
+   "description": "xfilter is elysia's analog 4-band stereo equalizer for recording, mixing and mastering — delivering precision, warmth and an open sound, with four individual bands for precise frequency control.\nA 500 series module for API-compatible racks. elysia states that the sound is identical across all formats (19\" rack, 500 series and qube).\nFeatures:\n- Four bands; the outer bands switch from shelves to 12 dB/octave cuts with variable resonance\n- Two parametric mid bands with switchable Q (0.5 wide / 1.0 narrow)\n- Passive Massage: a switchable passive LC high-band filter with a slight resonance peak at 12 kHz, for a second sound\n- True Stereo Link with selected dual/quad potentiometers and low-tolerance capacitors for matched channels\n- Every potentiometer measured and selected on an Audio Precision system, 41-step detented\n- Class-A technology; dedicated ground shield layer under the audio traces against hum",
+   "specs": "Format: 500 series module\nType: 4-band stereo equalizer\nFrequency response: <10 Hz – 400 kHz (−3 dB)\nTHD+N @ 0 dBu: 0.006 %\nTHD+N @ +10 dBu: 0.01 %\nNoise floor (A-weighted): −98 dBu\nDynamic range: 112 dB\nMax. input / output level: +21 dBu\nImpedance: input 10 kΩ, output 68 Ω\nPotentiometers: 41-step detented\nCurrent draw: 210 mA\nMade in: Germany",
+   "price_eur": 777,
+   "price_from": 0,
+   "images": [
+    "elysia-xfilter-500-1.jpg",
+    "elysia-xfilter-500-2.jpg",
+    "elysia-xfilter-500-3.jpg"
+   ],
+   "featured": 0,
+   "lead_time": "",
+   "variants": "",
+   "availability": "order",
+   "slug": "elysia-xfilter-500"
+  },
+  {
+   "brand": "Elysia",
+   "category": "Equalizers",
+   "name": "xfilter qube",
+   "sku": "",
+   "summary": "Analog 4-band stereo equalizer with Passive Massage — precise, open, versatile. In the portable qube case.",
+   "description": "xfilter is elysia's analog 4-band stereo equalizer for recording, mixing and mastering — delivering precision, warmth and an open sound, with four individual bands for precise frequency control.\nThe qube is the travel-ready version: selected 500 series modules in a rugged, lightweight aluminium case with its own power supply, for the studio, the rehearsal room, songwriting sessions and the stage. elysia states that the sound is identical across all formats.\nFeatures:\n- Four bands; the outer bands switch from shelves to 12 dB/octave cuts with variable resonance\n- Two parametric mid bands with switchable Q (0.5 wide / 1.0 narrow)\n- Passive Massage: a switchable passive LC high-band filter with a slight resonance peak at 12 kHz, for a second sound\n- True Stereo Link with selected dual/quad potentiometers and low-tolerance capacitors for matched channels\n- Every potentiometer measured and selected on an Audio Precision system, 41-step detented\n- Class-A technology; dedicated ground shield layer under the audio traces against hum",
+   "specs": "Format: qube (desktop aluminium case)\nType: 4-band stereo equalizer\nFrequency response: <10 Hz – 400 kHz (−3 dB)\nTHD+N @ 0 dBu: 0.006 %\nTHD+N @ +10 dBu: 0.01 %\nNoise floor (A-weighted): −98 dBu\nDynamic range: 112 dB\nMax. input / output level: +21 dBu\nImpedance: input 10 kΩ, output 68 Ω\nPotentiometers: 41-step detented\nDimensions: 104 × 137 × 212 mm\nWeight: 1.46 kg\nMade in: Germany",
+   "price_eur": 959,
+   "price_from": 0,
+   "images": [
+    "elysia-xfilter-qube-1.jpg",
+    "elysia-xfilter-qube-2.jpg",
+    "elysia-xfilter-qube-3.jpg",
+    "elysia-xfilter-qube-4.jpg"
+   ],
+   "featured": 0,
+   "lead_time": "",
+   "variants": "",
+   "availability": "order",
+   "slug": "elysia-xfilter-qube"
+  },
+  {
+   "brand": "Elysia",
+   "category": "Equalizers",
+   "name": "xfilter Mastering Edition",
+   "sku": "",
+   "summary": "Analog 4-band stereo equalizer with Passive Massage — precise, open, versatile.",
+   "description": "xfilter is elysia's analog 4-band stereo equalizer for recording, mixing and mastering — delivering precision, warmth and an open sound, with four individual bands for precise frequency control.\nFocus on every detail of your production. The Mastering Edition inherits the xfilter design and refines it for mastering: a precise ±5 dB control range on all four bands with stepped potentiometers and a detailed scale for exact, repeatable settings, and +27 dBu of mastering headroom.\nFeatures:\n- Four bands; the outer bands switch from shelves to 12 dB/octave cuts with variable resonance\n- Two parametric mid bands with switchable Q (0.5 wide / 1.0 narrow)\n- Passive Massage: a switchable passive LC high-band filter with a slight resonance peak at 12 kHz, for a second sound\n- True Stereo Link with selected dual/quad potentiometers and low-tolerance capacitors for matched channels\n- Every potentiometer measured and selected on an Audio Precision system, 41-step detented\n- Class-A technology; dedicated ground shield layer under the audio traces against hum",
+   "specs": "Format: 19\" rack, 1 RU\nType: 4-band stereo equalizer\nFrequency response: <10 Hz – 400 kHz (−3 dB)\nDynamic range: 112 dB\nImpedance: input 10 kΩ, output 68 Ω\nPotentiometers: 41-step detented\nNoise floor (A-weighted): −92 dBu\nMax. input / output level: +27 dBu\nDimensions: 483 × 44.45 × 238 mm\nWeight: 1.76 kg\nMade in: Germany",
+   "price_eur": 1899,
+   "price_from": 0,
+   "images": [
+    "elysia-xfilter-mastering-edition-1.jpg",
+    "elysia-xfilter-mastering-edition-2.jpg",
+    "elysia-xfilter-mastering-edition-3.jpg",
+    "elysia-xfilter-mastering-edition-4.jpg"
+   ],
+   "featured": 0,
+   "lead_time": "",
+   "variants": "",
+   "availability": "order",
+   "slug": "elysia-xfilter-mastering-edition"
+  },
+  {
+   "brand": "Elysia",
+   "category": "Channel strips",
+   "name": "channex|studio",
+   "sku": "",
+   "summary": "Analog recording. Grown up. — a class-A recall channel strip for sessions, recording and mixing.",
+   "description": "Analog recording. Grown up. channex|studio is a class-A recall channel strip for sessions, recording and mixing. It combines a high-end preamp, an analog dynamic equalizer, a compressor/limiter, a flavor section and a zero-latency monitor section in one box, to deliver a mix-ready signal straight from the recording. The audio path is fully analog, with full recall on the hardware and in your DAW via the control plugin.\nFeatures:\n- High-end preamp: DC-coupled mic preamp with adjustable high-pass filter, polarity reverse and +48 V; gain stored per input\n- Analog dynamic equalizer: four bands with switchable mids, adjustable Q and shelves, dynamic control on every band\n- Dual stage compressor & limiter, with Gain Reduction Limiter and Soft Clip Limiter\n- Flavor: five colouring options with five intensity levels each\n- Zero-latency monitor section: three independent monitor mixes, two headphone amps, talkback\n- Flexible routing of EQ, compressor/limiter, hardware insert and flavor section\n- Full recall: 22 presets on the unit, plus a control plugin with DAW automation",
+   "specs": "Format: 19\" rack\nType: recall channel strip\nPreamp gain: up to 64 dB\nPhantom power: +48 V\nInputs: front Hi-Z instrument, rear line (XLR/TRS combo), stereo DAW playback, FX, talkback mic\nOutputs: main, separate monitor outputs, 2 × 6.3 mm headphones\nInsert: send / return\nControl: Ethernet and USB (plugin, recall, automation)\nMade in: Germany",
+   "price_eur": 7399,
+   "price_from": 0,
+   "images": [
+    "elysia-channex-studio-1.jpg",
+    "elysia-channex-studio-2.jpg",
+    "elysia-channex-studio-3.jpg",
+    "elysia-channex-studio-4.jpg"
+   ],
+   "featured": 1,
+   "lead_time": "",
+   "variants": "",
+   "availability": "order",
+   "slug": "elysia-channex-studio"
+  },
+  {
+   "brand": "Elysia",
+   "category": "Channel strips",
+   "name": "skulpter|mpressor qube",
+   "sku": "",
+   "summary": "The skulpter preamp and the mpressor compressor together in one qube — a complete analog channel strip to go.",
+   "description": "skulpter|mpressor qube combines two elysia modules in one travel-ready qube: the skulpter microphone preamp (natural. versatile. rich.) and the mpressor creative compressor — a complete analog recording chain on your desk.\nThe qube is the travel-ready version: selected 500 series modules in a rugged, lightweight aluminium case with its own power supply, for the studio, the rehearsal room, songwriting sessions and the stage. elysia states that the sound is identical across all formats.\nFeatures:\n- skulpter: DC-coupled class-A mic preamp with DI input, variable low cut, Shape function and one-knob compressor\n- skulpter: relay-switched gain 3–65 dB, onboard +48 V phantom power\n- mpressor: Auto Fast, Anti Log Release, THD Boost and negative ratios\n- mpressor: Gain Reduction Limiter and Analog Dynamic Meter\n- Class-A technology with discrete circuit designs",
+   "specs": "Format: qube (desktop aluminium case)\nType: mic preamp + compressor channel strip\nMade in: Germany",
+   "price_eur": 1549,
+   "price_from": 0,
+   "images": [
+    "elysia-skulpter-mpressor-qube-1.jpg",
+    "elysia-skulpter-mpressor-qube-2.jpg",
+    "elysia-skulpter-mpressor-qube-3.jpg",
+    "elysia-skulpter-mpressor-qube-4.jpg"
+   ],
+   "featured": 0,
+   "lead_time": "",
+   "variants": "",
+   "availability": "order",
+   "slug": "elysia-skulpter-mpressor-qube"
+  },
+  {
+   "brand": "Elysia",
+   "category": "Preamps",
+   "name": "skulpter 500",
+   "sku": "",
+   "summary": "High-end class-A mic preamp with DI, low cut and one-knob compressor — natural, versatile, rich. 500 series module.",
+   "description": "skulpter is elysia's high-end microphone preamp for recording and mixing: a DC-coupled, class-A discrete design with a DI input, variable low cut, a Shape function and a built-in one-knob compressor — shape your sound with precision and warmth.\nA 500 series module for API-compatible racks. elysia states that the sound is identical across all formats (19\" rack, 500 series and qube).\nFeatures:\n- DC-coupled input to capture every detail of the signal\n- Shape function with two flavours: harmonic saturation for instruments, soft tube-like limiting for vocals\n- Variable low cut, 10–375 Hz, 12 dB/octave\n- Onboard one-knob compressor: 3:1 ratio, soft knee, RMS detection, Auto Fast\n- Balanced front-panel JFET DI input (1 MΩ) for guitars, basses, synths and line signals\n- Relay-switched gain, 3–65 dB in 1.5/2 dB steps, stored separately for mic and DI\n- Onboard +48 V phantom power, phase reverse, mute and a 15-LED multifunction meter\n- +48 V generated on the module itself, independent of the rack frame",
+   "specs": "Format: 500 series module\nType: microphone preamp with DI and compressor\nGain range: 3–65 dB in 1.5/2 dB steps\nFrequency response: 10 Hz – 170 kHz (−3 dB)\nTHD+N @ 6 dBu: 0.007 %\nNoise floor (A-weighted): −97 dBu (3 dB gain), −93 dBu (29 dB gain)\nMax. input level: +19 dBu (mic and DI)\nImpedance: mic input 13.6 kΩ, DI input 1 MΩ, output 62 Ω\nCurrent draw: 90 mA\nMade in: Germany",
+   "price_eur": 699,
+   "price_from": 0,
+   "images": [
+    "elysia-skulpter-500-1.jpg",
+    "elysia-skulpter-500-2.jpg",
+    "elysia-skulpter-500-3.jpg"
+   ],
+   "featured": 0,
+   "lead_time": "",
+   "variants": "",
+   "availability": "order",
+   "slug": "elysia-skulpter-500"
+  },
+  {
+   "brand": "Elysia",
+   "category": "Preamps",
+   "name": "skulpter² qube",
+   "sku": "",
+   "summary": "High-end class-A mic preamp with DI, low cut and one-knob compressor — natural, versatile, rich. In the portable qube case.",
+   "description": "skulpter is elysia's high-end microphone preamp for recording and mixing: a DC-coupled, class-A discrete design with a DI input, variable low cut, a Shape function and a built-in one-knob compressor — shape your sound with precision and warmth.\nThe qube is the travel-ready version: selected 500 series modules in a rugged, lightweight aluminium case with its own power supply, for the studio, the rehearsal room, songwriting sessions and the stage. elysia states that the sound is identical across all formats.\nFeatures:\n- DC-coupled input to capture every detail of the signal\n- Shape function with two flavours: harmonic saturation for instruments, soft tube-like limiting for vocals\n- Variable low cut, 10–375 Hz, 12 dB/octave\n- Onboard one-knob compressor: 3:1 ratio, soft knee, RMS detection, Auto Fast\n- Balanced front-panel JFET DI input (1 MΩ) for guitars, basses, synths and line signals\n- Relay-switched gain, 3–65 dB in 1.5/2 dB steps, stored separately for mic and DI\n- Onboard +48 V phantom power, phase reverse, mute and a 15-LED multifunction meter",
+   "specs": "Format: qube (desktop aluminium case)\nType: microphone preamp with DI and compressor\nGain range: 3–65 dB in 1.5/2 dB steps\nFrequency response: 10 Hz – 170 kHz (−3 dB)\nTHD+N @ 6 dBu: 0.007 %\nNoise floor (A-weighted): −97 dBu (3 dB gain), −93 dBu (29 dB gain)\nMax. input level: +19 dBu (mic and DI)\nImpedance: mic input 13.6 kΩ, DI input 1 MΩ, output 62 Ω\nDimensions: 104 × 137 × 205 mm\nWeight: 1.38 kg\nPower consumption: 8 W\nMade in: Germany",
+   "price_eur": 1599,
+   "price_from": 0,
+   "images": [
+    "elysia-skulpter2-qube-1.jpg",
+    "elysia-skulpter2-qube-2.jpg",
+    "elysia-skulpter2-qube-3.jpg",
+    "elysia-skulpter2-qube-4.jpg"
+   ],
+   "featured": 0,
+   "lead_time": "",
+   "variants": "",
+   "availability": "order",
+   "slug": "elysia-skulpter2-qube"
+  },
+  {
+   "brand": "Elysia",
+   "category": "Saturation & clipping",
+   "name": "karacter",
+   "sku": "",
+   "summary": "Stereo saturator, from subtle warmth to extreme distortion — colored, dirty, saturated.",
+   "description": "karacter is a stereo saturation unit for tracking, mixing and mastering, with a wide tonal range: from gentle harmonic enhancement and subtle warmth to extreme, aggressive saturation — controlled with precision and depth.\nFeatures:\n- Mastering-grade saturation: symmetrical clipping with a soft characteristic curve (odd harmonics)\n- FET Shred Mode: asymmetrical, tube-like distortion with even harmonics\n- Color filter built into the saturation circuit itself\n- Turbo Boost Mode for extreme distortion\n- Onboard Mix control to blend heavy distortion with the dry signal\n- Integrated Mid/Side matrix; Dual Mono, Stereo Link or M/S operation\n- Class-A technology with discrete circuit designs\n- Control voltage inputs (19\" version only): Drive and Mix can be modulated via EXT 1 / EXT 2",
+   "specs": "Format: 19\" rack, 1 RU\nType: stereo saturator\nFrequency response: <10 Hz – 400 kHz (−3 dB, 100 % wet)\nTHD+N, 100 % dry: 0.013 % @ 0 dBu\nTHD+N, 100 % wet: 0.47 % (min. Drive) up to 35.1 % (max. Drive, +10 dBu)\nNoise floor (A-weighted): −91 dBu dry, −81 dBu wet\nDynamic range: 112 dB\nMax. input / output level: +21 dBu\nImpedance: input 10 kΩ, output 68 Ω\nDimensions: 483 × 44.45 × 238 mm\nWeight: 1.76 kg\nPower consumption: 12 W\nMade in: Germany",
+   "price_eur": 1222,
+   "price_from": 0,
+   "images": [
+    "elysia-karacter-1.jpg",
+    "elysia-karacter-2.jpg",
+    "elysia-karacter-3.jpg",
+    "elysia-karacter-4.jpg"
+   ],
+   "featured": 0,
+   "lead_time": "",
+   "variants": "",
+   "availability": "order",
+   "slug": "elysia-karacter"
+  },
+  {
+   "brand": "Elysia",
+   "category": "Saturation & clipping",
+   "name": "karacter 500",
+   "sku": "",
+   "summary": "Stereo saturator, from subtle warmth to extreme distortion — colored, dirty, saturated. 500 series module.",
+   "description": "karacter is a stereo saturation unit for tracking, mixing and mastering, with a wide tonal range: from gentle harmonic enhancement and subtle warmth to extreme, aggressive saturation — controlled with precision and depth.\nA 500 series module for API-compatible racks. elysia states that the sound is identical across all formats (19\" rack, 500 series and qube).\nFeatures:\n- Mastering-grade saturation: symmetrical clipping with a soft characteristic curve (odd harmonics)\n- FET Shred Mode: asymmetrical, tube-like distortion with even harmonics\n- Color filter built into the saturation circuit itself\n- Turbo Boost Mode for extreme distortion\n- Onboard Mix control to blend heavy distortion with the dry signal\n- Integrated Mid/Side matrix; Dual Mono, Stereo Link or M/S operation\n- Class-A technology with discrete circuit designs",
+   "specs": "Format: 500 series module\nType: stereo saturator\nFrequency response: <10 Hz – 400 kHz (−3 dB, 100 % wet)\nTHD+N, 100 % dry: 0.013 % @ 0 dBu\nTHD+N, 100 % wet: 0.47 % (min. Drive) up to 35.1 % (max. Drive, +10 dBu)\nNoise floor (A-weighted): −91 dBu dry, −81 dBu wet\nDynamic range: 112 dB\nMax. input / output level: +21 dBu\nImpedance: input 10 kΩ, output 68 Ω\nCurrent draw: 210 mA\nMade in: Germany",
+   "price_eur": 769,
+   "price_from": 0,
+   "images": [
+    "elysia-karacter-500-1.jpg",
+    "elysia-karacter-500-2.jpg",
+    "elysia-karacter-500-3.jpg"
+   ],
+   "featured": 0,
+   "lead_time": "",
+   "variants": "",
+   "availability": "order",
+   "slug": "elysia-karacter-500"
+  },
+  {
+   "brand": "Elysia",
+   "category": "Saturation & clipping",
+   "name": "karacter qube",
+   "sku": "",
+   "summary": "Stereo saturator, from subtle warmth to extreme distortion — colored, dirty, saturated. In the portable qube case.",
+   "description": "karacter is a stereo saturation unit for tracking, mixing and mastering, with a wide tonal range: from gentle harmonic enhancement and subtle warmth to extreme, aggressive saturation — controlled with precision and depth.\nThe qube is the travel-ready version: selected 500 series modules in a rugged, lightweight aluminium case with its own power supply, for the studio, the rehearsal room, songwriting sessions and the stage. elysia states that the sound is identical across all formats.\nFeatures:\n- Mastering-grade saturation: symmetrical clipping with a soft characteristic curve (odd harmonics)\n- FET Shred Mode: asymmetrical, tube-like distortion with even harmonics\n- Color filter built into the saturation circuit itself\n- Turbo Boost Mode for extreme distortion\n- Onboard Mix control to blend heavy distortion with the dry signal\n- Integrated Mid/Side matrix; Dual Mono, Stereo Link or M/S operation\n- Class-A technology with discrete circuit designs",
+   "specs": "Format: qube (desktop aluminium case)\nType: stereo saturator\nFrequency response: <10 Hz – 400 kHz (−3 dB, 100 % wet)\nTHD+N, 100 % dry: 0.013 % @ 0 dBu\nTHD+N, 100 % wet: 0.47 % (min. Drive) up to 35.1 % (max. Drive, +10 dBu)\nNoise floor (A-weighted): −91 dBu dry, −81 dBu wet\nDynamic range: 112 dB\nMax. input / output level: +21 dBu\nImpedance: input 10 kΩ, output 68 Ω\nDimensions: 104 × 137 × 212 mm\nWeight: 1.46 kg\nPower consumption: 10 W\nMade in: Germany",
+   "price_eur": 899,
+   "price_from": 0,
+   "images": [
+    "elysia-karacter-qube-1.jpg",
+    "elysia-karacter-qube-2.jpg",
+    "elysia-karacter-qube-3.jpg",
+    "elysia-karacter-qube-4.jpg"
+   ],
+   "featured": 0,
+   "lead_time": "",
+   "variants": "",
+   "availability": "order",
+   "slug": "elysia-karacter-qube"
+  },
+  {
+   "brand": "Elysia",
+   "category": "Transient shapers",
+   "name": "nvelope",
+   "sku": "",
+   "summary": "Stereo transient shaper, the evolution of the original Transient Designer — transient, vibrant, shaping.",
+   "description": "nvelope is a stereo impulse shaper that enhances transients and shapes dynamics — on drums above all, and with a smooth, natural result on acoustic instruments, in recording, mixing and mastering. It is the evolution of the original Transient Designer, which elysia's Ruben Tilgner developed at SPL.\nFeatures:\n- Full Range Mode: works independently of the signal level, with one control each for attack and sustain\n- Dual Band Mode: attack and sustain within chosen frequency ranges (Freq A / Freq S), with fewer artefacts\n- EQ Mode: turns the unit into two shelving filters\n- Mixed Mode: different processing on each channel, or EQ chained into Dual Band shaping\n- Auto Gain compensates level peaks from boosting the attack\n- Stereo Link or Dual Mono operation\n- Class-A technology with discrete circuit designs",
+   "specs": "Format: 19\" rack, 1 RU\nType: stereo transient shaper / impulse shaper\nFrequency response: <10 Hz – 400 kHz (−3 dB)\nTHD+N @ 0 dBu: 0.006 %\nTHD+N @ +10 dBu: 0.01 %\nNoise floor (A-weighted): −90 dBu (Full Range & EQ), −87 dBu (Dual Band)\nDynamic range: 112 dB\nMax. input / output level: +21 dBu\nImpedance: input 10 kΩ, output 68 Ω\nDimensions: 483 × 44.45 × 238 mm\nWeight: 1.76 kg\nPower consumption: 12 W\nMade in: Germany",
+   "price_eur": 1135,
+   "price_from": 0,
+   "images": [
+    "elysia-nvelope-1.jpg",
+    "elysia-nvelope-2.jpg",
+    "elysia-nvelope-3.jpg",
+    "elysia-nvelope-4.jpg"
+   ],
+   "featured": 0,
+   "lead_time": "",
+   "variants": "",
+   "availability": "order",
+   "slug": "elysia-nvelope"
+  },
+  {
+   "brand": "Elysia",
+   "category": "Transient shapers",
+   "name": "nvelope 500",
+   "sku": "",
+   "summary": "Stereo transient shaper, the evolution of the original Transient Designer — transient, vibrant, shaping. 500 series module.",
+   "description": "nvelope is a stereo impulse shaper that enhances transients and shapes dynamics — on drums above all, and with a smooth, natural result on acoustic instruments, in recording, mixing and mastering. It is the evolution of the original Transient Designer, which elysia's Ruben Tilgner developed at SPL.\nA 500 series module for API-compatible racks. elysia states that the sound is identical across all formats (19\" rack, 500 series and qube).\nFeatures:\n- Full Range Mode: works independently of the signal level, with one control each for attack and sustain\n- Dual Band Mode: attack and sustain within chosen frequency ranges (Freq A / Freq S), with fewer artefacts\n- EQ Mode: turns the unit into two shelving filters\n- Mixed Mode: different processing on each channel, or EQ chained into Dual Band shaping\n- Auto Gain compensates level peaks from boosting the attack\n- Stereo Link or Dual Mono operation\n- Class-A technology with discrete circuit designs",
+   "specs": "Format: 500 series module\nType: stereo transient shaper / impulse shaper\nFrequency response: <10 Hz – 400 kHz (−3 dB)\nTHD+N @ 0 dBu: 0.006 %\nTHD+N @ +10 dBu: 0.01 %\nNoise floor (A-weighted): −90 dBu (Full Range & EQ), −87 dBu (Dual Band)\nDynamic range: 112 dB\nMax. input / output level: +21 dBu\nImpedance: input 10 kΩ, output 68 Ω\nCurrent draw: 205 mA\nMade in: Germany",
+   "price_eur": 729,
+   "price_from": 0,
+   "images": [
+    "elysia-nvelope-500-1.jpg",
+    "elysia-nvelope-500-2.jpg",
+    "elysia-nvelope-500-3.jpg"
+   ],
+   "featured": 0,
+   "lead_time": "",
+   "variants": "",
+   "availability": "order",
+   "slug": "elysia-nvelope-500"
+  },
+  {
+   "brand": "Elysia",
+   "category": "Transient shapers",
+   "name": "nvelope qube",
+   "sku": "",
+   "summary": "Stereo transient shaper, the evolution of the original Transient Designer — transient, vibrant, shaping. In the portable qube case.",
+   "description": "nvelope is a stereo impulse shaper that enhances transients and shapes dynamics — on drums above all, and with a smooth, natural result on acoustic instruments, in recording, mixing and mastering. It is the evolution of the original Transient Designer, which elysia's Ruben Tilgner developed at SPL.\nThe qube is the travel-ready version: selected 500 series modules in a rugged, lightweight aluminium case with its own power supply, for the studio, the rehearsal room, songwriting sessions and the stage. elysia states that the sound is identical across all formats.\nFeatures:\n- Full Range Mode: works independently of the signal level, with one control each for attack and sustain\n- Dual Band Mode: attack and sustain within chosen frequency ranges (Freq A / Freq S), with fewer artefacts\n- EQ Mode: turns the unit into two shelving filters\n- Mixed Mode: different processing on each channel, or EQ chained into Dual Band shaping\n- Auto Gain compensates level peaks from boosting the attack\n- Stereo Link or Dual Mono operation\n- Class-A technology with discrete circuit designs",
+   "specs": "Format: qube (desktop aluminium case)\nType: stereo transient shaper / impulse shaper\nFrequency response: <10 Hz – 400 kHz (−3 dB)\nTHD+N @ 0 dBu: 0.006 %\nTHD+N @ +10 dBu: 0.01 %\nNoise floor (A-weighted): −90 dBu (Full Range & EQ), −87 dBu (Dual Band)\nDynamic range: 112 dB\nMax. input / output level: +21 dBu\nImpedance: input 10 kΩ, output 68 Ω\nDimensions: 104 × 137 × 212 mm\nWeight: 1.46 kg\nPower consumption: 9 W\nMade in: Germany",
+   "price_eur": 929,
+   "price_from": 0,
+   "images": [
+    "elysia-nvelope-qube-1.jpg",
+    "elysia-nvelope-qube-2.jpg",
+    "elysia-nvelope-qube-3.jpg",
+    "elysia-nvelope-qube-4.jpg"
+   ],
+   "featured": 0,
+   "lead_time": "",
+   "variants": "",
+   "availability": "order",
+   "slug": "elysia-nvelope-qube"
+  },
+  {
+   "brand": "Elysia",
+   "category": "Transient shapers",
+   "name": "nvelope Mastering Edition",
+   "sku": "",
+   "summary": "Stereo transient shaper, the evolution of the original Transient Designer — transient, vibrant, shaping.",
+   "description": "nvelope is a stereo impulse shaper that enhances transients and shapes dynamics — on drums above all, and with a smooth, natural result on acoustic instruments, in recording, mixing and mastering. It is the evolution of the original Transient Designer, which elysia's Ruben Tilgner developed at SPL.\nThe Mastering Edition is the mastering-focused nvelope for percussive material and EQ-based polishing: a ±5 dB range on the gain parameters, with stepped potentiometers and a detailed scale for precise, repeatable settings.\nFeatures:\n- Full Range Mode: works independently of the signal level, with one control each for attack and sustain\n- Dual Band Mode: attack and sustain within chosen frequency ranges (Freq A / Freq S), with fewer artefacts\n- EQ Mode: turns the unit into two shelving filters\n- Mixed Mode: different processing on each channel, or EQ chained into Dual Band shaping\n- Auto Gain compensates level peaks from boosting the attack\n- Stereo Link or Dual Mono operation\n- Class-A technology with discrete circuit designs",
+   "specs": "Format: 19\" rack, 1 RU\nType: stereo transient shaper / impulse shaper\nFrequency response: <10 Hz – 400 kHz (−3 dB)\nTHD+N @ 0 dBu: 0.006 %\nTHD+N @ +10 dBu: 0.01 %\nNoise floor (A-weighted): −90 dBu (Full Range & EQ), −87 dBu (Dual Band)\nDynamic range: 112 dB\nMax. input / output level: +21 dBu\nImpedance: input 10 kΩ, output 68 Ω\nDimensions: 483 × 44.45 × 238 mm\nWeight: 1.76 kg\nPower consumption: 12 W\nMade in: Germany",
+   "price_eur": 1479,
+   "price_from": 0,
+   "images": [
+    "elysia-nvelope-mastering-edition-1.jpg",
+    "elysia-nvelope-mastering-edition-2.jpg",
+    "elysia-nvelope-mastering-edition-3.jpg",
+    "elysia-nvelope-mastering-edition-4.jpg"
+   ],
+   "featured": 0,
+   "lead_time": "",
+   "variants": "",
+   "availability": "order",
+   "slug": "elysia-nvelope-mastering-edition"
+  },
+  {
+   "brand": "Elysia",
+   "category": "Headphone amps & monitoring",
+   "name": "xpector",
+   "sku": "",
+   "summary": "The powerful dual headphone amp — perfect monitoring for artists and producers.",
+   "description": "The powerful dual headphone amp. Two sides – one audio experience: xpector combines two high-end headphone amplifiers with features tailored to engineers and artists during recording. Each side has its own mix control, so engineer and artist set their levels independently — and with its speaker outputs it doubles as a monitor controller.\nFeatures:\n- Two independent headphone amps, each with a large level control\n- Two stereo inputs (Direct and DAW) for an individual mix on each side\n- Monitoring modes: stereo, mono, side, left and right, to check stereo image and mono compatibility\n- Artist EQ: high and low shelf on the artist headphone output\n- Balanced XLR speaker outputs with Trim to match speakers and headphones\n- Loop outputs to cascade several units for separate mixes for each musician\n- Custom qube backplate with 12 audio connections; low-noise internal power supply",
+   "specs": "Format: qube (desktop aluminium case)\nType: dual headphone amplifier / monitor controller\nFrequency response: <10 Hz – 400 kHz (−3 dB)\nLevel: +22 dBu (input and XLR outputs)\nImpedance: input 45 kΩ, output 0.09 Ω\nMax. output power: 2 × 150 mW RMS (22 Ω and 600 Ω)\nDimensions: 104 × 137 × 212 mm\nWeight: 1.46 kg\nPower consumption: 9 W\nMade in: Germany",
+   "price_eur": 1099,
+   "price_from": 0,
+   "images": [
+    "elysia-xpector-1.jpg",
+    "elysia-xpector-2.jpg",
+    "elysia-xpector-3.jpg",
+    "elysia-xpector-4.jpg"
+   ],
+   "featured": 0,
+   "lead_time": "",
+   "variants": "",
+   "availability": "order",
+   "slug": "elysia-xpector"
   }
  ]
 }

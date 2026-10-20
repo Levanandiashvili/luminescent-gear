@@ -81,6 +81,22 @@ export function gelPrice(product, rate = currentRate().rate) {
   const step = Number(getSetting('gel_rounding')) || 1;
   return Math.ceil((Number(product.price_eur || 0) * rate) / step) * step;
 }
-export function priceIn(product, currency, rate) {
+/** Regular (list) price, before any sale discount. */
+export function listPriceIn(product, currency, rate) {
   return currency === 'EUR' ? Number(product.price_eur || 0) : gelPrice(product, rate);
+}
+/** Sale discount in percent from Settings (0 = no sale). */
+export function discountPct() {
+  const d = Number(getSetting('discount_pct') || 0);
+  return d > 0 && d < 90 ? d : 0;
+}
+/** Price customers pay: the list price minus the sale discount, rounded like other prices. */
+export function priceIn(product, currency, rate) {
+  const list = listPriceIn(product, currency, rate);
+  const d = discountPct();
+  if (!d || !(list > 0)) return list;
+  const v = list * (1 - d / 100);
+  if (currency === 'EUR') return Math.round(v);
+  const step = Number(getSetting('gel_rounding')) || 1;
+  return Math.ceil(v / step) * step;
 }

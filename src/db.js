@@ -115,6 +115,7 @@ export const DEFAULT_SETTINGS = {
   invoice_note: 'Please use the invoice number as the payment reference. Delivery time is confirmed once payment is received.',
   rate_mode: 'bog',         // bog | nbg | manual
   rate_manual: '2.95',
+  discount_pct: '10',      // sale: percent off every price; the old price is shown crossed out (0 = no sale)
   rate_markup: '0',         // percent added on top of the bank rate
   gel_rounding: '1',        // round GEL prices to this step (1, 5, 10)
   default_currency: 'GEL',

@@ -472,6 +472,7 @@ function settingsPage(req, res, url) {
         </div>
         <div class="f-row">
           ${t('rate_markup', 'Markup %', 'added on top, e.g. 1.5 to cover transfer costs')}
+          ${t('discount_pct', 'Sale discount %', 'taken off every price, old price shown crossed out; 0 = no sale', 'inputmode="decimal"')}
           <label class="f"><span>Round GEL prices up to</span><select name="gel_rounding">${['1', '5', '10', '50'].map((v) => opt(v, `${v} ₾`, s.gel_rounding))}</select></label>
           <label class="f"><span>Default currency</span><select name="default_currency">${opt('GEL', 'GEL', s.default_currency)}${opt('EUR', 'EUR', s.default_currency)}</select></label>
         </div>

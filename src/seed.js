@@ -2,6 +2,7 @@
 // (built from the Gyraf Audio shop data and the Sessiondesk 2026 price list + product data).
 import fs from 'node:fs';
 import path from 'node:path';
+import crypto from 'node:crypto';
 import { fileURLToPath } from 'node:url';
 import { db, UPLOAD_DIR, uniqueSlug } from './db.js';
 
@@ -19,6 +20,11 @@ const BRANDS = {
     tagline: 'Premium studio furniture and precision acoustic treatments for recording, mixing, mastering and broadcast.',
     description: 'Sessiondesk designs and manufactures premium studio furniture and precision acoustic treatments for recording, mixing, mastering and broadcast environments. From ergonomic desks to high-performance acoustic panels, the range works together to turn your space into a professional-grade sonic environment.\n\nThe line-up includes the TAV, HOME and MODULAR desk series, V-STAND and STAND-UP speaker stands, ALEA racks, and SessionbloX — a tool-free modular system of acoustic panels.',
   },
+  Elysia: {
+    slug: 'elysia', origin: 'Developed and built in Germany', sort: 3, website: 'https://elysia.com',
+    tagline: 'High-end analog processors in class-A technology — for recording, mixing and mastering, as 19" units, 500 series modules and qube.',
+    description: 'elysia develops and builds high-end analog audio processors in Germany: compressors, equalizers, saturators, transient shapers, preamps and channel strips, built in class-A technology with discrete circuit designs.\n\nThe range spans mastering classics like the alpha compressor and xmax, studio workhorses like xpressor|neo, xfilter, nvelope and karacter, and the channex|studio recall channel strip. Most designs come in three formats with the same sound: 19" rack, 500 series module, and the portable qube.',
+  },
 };
 
 function copyImage(name) {
@@ -34,7 +40,7 @@ function copyImage(name) {
  * prices, texts and photos (photos only if the catalog has some); new ones are added.
  * Your own edits to products that are not in the catalog are never touched.
  */
-export function loadCatalog({ log = console.log } = {}) {
+export function loadCatalog({ log = console.log, onlyNew = false } = {}) {
   if (!fs.existsSync(CATALOG)) { log('[catalog] catalog/catalog.json not found — nothing loaded.'); return; }
   const cat = JSON.parse(fs.readFileSync(CATALOG, 'utf8'));
   const brandId = {}, catId = {};
@@ -72,6 +78,8 @@ export function loadCatalog({ log = console.log } = {}) {
         description: p.description || '', specs: p.specs || '', featured: p.featured ? 1 : 0, sort: i,
       };
       const existing = db.prepare('SELECT id, images, published FROM products WHERE lower(name) = lower(?) AND brand_id IS ?').get(p.name, data.brand_id);
+      // On a running shop, only add products that are new in the catalog; never overwrite edits made in the admin panel.
+      if (onlyNew && existing) return;
       // Products without any photo stay hidden from the shop until photos are added in the admin panel.
       // Studio (room) photos belong in the gallery, not on product listings: drop any that an earlier catalog attached.
       let ownImages = [];
@@ -109,6 +117,10 @@ export function loadCatalog({ log = console.log } = {}) {
 }
 
 export function seedIfEmpty() {
-  if (db.prepare('SELECT COUNT(*) n FROM brands').get().n > 0) return;
-  loadCatalog();
+  const version = fs.existsSync(CATALOG) ? crypto.createHash('sha1').update(fs.readFileSync(CATALOG)).digest('hex') : '';
+  const setVersion = () => db.prepare("INSERT INTO settings(key, value) VALUES('catalog_version', ?) ON CONFLICT(key) DO UPDATE SET value = excluded.value").run(version);
+  if (db.prepare('SELECT COUNT(*) n FROM brands').get().n === 0) { loadCatalog(); setVersion(); return; }
+  // A newer catalog shipped with the code (e.g. a new brand): add what's new, keep everything else as it is.
+  const current = db.prepare("SELECT value FROM settings WHERE key = 'catalog_version'").get()?.value;
+  if (current !== version) { loadCatalog({ onlyNew: true }); setVersion(); }
 }

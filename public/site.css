@@ -97,6 +97,11 @@ p { margin: 0 0 .8em; }
 .price { display: inline-flex; flex-wrap: wrap; align-items: baseline; gap: 4px 10px; font-variant-numeric: tabular-nums; }
 .price-main { font-weight: 600; }
 .price-from { font-size: 13px; color: var(--graphite); }
+.price-old { color: var(--graphite); font-weight: 400; font-size: .92em; text-decoration-thickness: 1px; }
+.price-badge { font-size: 11px; font-weight: 600; letter-spacing: .02em; color: #fff; background: var(--oak); border-radius: 999px; padding: 2px 8px; line-height: 1.5; align-self: center; }
+.price-lg .price-old { font-size: 20px; }
+.price-lg .price-badge { font-size: 12px; padding: 3px 10px; }
+.variants .price-old { margin-right: 6px; }
 .price-alt { font-size: 13px; color: var(--graphite); }
 .price-lg .price-main { font: 400 40px/1 var(--serif); letter-spacing: -.01em; }
 .price-lg .price-alt { font-size: 15px; }
@@ -118,6 +123,7 @@ p { margin: 0 0 .8em; }
 
 /* Brand page */
 .brand-head { padding: clamp(40px, 6vw, 80px) 0 12px; }
+.brand-head h1 + .brand-origin { margin-top: 14px; }
 .brand-head-grid { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1.2fr); gap: 40px; align-items: start; }
 .brand-logo { max-height: 90px; max-width: 320px; margin-bottom: 14px; }
 .brand-hero { width: 100%; max-height: 560px; object-fit: cover; border-radius: 4px; margin-top: 36px; }
