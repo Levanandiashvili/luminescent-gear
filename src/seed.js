@@ -116,7 +116,19 @@ export function loadCatalog({ log = console.log, onlyNew = false } = {}) {
   }
 }
 
+// Home page texts that still carry an earlier default are brought up to date; texts you changed yourself are left alone.
+const OLD_DEFAULTS = {
+  hero_text: ['Luminescent Gear is the official dealer in Georgia for Gyraf Audio and Sessiondesk: hand-built tube processors from Denmark and studio furniture designed in Germany, with prices in lari or euro and local support after the sale.'],
+};
+function refreshDefaultTexts() {
+  for (const [key, olds] of Object.entries(OLD_DEFAULTS)) {
+    const row = db.prepare('SELECT value FROM settings WHERE key = ?').get(key);
+    if (row && olds.includes(row.value)) db.prepare('DELETE FROM settings WHERE key = ?').run(key);
+  }
+}
+
 export function seedIfEmpty() {
+  refreshDefaultTexts();
   const version = fs.existsSync(CATALOG) ? crypto.createHash('sha1').update(fs.readFileSync(CATALOG)).digest('hex') : '';
   const setVersion = () => db.prepare("INSERT INTO settings(key, value) VALUES('catalog_version', ?) ON CONFLICT(key) DO UPDATE SET value = excluded.value").run(version);
   if (db.prepare('SELECT COUNT(*) n FROM brands').get().n === 0) { loadCatalog(); setVersion(); return; }

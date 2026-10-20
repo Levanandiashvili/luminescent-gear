@@ -120,7 +120,7 @@ export const DEFAULT_SETTINGS = {
   gel_rounding: '1',        // round GEL prices to this step (1, 5, 10)
   default_currency: 'GEL',
   hero_title: 'Analogue tools and studio furniture, delivered in Georgia.',
-  hero_text: 'Luminescent Gear is the official dealer in Georgia for Gyraf Audio and Sessiondesk: hand-built tube processors from Denmark and studio furniture designed in Germany, with prices in lari or euro and local support after the sale.',
+  hero_text: 'Luminescent Gear is the official dealer in Georgia for Gyraf Audio, Elysia and Sessiondesk: hand-built tube processors from Denmark, class-A analog processors and studio furniture from Germany, with prices in lari or euro and local support after the sale.',
 };
 
 const getStmt = db.prepare('SELECT value FROM settings WHERE key = ?');
