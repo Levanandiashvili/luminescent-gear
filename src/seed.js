@@ -127,8 +127,22 @@ function refreshDefaultTexts() {
   }
 }
 
+// One-off changes requested by the owner, applied once on the live shop (later edits in Admin → Settings win).
+const ONE_OFF_SETTINGS = [
+  { id: '2026-10-21-sale-5', key: 'discount_pct', value: '5' },
+];
+function applyOneOffSettings() {
+  for (const ch of ONE_OFF_SETTINGS) {
+    const mark = 'applied:' + ch.id;
+    if (db.prepare('SELECT 1 FROM settings WHERE key = ?').get(mark)) continue;
+    db.prepare('INSERT INTO settings(key, value) VALUES(?, ?) ON CONFLICT(key) DO UPDATE SET value = excluded.value').run(ch.key, ch.value);
+    db.prepare("INSERT INTO settings(key, value) VALUES(?, '1')").run(mark);
+  }
+}
+
 export function seedIfEmpty() {
   refreshDefaultTexts();
+  applyOneOffSettings();
   const version = fs.existsSync(CATALOG) ? crypto.createHash('sha1').update(fs.readFileSync(CATALOG)).digest('hex') : '';
   const setVersion = () => db.prepare("INSERT INTO settings(key, value) VALUES('catalog_version', ?) ON CONFLICT(key) DO UPDATE SET value = excluded.value").run(version);
   if (db.prepare('SELECT COUNT(*) n FROM brands').get().n === 0) { loadCatalog(); setVersion(); return; }
