@@ -118,7 +118,7 @@ export function loadCatalog({ log = console.log, onlyNew = false } = {}) {
 
 // Home page texts that still carry an earlier default are brought up to date; texts you changed yourself are left alone.
 const OLD_DEFAULTS = {
-  hero_text: ['Luminescent Gear is the official dealer in Georgia for Gyraf Audio and Sessiondesk: hand-built tube processors from Denmark and studio furniture designed in Germany, with prices in lari or euro and local support after the sale.'],
+  hero_text: ['Luminescent Gear is the official dealer in Georgia for Gyraf Audio, Elysia and Sessiondesk: hand-built tube processors from Denmark, class-A analog processors and studio furniture from Germany, with prices in lari or euro and local support after the sale.', 'Luminescent Gear is the official dealer in Georgia for Gyraf Audio and Sessiondesk: hand-built tube processors from Denmark and studio furniture designed in Germany, with prices in lari or euro and local support after the sale.'],
 };
 function refreshDefaultTexts() {
   for (const [key, olds] of Object.entries(OLD_DEFAULTS)) {

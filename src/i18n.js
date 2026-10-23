@@ -25,7 +25,7 @@ const S = {
     invoice_ready: 'Your invoice is ready', invoice_ready_text: 'Save or print it, then pay by bank transfer using the invoice number as the reference. We have received your order and will be in touch.',
     rate_used: 'Exchange rate: 1 EUR = {rate} GEL ({source}, {date})',
     status: 'Status', awaiting_payment: 'Awaiting payment', paid: 'Paid', shipped: 'Shipped', completed: 'Completed', cancelled: 'Cancelled',
-    official_dealer: 'Official dealer in Georgia', not_found: 'This page does not exist.', home: 'Home',
+    official_dealer: 'Brands', not_found: 'This page does not exist.', home: 'Home',
     required: 'Required', invalid_email: 'Enter a valid email address', cart_changed: 'Some items in your cart are no longer available and were removed.',
     footer_pay: 'Payment by bank transfer in GEL or EUR', footer_rate: 'Today: 1 EUR = {rate} GEL',
     filter_all: 'All', sort: 'Sort', ask_whatsapp: 'Ask on WhatsApp', ask_email: 'Ask by email',
