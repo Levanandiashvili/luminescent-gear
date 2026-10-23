@@ -129,7 +129,7 @@ function refreshDefaultTexts() {
 
 // One-off changes requested by the owner, applied once on the live shop (later edits in Admin → Settings win).
 const ONE_OFF_SETTINGS = [
-  { id: '2026-10-21-sale-5', key: 'discount_pct', value: '5' },
+  { id: '2026-10-23-sale-off', key: 'discount_pct', value: '0' },
 ];
 function applyOneOffSettings() {
   for (const ch of ONE_OFF_SETTINGS) {
