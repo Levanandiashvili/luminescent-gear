@@ -145,6 +145,35 @@ function applyOneOffSettings() {
   }
 }
 
+// One-off photo upgrades for catalog products already in the shop. Only photos that came from the
+// catalog itself (/uploads/cat-...) are replaced; photos uploaded in the admin panel are never touched.
+const ONE_OFF_PHOTO_REFRESH = [
+  { id: '2026-11-02-strymon-press-photos', brand: 'Strymon' },
+];
+function applyPhotoRefresh() {
+  if (!fs.existsSync(CATALOG)) return;
+  const cat = JSON.parse(fs.readFileSync(CATALOG, 'utf8'));
+  for (const job of ONE_OFF_PHOTO_REFRESH) {
+    const mark = 'applied:' + job.id;
+    if (db.prepare('SELECT 1 FROM settings WHERE key = ?').get(mark)) continue;
+    const brand = db.prepare('SELECT id FROM brands WHERE lower(name) = lower(?)').get(job.brand);
+    if (brand) {
+      for (const p of cat.products.filter((x) => x.brand === job.brand && x.images.length)) {
+        const row = db.prepare('SELECT id, images FROM products WHERE lower(name) = lower(?) AND brand_id = ?').get(p.name, brand.id);
+        if (!row) continue;
+        let cur = [];
+        try { cur = JSON.parse(row.images || '[]'); } catch {}
+        if (cur.length && !cur.every((src) => String(src).startsWith('/uploads/cat-'))) continue;
+        const next = p.images.map(copyImage).filter(Boolean);
+        if (next.length && JSON.stringify(next) !== JSON.stringify(cur)) {
+          db.prepare("UPDATE products SET images = ?, published = 1, updated_at = datetime('now') WHERE id = ?").run(JSON.stringify(next), row.id);
+        }
+      }
+    }
+    db.prepare("INSERT INTO settings(key, value) VALUES(?, '1')").run(mark);
+  }
+}
+
 export function seedIfEmpty() {
   refreshDefaultTexts();
   applyOneOffSettings();
@@ -154,4 +183,5 @@ export function seedIfEmpty() {
   // A newer catalog shipped with the code (e.g. a new brand): add what's new, keep everything else as it is.
   const current = db.prepare("SELECT value FROM settings WHERE key = 'catalog_version'").get()?.value;
   if (current !== version) { loadCatalog({ onlyNew: true }); setVersion(); }
+  applyPhotoRefresh();
 }
