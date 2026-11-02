@@ -65,12 +65,12 @@ p { margin: 0 0 .8em; }
 .hero-caption { display: flex; justify-content: space-between; align-items: baseline; gap: 16px; border-top: 1px solid var(--rule); margin-top: 22px; padding-top: 14px; font-weight: 500; }
 
 /* Brand panels */
-.brands { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 12px; padding-bottom: clamp(40px, 6vw, 80px); }
+.brands { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 12px; padding-bottom: clamp(40px, 6vw, 80px); }
 .brand-panel { position: relative; display: flex; align-items: flex-end; min-height: 380px; overflow: hidden; border-radius: 4px; text-decoration: none; background: var(--ink); color: var(--panel-ink); }
 .brand-panel:nth-child(2n) { background: var(--panel); }
 .brand-panel-bg { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; }
 .brand-panel-text { position: relative; padding: clamp(24px, 3vw, 40px); max-width: 44ch; }
-.brand-panel h2 { font: 400 clamp(40px, 5vw, 64px)/1 var(--serif); letter-spacing: -.02em; margin-bottom: 10px; }
+.brand-panel h2 { font: 400 clamp(36px, 3.6vw, 54px)/1 var(--serif); overflow-wrap: anywhere; letter-spacing: -.02em; margin-bottom: 10px; }
 .brand-origin { font-size: 13px; color: var(--graphite); margin-bottom: 16px; }
 .brand-panel .brand-origin { color: color-mix(in srgb, var(--panel-ink) 70%, transparent); }
 .brand-panel .link { text-decoration-color: var(--ph-oak); }

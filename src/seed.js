@@ -20,6 +20,11 @@ const BRANDS = {
     tagline: 'Premium studio furniture and precision acoustic treatments for recording, mixing, mastering and broadcast.',
     description: 'Sessiondesk designs and manufactures premium studio furniture and precision acoustic treatments for recording, mixing, mastering and broadcast environments. From ergonomic desks to high-performance acoustic panels, the range works together to turn your space into a professional-grade sonic environment.\n\nThe line-up includes the TAV, HOME and MODULAR desk series, V-STAND and STAND-UP speaker stands, ALEA racks, and SessionbloX — a tool-free modular system of acoustic panels.',
   },
+  Strymon: {
+    slug: 'strymon', origin: 'Designed and built in the USA', sort: 4, website: 'https://www.strymon.net',
+    tagline: 'Studio-grade reverb, delay, modulation and drive pedals, Eurorack modules and power — designed and built in the USA.',
+    description: 'Strymon designs and builds effects pedals, Eurorack modules and power supplies in the USA, known for studio-quality reverbs, delays and modulation in a pedal format.\n\nThe range runs from compact pedals like Cloudburst, Brig, EC-1 and blueSky to the flagship BigSky MX and TimeLine MX, plus Eurorack modules such as Magneto and StarLab, the PCH direct interfaces, and Ojai and Zuma power supplies. Every Strymon pedal has true bypass with a 100 % analog dry path.',
+  },
   Elysia: {
     slug: 'elysia', origin: 'Developed and built in Germany', sort: 3, website: 'https://elysia.com',
     tagline: 'High-end analog processors in class-A technology — for recording, mixing and mastering, as 19" units, 500 series modules and qube.',
@@ -118,7 +123,7 @@ export function loadCatalog({ log = console.log, onlyNew = false } = {}) {
 
 // Home page texts that still carry an earlier default are brought up to date; texts you changed yourself are left alone.
 const OLD_DEFAULTS = {
-  hero_text: ['Luminescent Gear is the official dealer in Georgia for Gyraf Audio, Elysia and Sessiondesk: hand-built tube processors from Denmark, class-A analog processors and studio furniture from Germany, with prices in lari or euro and local support after the sale.', 'Luminescent Gear is the official dealer in Georgia for Gyraf Audio and Sessiondesk: hand-built tube processors from Denmark and studio furniture designed in Germany, with prices in lari or euro and local support after the sale.'],
+  hero_text: ['Luminescent Gear brings Gyraf Audio, Elysia and Sessiondesk to Georgia: hand-built tube processors from Denmark, class-A analog processors and studio furniture from Germany, with prices in lari or euro and local support after the sale.', 'Luminescent Gear is the official dealer in Georgia for Gyraf Audio, Elysia and Sessiondesk: hand-built tube processors from Denmark, class-A analog processors and studio furniture from Germany, with prices in lari or euro and local support after the sale.', 'Luminescent Gear is the official dealer in Georgia for Gyraf Audio and Sessiondesk: hand-built tube processors from Denmark and studio furniture designed in Germany, with prices in lari or euro and local support after the sale.'],
 };
 function refreshDefaultTexts() {
   for (const [key, olds] of Object.entries(OLD_DEFAULTS)) {

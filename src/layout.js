@@ -49,7 +49,7 @@ export function page(c, { title, body, description = '', bodyClass = '' }) {
 ${s.site_url ? html`<link rel="canonical" href="${s.site_url.replace(/\/$/, '') + (c.path || '/').split('?')[0]}">
 <meta property="og:site_name" content="${s.company_name}"><meta property="og:title" content="${fullTitle}"><meta property="og:url" content="${s.site_url.replace(/\/$/, '') + (c.path || '/').split('?')[0]}">` : ''}
 <link rel="icon" href="/static/favicon.svg" type="image/svg+xml">
-<link rel="stylesheet" href="/static/site.css?v=12">
+<link rel="stylesheet" href="/static/site.css?v=14">
 </head>
 <body class="${bodyClass}">
 <a class="skip" href="#main">Skip to content</a>

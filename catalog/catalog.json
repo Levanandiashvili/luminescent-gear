@@ -158,6 +158,10 @@
   {
    "name": "Elysia",
    "logo": ""
+  },
+  {
+   "name": "Strymon",
+   "logo": ""
   }
  ],
  "categories": [
@@ -193,6 +197,41 @@
   ],
   [
    "Headphone amps & monitoring",
+   "",
+   "gear"
+  ],
+  [
+   "Reverb pedals",
+   "",
+   "gear"
+  ],
+  [
+   "Delay pedals",
+   "",
+   "gear"
+  ],
+  [
+   "Modulation pedals",
+   "",
+   "gear"
+  ],
+  [
+   "Drive & fuzz pedals",
+   "",
+   "gear"
+  ],
+  [
+   "Amp, cab & DI",
+   "",
+   "gear"
+  ],
+  [
+   "Eurorack modules",
+   "",
+   "gear"
+  ],
+  [
+   "Power & control",
    "",
    "gear"
   ],
@@ -1560,6 +1599,1169 @@
    "variants": "",
    "availability": "order",
    "slug": "elysia-xpector"
+  },
+  {
+   "brand": "Strymon",
+   "category": "Reverb pedals",
+   "name": "Cloudburst",
+   "sku": "852571008387",
+   "summary": "Into The Clouds…And Beyond — ambient reverberator.",
+   "description": "Sometimes a single pedal can be transformative, allowing your tone to bloom in a way that draws music out of you effortlessly and keeps you engaged for hours on end.\nThe simple look and feel of Cloudburst belies the power underneath the hood, because it produces some of the most gorgeous ambient reverb tones and soundscapes that you’ve ever heard out of a guitar reverb pedal – there’s literally nothing else quite like it.",
+   "specs": "Type: Ambient reverberator\nBypass: true bypass, 100 % analog dry path\nPower supply: not included (Strymon power supplies available separately)\nMade in: USA",
+   "price_eur": 319.95,
+   "price_from": 0,
+   "images": [
+    "strymon-cloudburst-1.jpg"
+   ],
+   "featured": 1,
+   "lead_time": "",
+   "variants": "",
+   "availability": "order",
+   "slug": "strymon-cloudburst"
+  },
+  {
+   "brand": "Strymon",
+   "category": "Delay pedals",
+   "name": "Brig",
+   "sku": "852571008431",
+   "summary": "Certified Organic Delay — dbucket delay.",
+   "description": "The delays that become true classics do not simply repeat the notes you play.\nThey do something special to each delay repeat – something that evokes a feeling, fueling the music and inspiring you.\nPlug into Brig, play a note, and you’re instantly drawn in by repeats that evolve with captivating complexity and uncommonly rich tonal characteristics.\nBrig delivers all the warmth, subtle grit and unique tactile playing experience of analog bucket brigade delays (BBDs), offering three distinct delay voicings in one highly addictive stereo pedal.",
+   "specs": "Type: dBucket delay\nBypass: true bypass, 100 % analog dry path\nPower supply: not included (Strymon power supplies available separately)\nMade in: USA",
+   "price_eur": 299.95,
+   "price_from": 0,
+   "images": [
+    "strymon-brig-1.jpg"
+   ],
+   "featured": 0,
+   "lead_time": "",
+   "variants": "",
+   "availability": "order",
+   "slug": "strymon-brig"
+  },
+  {
+   "brand": "Strymon",
+   "category": "Modulation pedals",
+   "name": "UltraViolet",
+   "sku": "852571008448",
+   "summary": "Quintessential Vibe — vintage vibe.",
+   "description": "A warm grittiness to the warble, a rippling, wooshing, bubbling irregularity to the modulation and a dynamic response to your picking are all hallmarks of the true vibe experience.\nThicker and chewier than any chorus, earthier than any phaser and uniquely magical in front of a driven amp, the perfect vibe pedal moves you to dig in and play without inhibition.\nThis feeling has been difficult to find outside of large and expensive fully-analog boutique units, but the search for that elusive experience is now over.\nDelivering vintage vibe tone that’s second to none with simple and powerful controls for instantly obtaining a rich variety of captivating sounds, UltraViolet is the vibe pedal you’ve been looking for.",
+   "specs": "Type: Vintage vibe\nBypass: true bypass, 100 % analog dry path\nPower supply: not included (Strymon power supplies available separately)\nMade in: USA",
+   "price_eur": 299.95,
+   "price_from": 0,
+   "images": [
+    "strymon-ultraviolet-1.jpg"
+   ],
+   "featured": 0,
+   "lead_time": "",
+   "variants": "",
+   "availability": "order",
+   "slug": "strymon-ultraviolet"
+  },
+  {
+   "brand": "Strymon",
+   "category": "Delay pedals",
+   "name": "EC-1",
+   "sku": "852571008592",
+   "summary": "A Timeless Classic Reborn — single head dtape echo.",
+   "description": "Experience the dreamy sound of a classic ‘60s tape echo complete with the harmonic richness of the accompanying tube preamp.\nEnjoy organic and ethereal modulation produced by countless subtle mechanical imperfections, and easily dial in anything from warm slapback to expansive echo feedback beds with a strikingly gorgeous stereo image.\nWith beautifully-tuned low frequency response, lush tape saturation and sublime echo decay, EC-1 provides all the best of what a tube driven tape echo can deliver.",
+   "specs": "Type: Single head dTape echo\nBypass: true bypass, 100 % analog dry path\nPower supply: not included (Strymon power supplies available separately)\nMade in: USA",
+   "price_eur": 319.95,
+   "price_from": 0,
+   "images": [
+    "strymon-ec-1-1.jpg"
+   ],
+   "featured": 0,
+   "lead_time": "",
+   "variants": "",
+   "availability": "order",
+   "slug": "strymon-ec-1"
+  },
+  {
+   "brand": "Strymon",
+   "category": "Delay pedals",
+   "name": "Olivera",
+   "sku": "852571008646",
+   "summary": "A Well Oiled Machine — vintage oil can echo.",
+   "description": "Turn the clock back to a time when audio effects were still uncharted territory, and experience the vintage syrupy warble of a true oil can echo.\nFrom dark and modulated repeats to sustaining textures that approach the sound of classic spring reverb tanks, Olivera is the first pedal emulation that truly captures the mechanical yet wildly organic nature of these oddball machines, bringing funky inspiration to anything you run through it.",
+   "specs": "Type: Vintage oil can echo\nBypass: true bypass, 100 % analog dry path\nPower supply: not included (Strymon power supplies available separately)\nMade in: USA",
+   "price_eur": 299.95,
+   "price_from": 0,
+   "images": [
+    "strymon-olivera-1.jpg"
+   ],
+   "featured": 0,
+   "lead_time": "",
+   "variants": "",
+   "availability": "order",
+   "slug": "strymon-olivera"
+  },
+  {
+   "brand": "Strymon",
+   "category": "Drive & fuzz pedals",
+   "name": "Fairfax",
+   "sku": "85257100866",
+   "summary": "Miniature Marvel — class a output stage drive.",
+   "description": "Fairfax isn’t really a distortion pedal. Instead, it’s a complete miniature amplifier in 100% analog form, based upon a little-known device from the 60’s that powered a number of classic rock anthems.\nThe sound and feel is extremely tube-like, with added harmonics and saturation coming from a clever circuit that emulates the critical behavior of a tube amp’s output transformer. It’s a drive pedal that feels completely natural to play, retains the natural sound of your guitar, and glues notes together in a truly organic way.",
+   "specs": "Type: Class A output stage drive\nBypass: true bypass, 100 % analog dry path\nPower supply: not included (Strymon power supplies available separately)\nMade in: USA",
+   "price_eur": 229.95,
+   "price_from": 0,
+   "images": [
+    "strymon-fairfax-1.jpg"
+   ],
+   "featured": 0,
+   "lead_time": "",
+   "variants": "",
+   "availability": "order",
+   "slug": "strymon-fairfax"
+  },
+  {
+   "brand": "Strymon",
+   "category": "Drive & fuzz pedals",
+   "name": "Canoga",
+   "sku": "852571008691",
+   "summary": "Vintage Simplicity — vintage silicon fuzz.",
+   "description": "Canoga is a tweaked version of a vintage silicon FuzzFace®. Full up it works as a fuzz or distortion, but if you back the guitar’s volume down there’s a world of varied tones on tap for all different styles of music.  Canoga is a simple pedal to use - there’s one knob for Drive and one for output Level - but the interaction between the guitar and Canoga’s input is critical, as is the interaction between it and your amp. As with many fuzz pedals, Canoga works brilliantly plugged into an amp with a bit of hair on the tone already, similar to how Jimi Hendrix and other guitar greats of the 60s and 70s ran their rigs.",
+   "specs": "Type: Vintage silicon fuzz\nBypass: true bypass, 100 % analog dry path\nPower supply: not included (Strymon power supplies available separately)\nMade in: USA",
+   "price_eur": 229.95,
+   "price_from": 0,
+   "images": [
+    "strymon-canoga-1.jpg"
+   ],
+   "featured": 0,
+   "lead_time": "",
+   "variants": "",
+   "availability": "order",
+   "slug": "strymon-canoga"
+  },
+  {
+   "brand": "Strymon",
+   "category": "Drive & fuzz pedals",
+   "name": "La Brea",
+   "sku": "852571008707",
+   "summary": "Your new favourite drive — analog tape drive.",
+   "description": "All-analog tape saturation drive initially inspired by our classic Deco pedal’s Saturation voices.\nFull analog design – nothing digital in the signal path.\nGain switch to set the range of the Tape Saturation control.\nShift switch to enable a dedicated high frequency boost or a high frequency boost with added midrange frequencies for fatness and clarity.\nVariable clean Dry path that is always in phase with the pedal’s saturated audio for adding clarity and fatness even with high saturation levels.\nRuns at 24V internally to facilitate high headroom, a wide gain range and quiet operation.",
+   "specs": "Type: Analog tape drive\nBypass: true bypass, 100 % analog dry path\nPower supply: not included (Strymon power supplies available separately)\nMade in: USA",
+   "price_eur": 229.95,
+   "price_from": 0,
+   "images": [
+    "strymon-la-brea-1.jpg"
+   ],
+   "featured": 0,
+   "lead_time": "",
+   "variants": "",
+   "availability": "order",
+   "slug": "strymon-la-brea"
+  },
+  {
+   "brand": "Strymon",
+   "category": "Reverb pedals",
+   "name": "blueSky V2",
+   "sku": "852571008288",
+   "summary": "Higher Elevation — reverberator.",
+   "description": "The pedal that revolutionized compact reverb pedals has evolved. Plug into blueSky for the most lush, majestic reverbs imaginable. Transform a single note or chord into vast sonic atmospheres with impossibly gorgeous, incredibly long reverb tails. Hear the inspiring splash of an upgraded spring algorithm dripping with vintage vibe. Lose track of time and space as you interact with deep and expansive new Shimmer sounds never heard anywhere before.",
+   "specs": "Type: Reverberator\nBypass: true bypass, 100 % analog dry path\nPower supply: not included (Strymon power supplies available separately)\nMade in: USA",
+   "price_eur": 429.95,
+   "price_from": 0,
+   "images": [
+    "strymon-bluesky-v2-1.jpg"
+   ],
+   "featured": 0,
+   "lead_time": "",
+   "variants": "",
+   "availability": "order",
+   "slug": "strymon-bluesky-v2"
+  },
+  {
+   "brand": "Strymon",
+   "category": "Modulation pedals",
+   "name": "Deco V2",
+   "sku": "852571008264",
+   "summary": "Tape: The First Effect — tape saturation & doubletracker.",
+   "description": "Add warm dimensionality and luscious tape saturation to your signal. Teleport the tones of yesteryear to your board. Effortlessly create a huge range of beautiful, distinctive, and enveloping vintage sounds.\nOur journey begins with the early recording studios of the ’50s and ’60s. The introduction of reel-to-reel tape machines and the creative engineers that used them brought on some of the fattest sounds imaginable. These early machines really were the first effects pedals — they just wouldn’t have fit on your pedalboard!",
+   "specs": "Type: Tape saturation & doubletracker\nFootswitch control: MiniSwitch and MultiSwitch / MultiSwitch Plus compatible\nBypass: true bypass, 100 % analog dry path\nPower supply: not included (Strymon power supplies available separately)\nMade in: USA",
+   "price_eur": 429.95,
+   "price_from": 0,
+   "images": [
+    "strymon-deco-v2-1.jpg"
+   ],
+   "featured": 0,
+   "lead_time": "",
+   "variants": "",
+   "availability": "order",
+   "slug": "strymon-deco-v2"
+  },
+  {
+   "brand": "Strymon",
+   "category": "Delay pedals",
+   "name": "DIG V2",
+   "sku": "852571008271",
+   "summary": "Delay Doppelgänger — dual digital delay.",
+   "description": "DIG unearths the true soul of digital delay and doubles it — two simultaneous, integrated delays with captivating rack delay voicings from the 1980s and today, for incredible expressive potential.\nEffortlessly create your own world of intricate and synchronized echoes, along with hypnotic and atmospheric repeats that blur the line between delay and reverb. Stretch your sonic horizons with five musically satisfying rhythmic subdivisions and three dual delay routing options. Go from syncopated, pulsating delay patterns, to evocative, spaced-out echo trails, all in a compact, pedalboard-friendly format.",
+   "specs": "Type: Dual digital delay\nFootswitch control: MiniSwitch and MultiSwitch / MultiSwitch Plus compatible\nBypass: true bypass, 100 % analog dry path\nPower supply: not included (Strymon power supplies available separately)\nMade in: USA",
+   "price_eur": 429.95,
+   "price_from": 0,
+   "images": [
+    "strymon-dig-v2-1.jpg"
+   ],
+   "featured": 0,
+   "lead_time": "",
+   "variants": "",
+   "availability": "order",
+   "slug": "strymon-dig-v2"
+  },
+  {
+   "brand": "Strymon",
+   "category": "Delay pedals",
+   "name": "El Capistan V2",
+   "sku": "852571008257",
+   "summary": "Vintage Vibe Machine — dtape echo.",
+   "description": "Plug in, play a note or chord, and you feel it: All the warm, saturated, distinctive qualities and subtle nuances of vintage tape echo combine to instantly create an unmistakable atmosphere.\nEverything from classic slapback echoes to psychedelic space explorations have stunning richness and depth, responding to each note and knob turn in a musically inspiring way.\nTurn up the repeats for organic delay feedback with just the right amount of grit. Dial in some spring reverb to further enhance the sense of space. Effortlessly create multi-layered ambient soundscapes with the tape-style sound on sound looper.\nTransform your pedalboard into the inspiration machine it was meant to be.",
+   "specs": "Type: dTape echo\nFootswitch control: MiniSwitch and MultiSwitch / MultiSwitch Plus compatible\nBypass: true bypass, 100 % analog dry path\nPower supply: not included (Strymon power supplies available separately)\nMade in: USA",
+   "price_eur": 429.95,
+   "price_from": 0,
+   "images": [
+    "strymon-el-capistan-v2-1.jpg"
+   ],
+   "featured": 0,
+   "lead_time": "",
+   "variants": "",
+   "availability": "order",
+   "slug": "strymon-el-capistan-v2"
+  },
+  {
+   "brand": "Strymon",
+   "category": "Reverb pedals",
+   "name": "Flint V2",
+   "sku": "852571008301",
+   "summary": "A Perfect Gentleman — tremolo & reverb.",
+   "description": "The magical combination of tremolo and reverb is the earliest example of a perfect guitar effects marriage. First pioneered within historic amplifiers of the 1960s, this harmonious coexistence has made its way onto countless records and performances — from early surf, swampy bayou blues, spaghetti westerns and film noir soundtracks, to modern day indie rock. As music moves forward, guitarists continue rediscovering the inspiration provided by this perfect pair.\nFlint is a studio-class effects pedal that delivers this classic combination. We carefully studied our favorite classic tremolo and reverb circuits, examined the sonic complexities and faithfully accounted for every detail in our hand-crafted algorithms. Flint is essentially two pedals in one, with tremolo on one half and reverb on the other.",
+   "specs": "Type: Tremolo & reverb\nFootswitch control: MiniSwitch and MultiSwitch / MultiSwitch Plus compatible\nBypass: true bypass, 100 % analog dry path\nPower supply: not included (Strymon power supplies available separately)\nMade in: USA",
+   "price_eur": 409.95,
+   "price_from": 0,
+   "images": [
+    "strymon-flint-v2-1.jpg"
+   ],
+   "featured": 0,
+   "lead_time": "",
+   "variants": "",
+   "availability": "order",
+   "slug": "strymon-flint-v2"
+  },
+  {
+   "brand": "Strymon",
+   "category": "Modulation pedals",
+   "name": "Lex V2",
+   "sku": "852571008295",
+   "summary": "Born to Revolve — rotary.",
+   "description": "There is something uniquely powerful about the sound of a vintage rotary speaker system. The organic chorusing as the treble horn and bass rotor start speeding up.  The grit of the internal tube-driven amplifier, creating additional harmonics that spin around the room.  Plug into Lex, close your eyes, and be transported by this classic sound, recreated with astonishing realism and depth for your pedalboard.",
+   "specs": "Type: Rotary\nFootswitch control: MiniSwitch and MultiSwitch / MultiSwitch Plus compatible\nBypass: true bypass, 100 % analog dry path\nPower supply: not included (Strymon power supplies available separately)\nMade in: USA",
+   "price_eur": 409.95,
+   "price_from": 0,
+   "images": [
+    "strymon-lex-v2-1.jpg"
+   ],
+   "featured": 0,
+   "lead_time": "",
+   "variants": "",
+   "availability": "order",
+   "slug": "strymon-lex-v2"
+  },
+  {
+   "brand": "Strymon",
+   "category": "Modulation pedals",
+   "name": "Orbit",
+   "sku": "852636007294",
+   "summary": "dBucket flanger.",
+   "description": "Features:\n- Hand crafted algorithm for highly accurate reproduction of vintage flangers\n- Super low noise, high perf. A/D, D/A converters w/ 110dB signal to noise\n- 3 LFO types (log, lin, through zero)\n- 3 Feedback types (positive, negative, pos/neg)\n- TRUE BYPASS (electromechanical relay switching)\n- Stereo output\n- Expression pedal input with selectable control over any knob parameter\n- Favorite footswitch for saving your favorite setting",
+   "specs": "Type: dBucket flanger\nBypass: true bypass, 100 % analog dry path\nPower supply: not included (Strymon power supplies available separately)\nMade in: USA",
+   "price_eur": 339.95,
+   "price_from": 0,
+   "images": [
+    "strymon-orbit-1.jpg"
+   ],
+   "featured": 0,
+   "lead_time": "",
+   "variants": "",
+   "availability": "order",
+   "slug": "strymon-orbit"
+  },
+  {
+   "brand": "Strymon",
+   "category": "Drive & fuzz pedals",
+   "name": "Riverside",
+   "sku": "852636007973",
+   "summary": "A new world of drive — multistage drive.",
+   "description": "Riverside is the culmination of a thorough analysis of numerous analog and vacuum tube circuits. Our goal? To deliver a new world of harmonically rich, incredibly versatile, tube-inspired drive sounds. We didn’t want to build just another distortion or overdrive. We knew we must examine what has been done, and bring a new approach to the world of drive sounds.",
+   "specs": "Type: Multistage drive\nFootswitch control: MiniSwitch and MultiSwitch / MultiSwitch Plus compatible\nBypass: true bypass, 100 % analog dry path\nPower supply: not included (Strymon power supplies available separately)\nMade in: USA",
+   "price_eur": 339.95,
+   "price_from": 0,
+   "images": [
+    "strymon-riverside-1.jpg"
+   ],
+   "featured": 0,
+   "lead_time": "",
+   "variants": "",
+   "availability": "order",
+   "slug": "strymon-riverside"
+  },
+  {
+   "brand": "Strymon",
+   "category": "Drive & fuzz pedals",
+   "name": "Sunset",
+   "sku": "852636007904",
+   "summary": "Classic overdrive sound, x2 — dual overdrive.",
+   "description": "Sunset gives you the best of the best classic overdrive circuits, custom voiced for instantly gratifying control over a huge range of sought-after tones. We studied six circuit types found in many truly timeless and iconic overdrive and boost pedals, and put our takes on all six of them into a single two-channel unit.",
+   "specs": "Type: Dual overdrive\nFootswitch control: MiniSwitch and MultiSwitch / MultiSwitch Plus compatible\nBypass: true bypass, 100 % analog dry path\nPower supply: not included (Strymon power supplies available separately)\nMade in: USA",
+   "price_eur": 339.95,
+   "price_from": 0,
+   "images": [
+    "strymon-sunset-1.jpg"
+   ],
+   "featured": 0,
+   "lead_time": "",
+   "variants": "",
+   "availability": "order",
+   "slug": "strymon-sunset"
+  },
+  {
+   "brand": "Strymon",
+   "category": "Amp, cab & DI",
+   "name": "Iridium",
+   "sku": "8525710080354",
+   "summary": "Leave Your Amp At Home — amp & ir cab simulator.",
+   "description": "Nothing reveals the true nature of your guitar and your playing like a world-class tube amp driving a perfectly matched speaker cabinet in a great sounding room. Now there is a pedal that truly delivers that sound and feel, with simple controls for effortlessly dialing in the perfect amp tone when going direct.\nDiscover inspiring tube amp responsiveness, unprecedented impulse response speaker cabinet realism, and controllable natural sounding room ambience.",
+   "specs": "Type: Amp & IR cab simulator\nFootswitch control: MiniSwitch and MultiSwitch / MultiSwitch Plus compatible\nMade in: USA",
+   "price_eur": 435.95,
+   "price_from": 0,
+   "images": [
+    "strymon-iridium-1.jpg"
+   ],
+   "featured": 0,
+   "lead_time": "",
+   "variants": "",
+   "availability": "order",
+   "slug": "strymon-iridium"
+  },
+  {
+   "brand": "Strymon",
+   "category": "Drive & fuzz pedals",
+   "name": "Compadre",
+   "sku": "852571008059",
+   "summary": "Your Dream Tone Starts Here — dual voice compressor & boost.",
+   "description": "Start your signal chain with the best possible version of your guitar tone. Treat your guitar signal to true studio quality analog compression with two distinct voices for smooth transparency or vintage squeeze. Hit the Boost switch to add clean boost or soft-clipped dirty boost, with the EQ curve of your choice. Mix in some dry signal for natural attack even with extreme compression settings. Feel the perfectly tailored dynamic response, feeding your amp and effects just what they need to sound their best.",
+   "specs": "Type: Dual voice compressor & boost\nFootswitch control: MiniSwitch and MultiSwitch / MultiSwitch Plus compatible\nBypass: true bypass, 100 % analog dry path\nPower supply: not included (Strymon power supplies available separately)\nMade in: USA",
+   "price_eur": 339.95,
+   "price_from": 0,
+   "images": [
+    "strymon-compadre-1.jpg"
+   ],
+   "featured": 0,
+   "lead_time": "",
+   "variants": "",
+   "availability": "order",
+   "slug": "strymon-compadre"
+  },
+  {
+   "brand": "Strymon",
+   "category": "Modulation pedals",
+   "name": "Zelzah",
+   "sku": "852571008158",
+   "summary": "Way Back Machine — multi-dimensional phaser.",
+   "description": "Step on Zelzah, play one chord, and you’re instantly taken back to a world of classic phaser tones as they were always meant to sound, perfectly voiced, with tons of vibe.\nVintage 4-stage and 6-stage phasing with controls that allow seamless transitions to vibrato, gorgeous flanging and chorus, and new sounds never heard before—all instantly musical with great tone all the way across every dial.",
+   "specs": "Type: Multi-dimensional phaser\nFootswitch control: MiniSwitch and MultiSwitch / MultiSwitch Plus compatible\nBypass: true bypass, 100 % analog dry path\nPower supply: not included (Strymon power supplies available separately)\nMade in: USA",
+   "price_eur": 379.99,
+   "price_from": 0,
+   "images": [
+    "strymon-zelzah-1.jpg"
+   ],
+   "featured": 0,
+   "lead_time": "",
+   "variants": "",
+   "availability": "order",
+   "slug": "strymon-zelzah"
+  },
+  {
+   "brand": "Strymon",
+   "category": "Delay pedals",
+   "name": "Volante",
+   "sku": "852571008042",
+   "summary": "Delays For Days — magnetic echo machine.",
+   "description": "Three Magnetic Delay Types, Reverb, Sound on Sound, and More.\nDelivering truly exceptional sound quality and intuitive playability, Volante is designed to radically enhance the sonic expressiveness of your pedalboard. Featuring magnetic drum echo, tape echo, and reel-to-reel studio echo, Volante is a stereo multi-head delay that also offers a Sound on Sound mode and a vintage spring reverb algorithm. Volante’s powerful sound-sculpting controls provide limitless sonic possibilities.",
+   "specs": "Type: Magnetic echo machine\nFootswitch control: MiniSwitch and MultiSwitch / MultiSwitch Plus compatible\nBypass: true bypass, 100 % analog dry path\nPower supply: not included (Strymon power supplies available separately)\nMade in: USA",
+   "price_eur": 489.95,
+   "price_from": 0,
+   "images": [
+    "strymon-volante-1.jpg"
+   ],
+   "featured": 1,
+   "lead_time": "",
+   "variants": "",
+   "availability": "order",
+   "slug": "strymon-volante"
+  },
+  {
+   "brand": "Strymon",
+   "category": "Reverb pedals",
+   "name": "NightSky",
+   "sku": "852571008127",
+   "summary": "Time-Warped Reverberator — time-warped reverberator.",
+   "description": "Create vast soundscapes with just a few notes from your instrument. Apply mind-bending pitch and harmonic manipulation to your reverb tails, with synth-like filter sweeps. Enter a world of new sounds that blow away the boundaries of what is possible with reverb. With pioneers and adventurous sonic explorers in mind we created a reverb pedal that can go where none have gone before.",
+   "specs": "Type: Time-warped reverberator\nFootswitch control: MiniSwitch and MultiSwitch / MultiSwitch Plus compatible\nBypass: true bypass, 100 % analog dry path\nPower supply: not included (Strymon power supplies available separately)\nMade in: USA",
+   "price_eur": 489.95,
+   "price_from": 0,
+   "images": [
+    "strymon-nightsky-1.jpg"
+   ],
+   "featured": 0,
+   "lead_time": "",
+   "variants": "",
+   "availability": "order",
+   "slug": "strymon-nightsky"
+  },
+  {
+   "brand": "Strymon",
+   "category": "Delay pedals",
+   "name": "TimeLine",
+   "sku": "852636007188",
+   "summary": "Inspiration Machine — multidimensional delay.",
+   "description": "When we decided to create a studio-class stereo delay effects pedal, we knew we must go well beyond what has been done in the past—in sound quality, sonic flexibility, hardware design, and processing power. We spent months locked up in the Strymon sound design labs dreaming up the most spacious, lush, creative, and tweakable delay effects ever heard. It was a monumental task—a relentless study of delays and their nuances, and a continuous pursuit of innovative and musically inspirational sounds. Utilizing a ridiculously powerful SHARC DSP, every drop of processing power is harnessed.",
+   "specs": "Type: Multidimensional delay\nFootswitch control: MiniSwitch and MultiSwitch / MultiSwitch Plus compatible\nBypass: true bypass, 100 % analog dry path\nPower supply: not included (Strymon power supplies available separately)\nMade in: USA",
+   "price_eur": 499.95,
+   "price_from": 0,
+   "images": [
+    "strymon-timeline-1.jpg"
+   ],
+   "featured": 0,
+   "lead_time": "",
+   "variants": "",
+   "availability": "order",
+   "slug": "strymon-timeline"
+  },
+  {
+   "brand": "Strymon",
+   "category": "Modulation pedals",
+   "name": "Mobius",
+   "sku": "852636007201",
+   "summary": "Infinitely Organic — multidimensional modulation.",
+   "description": "Some might say we’re driven. When our engineers lock themselves in our sound design labs for months on end, you might say we’re obsessed. We have been dedicating ourselves to forging a collection of the most organic, luscious, expressive, and versatile modulation effects ever heard.\nIt was an enormous mission—we painstakingly studied the nuances of the legendary modulations of celebrated tremolo effects, phaser pedals, chorus units, and more from the last five decades. We didn’t stop at faithfully capturing these warm and lush vintage sounds—we expanded their vocabulary with extended versatility and sonic possibilities never before heard.",
+   "specs": "Type: Multidimensional modulation\nFootswitch control: MiniSwitch and MultiSwitch / MultiSwitch Plus compatible\nBypass: true bypass, 100 % analog dry path\nPower supply: not included (Strymon power supplies available separately)\nMade in: USA",
+   "price_eur": 499.95,
+   "price_from": 0,
+   "images": [
+    "strymon-mobius-1.jpg"
+   ],
+   "featured": 0,
+   "lead_time": "",
+   "variants": "",
+   "availability": "order",
+   "slug": "strymon-mobius"
+  },
+  {
+   "brand": "Strymon",
+   "category": "Reverb pedals",
+   "name": "BigSky",
+   "sku": "852636007195",
+   "summary": "Clear Skies Ahead — multi reverb.",
+   "description": "Plug into BigSky and instantly lift your sound into the stratosphere. The world below you fades into the distance, and you’re elevated into a glow of lush, glorious, radiant reverbs.\nTo create a reverb experience as beautiful and immersive as BigSky required, we carefully studied and scientifically analyzed reverb technology from the past fifty years. We faithfully captured the essence of these classic sounds, and forged ahead to dream up our vision of reverbs from the future.",
+   "specs": "Type: Multi reverb\nFootswitch control: MiniSwitch and MultiSwitch / MultiSwitch Plus compatible\nBypass: true bypass, 100 % analog dry path\nPower supply: not included (Strymon power supplies available separately)\nMade in: USA",
+   "price_eur": 539.99,
+   "price_from": 0,
+   "images": [
+    "strymon-bigsky-1.jpg"
+   ],
+   "featured": 1,
+   "lead_time": "",
+   "variants": "",
+   "availability": "order",
+   "slug": "strymon-bigsky"
+  },
+  {
+   "brand": "Strymon",
+   "category": "Reverb pedals",
+   "name": "BigSky MX",
+   "sku": "852571008394",
+   "summary": "A new era of reverb — dual engine multi reverb.",
+   "description": "The new pinnacle of what a reverb pedal can be has arrived.\nIn BigSky MX, raw computational power meets innovative design and consummate sonic craftsmanship to give you positively sublime reverbs with stunning new levels of richness and complexity.\nThese are sounds to inspire new creative works and endless hours of playing.\nBigSky MX features a staggering amount of computing power — it uses a high performance tri-core 800 MHz ARM processor — all dedicated to producing truly breathtaking reverbs. Our new reverb algorithms were meticulously created by hand, and then a state-of-the-art gradient descent optimization algorithm was used to dial out any undesirable ringing or artifacts.\nThis type of neural fine-tuning is based upon the same techniques that have enabled the recent AI revolution, and the result is springs that drip and splash, physical spaces you can really feel yourself in, and the sweetest possible musical response to every note you play.",
+   "specs": "Type: Dual engine multi reverb\nFootswitch control: MultiSwitch / MultiSwitch Plus compatible\nBypass: true bypass, 100 % analog dry path\nPower supply: not included (Strymon power supplies available separately)\nMade in: USA",
+   "price_eur": 799.95,
+   "price_from": 0,
+   "images": [
+    "strymon-bigsky-mx-1.jpg"
+   ],
+   "featured": 1,
+   "lead_time": "",
+   "variants": "",
+   "availability": "order",
+   "slug": "strymon-bigsky-mx"
+  },
+  {
+   "brand": "Strymon",
+   "category": "Delay pedals",
+   "name": "TimeLine MX",
+   "sku": "852571008615",
+   "summary": "Time machine from the future — dual engine multi delay.",
+   "description": "TimeLine MX delivers stunning studio-quality delays and a host of new professional features in an elegant and intuitive stage-ready design. Every sound is carefully tuned to react musically to your playing, and every control has been calibrated for an intuitive feel and response. From classic echoes dripping with vintage vibe to captivating and modern sounds that push the envelope, TimeLine MX is full of fresh inspiration.\nThe most powerful delay pedal ever.",
+   "specs": "Type: Dual engine multi delay\nFootswitch control: MultiSwitch / MultiSwitch Plus compatible\nBypass: true bypass, 100 % analog dry path\nPower supply: not included (Strymon power supplies available separately)\nMade in: USA",
+   "price_eur": 799.95,
+   "price_from": 0,
+   "images": [
+    "strymon-timeline-mx-1.jpg"
+   ],
+   "featured": 1,
+   "lead_time": "",
+   "variants": "",
+   "availability": "order",
+   "slug": "strymon-timeline-mx"
+  },
+  {
+   "brand": "Strymon",
+   "category": "Eurorack modules",
+   "name": "Magneto",
+   "sku": "852636007966",
+   "summary": "Four-head dTape echo & looper.",
+   "description": "Features:\n- Tape-voiced delay machine with four playback heads and one record head\n- Processor-intense dTape algorithm delivers meticulously nuanced recreations of vintage tape echo systems\n- Three operational modes: Echo, Sound On Sound Looper, Phrase Sampler\n- Varispeed algorithm with dynamic machine mechanics, 8:1 speed range\n- Input record level for clean reproduction to warm, fat saturation\n- Self-oscillating for tone generation\n- Independent Spring Reverb\n- Dedicated control over tape mechanics, machine health, and tone: Low Cut, Tape Age, Crinkle, Wow & Flutter\n- Hardware Transport controls (buttons and CV inputs) for real-time performance options\n- Individual Playback Head Level controls\n- Individual head Feedback assignment independent of playback level\n- Three stereo head panning options, including user-defined custom panning\n- Phase aligned clock out (CLK OUT) CVs synched with clock in (CLK IN) CV\n- Eurorack format, 28HP wide",
+   "specs": "Type: Four-head dTape echo & looper\nMade in: USA",
+   "price_eur": 649.95,
+   "price_from": 0,
+   "images": [
+    "strymon-magneto-1.jpg"
+   ],
+   "featured": 0,
+   "lead_time": "",
+   "variants": "",
+   "availability": "order",
+   "slug": "strymon-magneto"
+  },
+  {
+   "brand": "Strymon",
+   "category": "Eurorack modules",
+   "name": "StarLab",
+   "sku": "852571008165",
+   "summary": "Time-warped reverb.",
+   "description": "Features:\n- Reverb, chorus, flanging, modulated delays, mod/verb and delay/verb + Karplus-Strong string synthesis\n- Three selectable reverb types for a wide variety of ambient textures\n- Four-octave Karplus-Strong string synthesis mode with damping control for string/ verb full voice capability\n- LFO section: waveforms to modulate delay time,/reverb size/tone filters, + FILTER section to sculpt high and low EQ of reverb and string section + 4-pole 24dB/octave variable resonance low pass filter\n- HARMONICS section to enhance the reverb’s aural spectrum, + adjustable SHIMMER for added +/- 1 octave pitch shifting to the reverb/GLIMMER for dynamic enhancement of harmonics\n- Adjustable reverb core size to increase or decrease space for reflections, allowing pitch control of regenerating reverb\n- INFINITE freezes the input audio prior to the reverb tank\n- Stereo i/o plus extensive CV control of parameters. Independent WET and DRY level controls Ins, Outs, Switches\n- Access to four presets from the front panel\n- USB jack (located on the rear) for performing firmware updates\n- Ultra low noise, high performance 24-bit 96kHz A/D and D/A converters (analog dry path for zero latency dry signal never converted to digital)/ ARM DSP + 32-bit floating point processing provide incredible audio quality.\n- Rack Width: 28hp x Depth: 41mm, 1.61/ Power requirements • +12V rail: 210mA/ -12V rail: 210mA/ +5V rail: 0mA",
+   "specs": "Type: Time-warped reverb\nMade in: USA",
+   "price_eur": 679.95,
+   "price_from": 0,
+   "images": [
+    "strymon-starlab-1.jpg"
+   ],
+   "featured": 0,
+   "lead_time": "",
+   "variants": "",
+   "availability": "order",
+   "slug": "strymon-starlab"
+  },
+  {
+   "brand": "Strymon",
+   "category": "Eurorack modules",
+   "name": "StarLab Black",
+   "sku": "852571008370",
+   "summary": "Time-warped reverb, black edition.",
+   "description": "StarLab in a black finish; the specifications are the same as StarLab.\nFeatures:\n- Reverb, chorus, flanging, modulated delays, mod/verb and delay/verb + Karplus-Strong string synthesis\n- Three selectable reverb types for a wide variety of ambient textures\n- Four-octave Karplus-Strong string synthesis mode with damping control for string/ verb full voice capability\n- LFO section: waveforms to modulate delay time,/reverb size/tone filters, + FILTER section to sculpt high and low EQ of reverb and string section + 4-pole 24dB/octave variable resonance low pass filter\n- HARMONICS section to enhance the reverb’s aural spectrum, + adjustable SHIMMER for added +/- 1 octave pitch shifting to the reverb/GLIMMER for dynamic enhancement of harmonics\n- Adjustable reverb core size to increase or decrease space for reflections, allowing pitch control of regenerating reverb\n- INFINITE freezes the input audio prior to the reverb tank\n- Stereo i/o plus extensive CV control of parameters. Independent WET and DRY level controls Ins, Outs, Switches\n- Access to four presets from the front panel\n- USB jack (located on the rear) for performing firmware updates\n- Ultra low noise, high performance 24-bit 96kHz A/D and D/A converters (analog dry path for zero latency dry signal never converted to digital)/ ARM DSP + 32-bit floating point processing provide incredible audio quality.\n- Rack Width: 28hp x Depth: 41mm, 1.61/ Power requirements • +12V rail: 210mA/ -12V rail: 210mA/ +5V rail: 0mA",
+   "specs": "Type: Time-warped reverb, black edition\nMade in: USA",
+   "price_eur": 679.95,
+   "price_from": 0,
+   "images": [
+    "strymon-starlab-black-1.jpg"
+   ],
+   "featured": 0,
+   "lead_time": "",
+   "variants": "",
+   "availability": "order",
+   "slug": "strymon-starlab-black"
+  },
+  {
+   "brand": "Strymon",
+   "category": "Eurorack modules",
+   "name": "AA.1 Level Shifter",
+   "sku": "852571008028",
+   "summary": "Amplified level shifter.",
+   "description": "Features:\n- 18dB amplified lift means direct front panel access to Magneto at correct level for guitarists\n- 18dB pad down means direct connection at correct level possible between Magneto and external FX pedals\n- Mono and stero inputs, stereo outputs\n- Compact: just 4HP wide.",
+   "specs": "Type: Amplified level shifter\nMade in: USA",
+   "price_eur": 149.95,
+   "price_from": 0,
+   "images": [
+    "strymon-aa-1-level-shifter-1.jpg"
+   ],
+   "featured": 0,
+   "lead_time": "",
+   "variants": "",
+   "availability": "order",
+   "slug": "strymon-aa-1-level-shifter"
+  },
+  {
+   "brand": "Strymon",
+   "category": "Eurorack modules",
+   "name": "SuperKar+",
+   "sku": "852571008639",
+   "summary": "Karplus-Strong synth module.",
+   "description": "with 16-note polyphony\nFeatures:\n- 32 voice Karplus Strong synth module\n- Creates realistic bowed string, resonant tube and percussive textures\n- Two simultaneous and independent voice engines - the Solo Voice and Chord Voice, both\n- Chord Voice generates advanced chords based upon CV input and harmony selection\n- Independent timbre selection per voice engine\n- Comprehensive and independent CV control per voice\n- Onboard MIDI input for controlling the Solo Voice\n- Onboard mixer with separate level controls and audio output modes\n- Small footprint - only 12 HP wide",
+   "specs": "Type: Karplus-Strong synth module\nMade in: USA",
+   "price_eur": 435.95,
+   "price_from": 0,
+   "images": [
+    "strymon-superkar-1.jpg"
+   ],
+   "featured": 0,
+   "lead_time": "",
+   "variants": "",
+   "availability": "order",
+   "slug": "strymon-superkar"
+  },
+  {
+   "brand": "Strymon",
+   "category": "Amp, cab & DI",
+   "name": "PCH",
+   "sku": "",
+   "summary": "Premium stereo active DI.",
+   "description": "An ultra-premium stereo active direct interface with a hidden superpower: an onboard console-quality headphone amplifier.\nFeatures:\n- Two channel design - use in stereo or dual mono, whichever fits your setup\n- Runs on 9VDC - internally converted to 24V to be virtually unclippable\n- Onboard headphone amplifier powerful enough to drive high impedance headphones\n- Switchable Mic/Line level operation for the XLR outputs\n- Defeatable ground lift for the XLR outputs\n- Defeatable Sum for the Thru outputs\n- Internal supply uses custom transformer for galvanic isolation",
+   "specs": "Type: Premium stereo active DI\nMade in: USA",
+   "price_eur": 299.95,
+   "price_from": 0,
+   "images": [
+    "strymon-pch-1.jpg"
+   ],
+   "featured": 0,
+   "lead_time": "",
+   "variants": "",
+   "availability": "order",
+   "slug": "strymon-pch"
+  },
+  {
+   "brand": "Strymon",
+   "category": "Amp, cab & DI",
+   "name": "PCH X1",
+   "sku": "",
+   "summary": "Premium active DI, 1 channel.",
+   "description": "Phantom-powered and transformer-isolated PCH X1 and X2 active direct interfaces were designed to be pristine-sounding before any other feature, meaning that these are units you can trust implicitly to handle your audio. Other direct boxes can distort low frequencies to the point where a low B on a bass guitar barely resembles the input, but the PCH X1 and X2 remain flat from far lower than that (10Hz) to well above what dogs can hear (80KHz) within a half of a db. Add in audiophile-quality noise specs, a host of connectivity options, a small form factor and bulletproof design, and you have a serious contender in the world of connectivity. Along with pristine audio, PCH X1 and X2 were designed with a host of real-world features that make them ideal as direct interfaces and line isolators. Housed in a bulletproof 3mm extruded aluminum chassis for protection, it doesn’t matter if you’re using them on a loud stage or in a quiet world-class recording studio, X1 and X2 balance your audio perfectly - and they’re small enough to fit just about anywhere.",
+   "specs": "Type: Premium active DI, 1 channel\nMade in: USA",
+   "price_eur": 229.95,
+   "price_from": 0,
+   "images": [
+    "strymon-pch-x1-1.jpg"
+   ],
+   "featured": 0,
+   "lead_time": "",
+   "variants": "",
+   "availability": "order",
+   "slug": "strymon-pch-x1"
+  },
+  {
+   "brand": "Strymon",
+   "category": "Amp, cab & DI",
+   "name": "PCH X2",
+   "sku": "",
+   "summary": "Premium active DI, 2 channels.",
+   "description": "Phantom-powered and transformer-isolated PCH X1 and X2 active direct interfaces were designed to be pristine-sounding before any other feature, meaning that these are units you can trust implicitly to handle your audio. Other direct boxes can distort low frequencies to the point where a low B on a bass guitar barely resembles the input, but the PCH X1 and X2 remain flat from far lower than that (10Hz) to well above what dogs can hear (80KHz) within a half of a db. Add in audiophile-quality noise specs, a host of connectivity options, a small form factor and bulletproof design, and you have a serious contender in the world of connectivity. Along with pristine audio, PCH X1 and X2 were designed with a host of real-world features that make them ideal as direct interfaces and line isolators. Housed in a bulletproof 3mm extruded aluminum chassis for protection, it doesn’t matter if you’re using them on a loud stage or in a quiet world-class recording studio, X1 and X2 balance your audio perfectly - and they’re small enough to fit just about anywhere.",
+   "specs": "Type: Premium active DI, 2 channels\nMade in: USA",
+   "price_eur": 329.95,
+   "price_from": 0,
+   "images": [
+    "strymon-pch-x2-1.jpg"
+   ],
+   "featured": 0,
+   "lead_time": "",
+   "variants": "",
+   "availability": "order",
+   "slug": "strymon-pch-x2"
+  },
+  {
+   "brand": "Strymon",
+   "category": "Power & control",
+   "name": "Ojai",
+   "sku": "852636007300",
+   "summary": "High current power supply.",
+   "description": "Features:\n- High current, 500 milliamp 9v DC supply for EVERY channel\n- Five individual custom transformers (one per channel) deliver clean, consistent power\n- Two-stage isolation completely eliminates ground loop and AC line noise issues\n- Worldwide power compatibility ensures no-hassle international touring\n- Energy efficient, compact design\n- Can be used standalone, or as a a channel expander with other Ojais or Zumas\n- Lightweight and rugged anodized midnight blue aluminum chassis\n- Fits under most pedalboards\n- Designed and built in the USA\n- Includes 18\" EIAJ cable, 5 x FX cables, 1 x mains cable",
+   "specs": "Type: High current power supply\nMade in: USA",
+   "price_eur": 189.95,
+   "price_from": 0,
+   "images": [
+    "strymon-ojai-1.jpg"
+   ],
+   "featured": 0,
+   "lead_time": "",
+   "variants": "",
+   "availability": "order",
+   "slug": "strymon-ojai"
+  },
+  {
+   "brand": "Strymon",
+   "category": "Power & control",
+   "name": "Ojai R30",
+   "sku": "852636007874",
+   "summary": "High current power supply.",
+   "description": "Features:\n- High current, 500 milliamp 9v DC supply for EVERY channel\n- Five individual custom transformers (one per channel) deliver clean, consistent power\n- Two-stage isolation completely eliminates ground loop and AC line noise issues\n- Three 9v outputs, two 9v/12v/18v selectable outputs\n- Worldwide power compatibility ensures no-hassle international touring\n- Energy efficient, compact design\n- Can be used standalone, or as a channel expander with other Ojais or Zumas\n- Lightweight and rugged anodized midnight blue aluminum chassis\n- Fits under most pedalboards\n- Designed and built in the USA\n- Includes 18\" EIAJ cable, 5 x FX cables, 1 x mains cable",
+   "specs": "Type: High current power supply\nMade in: USA",
+   "price_eur": 209.95,
+   "price_from": 0,
+   "images": [
+    "strymon-ojai-r30-1.jpg"
+   ],
+   "featured": 0,
+   "lead_time": "",
+   "variants": "",
+   "availability": "order",
+   "slug": "strymon-ojai-r30"
+  },
+  {
+   "brand": "Strymon",
+   "category": "Power & control",
+   "name": "Zuma R300",
+   "sku": "852636007959",
+   "summary": "High current power supply.",
+   "description": "Features:\n- High current, 500 milliamp 9v DC supply for EVERY channel\n- Five individual custom transformers (one per channel) deliver clean, consistent power\n- Two-stage isolation completely eliminates ground loop and AC line noise issues\n- Four 9v outputs, one 9v/12v/18v selectable output\n- Built-in switching power supply- no external adaptor\n- Low profile design fits underneath even nano pedal boards\n- Built-in threaded hardware, so mounting to your board is simple\n- Worldwide power compatibility ensures no-hassle international touring\n- Can be used standalone, or as a channel expander with other Ojais or Zumas\n- Lightweight and rugged anodized midnight blue aluminum chassis\n- Fits under most pedalboards incl. most nano boards\n- Designed and built in the USA",
+   "specs": "Type: High current power supply\nMade in: USA",
+   "price_eur": 239.95,
+   "price_from": 0,
+   "images": [
+    "strymon-zuma-r300-1.jpg"
+   ],
+   "featured": 0,
+   "lead_time": "",
+   "variants": "",
+   "availability": "order",
+   "slug": "strymon-zuma-r300"
+  },
+  {
+   "brand": "Strymon",
+   "category": "Power & control",
+   "name": "Zuma",
+   "sku": "852636007317",
+   "summary": "High current power supply.",
+   "description": "Features:\n- High current, 500 milliamp supply for EVERY channel: 7 x 9v DC, 2 x switchable 9v/12v/18v DC\n- Nine individual custom transformers (one per channel) deliver clean, consistent power\n- Two-stage isolation completely eliminates ground loop and AC line noise issues\n- Worldwide power compatibility ensures no-hassle international touring\n- Energy efficient, compact design\n- Can be used singly or with other Ojais or Zumas\n- Built-in power supply- no external adaptor\n- Lightweight and rugged anodized midnight blue aluminum chassis\n- Fits under most pedalboards\n- PedalTrain mounting bracket available (sold separately)\n- Designed and built in the USA",
+   "specs": "Type: High current power supply\nMade in: USA",
+   "price_eur": 299.95,
+   "price_from": 0,
+   "images": [
+    "strymon-zuma-1.jpg"
+   ],
+   "featured": 0,
+   "lead_time": "",
+   "variants": "",
+   "availability": "order",
+   "slug": "strymon-zuma"
+  },
+  {
+   "brand": "Strymon",
+   "category": "Power & control",
+   "name": "Ojai Expansion Kit",
+   "sku": "852636007935",
+   "summary": "Expansion kit.",
+   "description": "Features:\n- Expansion Kit consisting of an isolated power distributor and all necessary connection cables to integrate with your existing Strymon power supply and power up to five additional effects pedals. Power adapter not included. Requires existing Strymon power system",
+   "specs": "Type: Expansion kit\nMade in: USA",
+   "price_eur": 149.95,
+   "price_from": 0,
+   "images": [
+    "strymon-ojai-expansion-kit-1.jpg"
+   ],
+   "featured": 0,
+   "lead_time": "",
+   "variants": "",
+   "availability": "order",
+   "slug": "strymon-ojai-expansion-kit"
+  },
+  {
+   "brand": "Strymon",
+   "category": "Power & control",
+   "name": "Ojai R30 Expansion Kit",
+   "sku": "852636007942",
+   "summary": "Expansion kit.",
+   "description": "Features:\n- Expansion Kit consisting of an isolated power distributor and all necessary connection cables to integrate with your existing Strymon power supply and power up to five additional effects pedals. Power adapter not included. Requires existing Strymon power system",
+   "specs": "Type: Expansion kit\nMade in: USA",
+   "price_eur": 169.95,
+   "price_from": 0,
+   "images": [
+    "strymon-ojai-r30-expansion-kit-1.jpg"
+   ],
+   "featured": 0,
+   "lead_time": "",
+   "variants": "",
+   "availability": "order",
+   "slug": "strymon-ojai-r30-expansion-kit"
+  },
+  {
+   "brand": "Strymon",
+   "category": "Power & control",
+   "name": "Conduit",
+   "sku": "852571008141",
+   "summary": "MIDI interface.",
+   "description": "Features:\n- Premium, easily configurable, ultra-reliable MIDI interface; works with almost all quarter-inch MIDI equipped FX\n- The best USB computer connection for any TRS MIDI pedal\n- Opto-isolated 5-pin DIN MIDI interface (one IN and one OUT port)\n- Four 1/4” TRS bi-directional MIDI ports\n- Five MIDI status indicator LEDs\n- One USB Type-C to USB-A Male cable\n- Lightweight, compact anodised aluminium chassis with threaded mounting hardware\n- Weight: 5 oz (141 g) • Dims: 2.63” deep x 3.5” wide x 1.2” tall (7.2 cm deep x 9 cm wide x 3.8 cm tall)",
+   "specs": "Type: MIDI interface\nMade in: USA",
+   "price_eur": 169.95,
+   "price_from": 0,
+   "images": [
+    "strymon-conduit-1.jpg"
+   ],
+   "featured": 0,
+   "lead_time": "",
+   "variants": "",
+   "availability": "order",
+   "slug": "strymon-conduit"
+  },
+  {
+   "brand": "Strymon",
+   "category": "Power & control",
+   "name": "PS-124 Power Block",
+   "sku": "",
+   "summary": "PS124 power block only — spare power block for ojai / ojai r30.",
+   "description": "",
+   "specs": "Type: Spare power block for Ojai / Ojai R30\nMade in: USA",
+   "price_eur": 34.95,
+   "price_from": 0,
+   "images": [],
+   "featured": 0,
+   "lead_time": "",
+   "variants": "",
+   "availability": "order",
+   "slug": "strymon-ps-124-power-block"
+  },
+  {
+   "brand": "Strymon",
+   "category": "Power & control",
+   "name": "PS-124 Power Block with cables",
+   "sku": "",
+   "summary": "PS124 power block incl. cables — spare power block, power cable and eiaj cable for ojai / ojai r30.",
+   "description": "",
+   "specs": "Type: Spare power block, power cable and EIAJ cable for Ojai / Ojai R30\nMade in: USA",
+   "price_eur": 49.95,
+   "price_from": 0,
+   "images": [],
+   "featured": 0,
+   "lead_time": "",
+   "variants": "",
+   "availability": "order",
+   "slug": "strymon-ps-124-power-block-with-cables"
+  },
+  {
+   "brand": "Strymon",
+   "category": "Power & control",
+   "name": "Zuma Mounting Bracket",
+   "sku": "852636007652",
+   "summary": "Mounting bracket.",
+   "description": "Features:\n- Mounting bracket for Pedaltrain pedalboards\n- Stylish anodised blue livery matches the Zuma finish\n- Includes 4 x mounting screws\n- Compatible with Pedaltrain PT-3/Pro/Grande, Novo 18/24/32, Classic 1/2/Jr/Pro, Terra 42/Fly\n- NOT compatible with older model Pedaltrain boards (PT-1, PT-2, PT-JR) with holes on the rear brace instead of an open pass through for the length of the board\n- Excellent signal to noise ratio",
+   "specs": "Type: Mounting bracket\nMade in: USA",
+   "price_eur": 28.95,
+   "price_from": 0,
+   "images": [
+    "strymon-zuma-mounting-bracket-1.jpg"
+   ],
+   "featured": 0,
+   "lead_time": "",
+   "variants": "",
+   "availability": "order",
+   "slug": "strymon-zuma-mounting-bracket"
+  },
+  {
+   "brand": "Strymon",
+   "category": "Power & control",
+   "name": "MiniSwitch",
+   "sku": "852636007607",
+   "summary": "Footswitch.",
+   "description": "Features:\n- Favorite mode works with Brigadier, El Capistan, Lex and Flint (allows recall of full set of saved parameters)\n- Recalled parameter set can be toggled with active settings\n- Tap Tempo mode (set by internal jumper move) works with Flint, Mobius and Timeline.\n- Tap tempos can be remotely triggered",
+   "specs": "Type: Footswitch\nMade in: USA",
+   "price_eur": 69.95,
+   "price_from": 0,
+   "images": [
+    "strymon-miniswitch-1.jpg"
+   ],
+   "featured": 0,
+   "lead_time": "",
+   "variants": "",
+   "availability": "order",
+   "slug": "strymon-miniswitch"
+  },
+  {
+   "brand": "Strymon",
+   "category": "Power & control",
+   "name": "MultiSwitch",
+   "sku": "852636007614",
+   "summary": "Footswitch.",
+   "description": "Features:\n- Bank Mode (TimeLine/BigSky/Mobius): Bank up and down/preset cycling within bank from a single switch.\n- Preset Mode (TimeLine/BigSky/Mobius): Preset up and down, engage/bypass a selected preset from a single switch.\n- Tap Mode (TimeLine/BigSky/Mobius) Scroll through your saved presets AND control your tap tempo all at once.\n- TimeLine Looper Modes: full control over the TimeLine Looper's Record/Overdub, Play, and Stop functions in a simple, compact format. Also unlocks 3 additional looping features: Reverse, Half Speed, and Undo/Redo.",
+   "specs": "Type: Footswitch\nMade in: USA",
+   "price_eur": 124.95,
+   "price_from": 0,
+   "images": [
+    "strymon-multiswitch-1.jpg"
+   ],
+   "featured": 0,
+   "lead_time": "",
+   "variants": "",
+   "availability": "order",
+   "slug": "strymon-multiswitch"
+  },
+  {
+   "brand": "Strymon",
+   "category": "Power & control",
+   "name": "MultiSwitch Plus",
+   "sku": "852571008066",
+   "summary": "Footswitch.",
+   "description": "Features:\n- All the features of MultiSwitch plus extended control for Volante, Riverside and Sunset • Instant access to 3 presets for Riverside/Sunset/Volante • Engage presets on Sunset, Riverside, and Volante simultaneously (extra TRS cables required) • Set up custom ops e.g. set tap tempo on Flint, favorite on El Capistan, boost on Riverside • Volante only: remotely toggle the SPEED switch, or enhance mastery of reverse/pause/infinity for transport control or in Sound on Sound mode.",
+   "specs": "Type: Footswitch\nMade in: USA",
+   "price_eur": 159.95,
+   "price_from": 0,
+   "images": [
+    "strymon-multiswitch-plus-1.jpg"
+   ],
+   "featured": 0,
+   "lead_time": "",
+   "variants": "",
+   "availability": "order",
+   "slug": "strymon-multiswitch-plus"
+  },
+  {
+   "brand": "Strymon",
+   "category": "Power & control",
+   "name": "EU Power Supply",
+   "sku": "852636007638",
+   "summary": "9 V DC power supply.",
+   "description": "Features:\n- Works with all Strymon pedals\n- 9v DC centre negative 667 milliamp",
+   "specs": "Type: 9 V DC power supply\nMade in: USA",
+   "price_eur": 13.95,
+   "price_from": 0,
+   "images": [],
+   "featured": 0,
+   "lead_time": "",
+   "variants": "",
+   "availability": "order",
+   "slug": "strymon-eu-power-supply"
+  },
+  {
+   "brand": "Strymon",
+   "category": "Power & control",
+   "name": "DC Power Cable 18\" (46 cm), right angle, 5-pack",
+   "sku": "",
+   "summary": "Cable.",
+   "description": "Features:\n- Five 18\" rugged and reliable cables for connecting the majority of popular effect pedals to a Strymon Ojai or Zuma power supply.",
+   "specs": "Type: Cable\nMade in: USA",
+   "price_eur": 28.95,
+   "price_from": 0,
+   "images": [],
+   "featured": 0,
+   "lead_time": "",
+   "variants": "",
+   "availability": "order",
+   "slug": "strymon-dc-power-cable-18-46-cm-right-angle-5-pack"
+  },
+  {
+   "brand": "Strymon",
+   "category": "Power & control",
+   "name": "DC Power Cable 36\" (92 cm), right angle, 5-pack",
+   "sku": "",
+   "summary": "Cable.",
+   "description": "Features:\n- Five 36\" rugged and reliable cables for connecting the majority of popular effect pedals to a Strymon Ojai or Zuma power supply.",
+   "specs": "Type: Cable\nMade in: USA",
+   "price_eur": 28.95,
+   "price_from": 0,
+   "images": [],
+   "featured": 0,
+   "lead_time": "",
+   "variants": "",
+   "availability": "order",
+   "slug": "strymon-dc-power-cable-36-92-cm-right-angle-5-pack"
+  },
+  {
+   "brand": "Strymon",
+   "category": "Power & control",
+   "name": "Polarity Reverse Cable 2.1–2.1 mm, 6\" (15 cm)",
+   "sku": "",
+   "summary": "Cable.",
+   "description": "Features:\n- Connects pedals that have a power connector with reverse (center positive) polarity to the Strymon Ojai or Zuma power supply. Connector #1: 2.1mm straight Connector #2: 2.1mm female Polarity: reverse (center positive) Length: 6″ (15cm). Pedals that require this cable include Janglebox pedals, some Fulltone and some Moogerfooger pedals, and others.",
+   "specs": "Type: Cable\nMade in: USA",
+   "price_eur": 8.95,
+   "price_from": 0,
+   "images": [],
+   "featured": 0,
+   "lead_time": "",
+   "variants": "",
+   "availability": "order",
+   "slug": "strymon-polarity-reverse-cable-2-1-2-1-mm-6-15-cm"
+  },
+  {
+   "brand": "Strymon",
+   "category": "Power & control",
+   "name": "Polarity Reverse Cable 2.1–2.5 mm, 6\" (15 cm)",
+   "sku": "",
+   "summary": "Cable.",
+   "description": "Features:\n- Connects pedals that have a power connector with reverse (center positive) polarity to the Strymon Ojai or Zuma power supply.  Connector #1: 2.1mm straight Connector #2: 2.5mm female Polarity: reverse (center positive) Length: 6″ (15cm). Pedals that require this cable include some models Line 6, Electro-Harmonix, Eventide and others.",
+   "specs": "Type: Cable\nMade in: USA",
+   "price_eur": 8.95,
+   "price_from": 0,
+   "images": [],
+   "featured": 0,
+   "lead_time": "",
+   "variants": "",
+   "availability": "order",
+   "slug": "strymon-polarity-reverse-cable-2-1-2-5-mm-6-15-cm"
+  },
+  {
+   "brand": "Strymon",
+   "category": "Power & control",
+   "name": "Voltage Doubler Cable, 4\" (10 cm)",
+   "sku": "",
+   "summary": "Cable.",
+   "description": "Features:\n- Connects 18V pedals to two 9V outputs on the Strymon Zuma or Ojai power supply. Also connects 24V pedals to two 12V outputs on the Zuma. Power supply connectors: 2.1mm straight (2) Pedal connector: 2.1mm female Polarity: standard (center negative). Length: 4\"/10cm. Compatible pedals include some pedals by Fulltone, Keeley, MXR and Dunlop (Cry Baby).",
+   "specs": "Type: Cable\nMade in: USA",
+   "price_eur": 14.95,
+   "price_from": 0,
+   "images": [],
+   "featured": 0,
+   "lead_time": "",
+   "variants": "",
+   "availability": "order",
+   "slug": "strymon-voltage-doubler-cable-4-10-cm"
+  },
+  {
+   "brand": "Strymon",
+   "category": "Power & control",
+   "name": "EIAJ Cable 9\" (23 cm)",
+   "sku": "",
+   "summary": "Cable.",
+   "description": "Features:\n- 9\" Connects a Strymon Ojai power supply to either the provided power block (PS-124) or to another Strymon multi- power supply (Ojai + Zuma, Ojai + Ojai) for expanded flexibility. Connector #1: EIAJ-05 straight Connector #2: EIAJ-05 right angle.",
+   "specs": "Type: Cable\nMade in: USA",
+   "price_eur": 8.95,
+   "price_from": 0,
+   "images": [],
+   "featured": 0,
+   "lead_time": "",
+   "variants": "",
+   "availability": "order",
+   "slug": "strymon-eiaj-cable-9-23-cm"
+  },
+  {
+   "brand": "Strymon",
+   "category": "Power & control",
+   "name": "EIAJ Cable 18\" (46 cm)",
+   "sku": "",
+   "summary": "Cable.",
+   "description": "Features:\n- 18\" Connects a Strymon Ojai power supply to either the provided power block (PS-124) or to another Strymon multi- power supply (Ojai + Zuma, Ojai + Ojai) for expanded flexibility. Connector #1: EIAJ-05 straight Connector #2: EIAJ-05 right angle.",
+   "specs": "Type: Cable\nMade in: USA",
+   "price_eur": 8.95,
+   "price_from": 0,
+   "images": [],
+   "featured": 0,
+   "lead_time": "",
+   "variants": "",
+   "availability": "order",
+   "slug": "strymon-eiaj-cable-18-46-cm"
+  },
+  {
+   "brand": "Strymon",
+   "category": "Power & control",
+   "name": "EIAJ Cable 36\" (92 cm)",
+   "sku": "",
+   "summary": "Cable.",
+   "description": "Features:\n- 36\" Connects a Strymon Ojai power supply to either the provided power block (PS-124) or to another Strymon multi- power supply (Ojai + Zuma, Ojai + Ojai) for expanded flexibility. Connector #1: EIAJ-05 straight Connector #2: EIAJ-05 right angle.",
+   "specs": "Type: Cable\nMade in: USA",
+   "price_eur": 8.95,
+   "price_from": 0,
+   "images": [],
+   "featured": 0,
+   "lead_time": "",
+   "variants": "",
+   "availability": "order",
+   "slug": "strymon-eiaj-cable-36-92-cm"
+  },
+  {
+   "brand": "Strymon",
+   "category": "Power & control",
+   "name": "MIDI-EXP Cable, right angle MIDI – right angle TRS",
+   "sku": "",
+   "summary": "Cable.",
+   "description": "Features:\n- Allows you to save and load any one of up to 300 Sunset/Riverside drive presets into your Sunset and Riverside pedals. • Gives full control of all knobs and switches via MIDI • Means you can save and recall presets in bypass state, ready to punch in the perfect drive setting when it’s time for your solo.",
+   "specs": "Type: Cable\nMade in: USA",
+   "price_eur": 39.95,
+   "price_from": 0,
+   "images": [],
+   "featured": 0,
+   "lead_time": "",
+   "variants": "",
+   "availability": "order",
+   "slug": "strymon-midi-exp-cable-right-angle-midi-right-angle-trs"
+  },
+  {
+   "brand": "Strymon",
+   "category": "Power & control",
+   "name": "MIDI-EXP Cable, right angle MIDI – straight TRS",
+   "sku": "",
+   "summary": "Cable.",
+   "description": "Features:\n- Allows you to save and load any one of up to 300 Sunset/Riverside drive presets into your Sunset and Riverside pedals. • Gives full control of all knobs and switches via MIDI • Save and recall presets in bypass state",
+   "specs": "Type: Cable\nMade in: USA",
+   "price_eur": 39.95,
+   "price_from": 0,
+   "images": [],
+   "featured": 0,
+   "lead_time": "",
+   "variants": "",
+   "availability": "order",
+   "slug": "strymon-midi-exp-cable-right-angle-midi-straight-trs"
+  },
+  {
+   "brand": "Strymon",
+   "category": "Power & control",
+   "name": "MIDI-EXP Cable, straight MIDI – right angle TRS",
+   "sku": "",
+   "summary": "Cable.",
+   "description": "Features:\n- Allows you to save and load any one of up to 300 Sunset/Riverside drive presets into your Sunset and Riverside pedals. • Gives full control of all knobs and switches via MIDI • Save and recall presets in bypass state",
+   "specs": "Type: Cable\nMade in: USA",
+   "price_eur": 39.95,
+   "price_from": 0,
+   "images": [],
+   "featured": 0,
+   "lead_time": "",
+   "variants": "",
+   "availability": "order",
+   "slug": "strymon-midi-exp-cable-straight-midi-right-angle-trs"
+  },
+  {
+   "brand": "Strymon",
+   "category": "Power & control",
+   "name": "Multi-plug Daisy Chain Power Cable",
+   "sku": "",
+   "summary": "Cable.",
+   "description": "Features:\n- 5 x 2.1mm straight connectors, standard polarity (center negative), length between outputs: 12″ (30cm), total: 48″ (122cm)\n- Allows running of up to 4 pedals that do not need isolated supply from a single power supply",
+   "specs": "Type: Cable\nMade in: USA",
+   "price_eur": 14.95,
+   "price_from": 0,
+   "images": [],
+   "featured": 0,
+   "lead_time": "",
+   "variants": "",
+   "availability": "order",
+   "slug": "strymon-multi-plug-daisy-chain-power-cable"
+  },
+  {
+   "brand": "Strymon",
+   "category": "Power & control",
+   "name": "TRS Cable 1.5', right – right angle",
+   "sku": "",
+   "summary": "Cable.",
+   "description": "Features:\n- Pedalboard-friendly TRS cable, for use with MiniSwitch, MultiSwitch/MultiSwitch Plus, Tap Favorite, Favorite switch, and expression pedals. Connector 1: TRS Male - Right Angle - 1/4\" Connector 2: TRS Male - Right Angle - 1/4\" Length: 1.5\"",
+   "specs": "Type: Cable\nMade in: USA",
+   "price_eur": 14.95,
+   "price_from": 0,
+   "images": [],
+   "featured": 0,
+   "lead_time": "",
+   "variants": "",
+   "availability": "order",
+   "slug": "strymon-trs-cable-1-5-right-right-angle"
+  },
+  {
+   "brand": "Strymon",
+   "category": "Power & control",
+   "name": "TRS Cable 1.5', straight – right angle",
+   "sku": "",
+   "summary": "Cable.",
+   "description": "Features:\n- Pedalboard-friendly TRS cable, for use with MiniSwitch, MultiSwitch/MultiSwitch Plus, Tap Favorite, Favorite switch, and expression pedals. Connector 1: TRS Male - Straight - 1/4\" Connector 2: TRS Male - Right Angle - 1/4\" Length: 1.5\"",
+   "specs": "Type: Cable\nMade in: USA",
+   "price_eur": 14.95,
+   "price_from": 0,
+   "images": [],
+   "featured": 0,
+   "lead_time": "",
+   "variants": "",
+   "availability": "order",
+   "slug": "strymon-trs-cable-1-5-straight-right-angle"
   }
  ]
 }
