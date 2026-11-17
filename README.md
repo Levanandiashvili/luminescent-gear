@@ -5,6 +5,7 @@ code on `main`: Railway's `luminescent-mastering` project deploys it, and pushes
 the Gear site.
 
 - `index.html` is the whole site, with the logo and icons inlined.
+- `luminescent-mastering-mix-guide.pdf` is the mix and submission guide linked from Send your music.
 - `nginx.conf` serves it on port 8080, with a `/healthz` check for Railway, and sends
   www.luminescentmastering.com to the bare domain.
 - DNS for luminescentmastering.com is at LuaDNS (the domain is registered at ALL-INKL).

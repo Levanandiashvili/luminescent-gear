@@ -6,6 +6,6 @@ FROM nginx:stable-alpine
 RUN sed -i 's/^worker_processes .*/worker_processes 1;/' /etc/nginx/nginx.conf
 
 COPY nginx.conf /etc/nginx/conf.d/default.conf
-COPY index.html /usr/share/nginx/html/index.html
+COPY index.html luminescent-mastering-mix-guide.pdf /usr/share/nginx/html/
 
 EXPOSE 8080
