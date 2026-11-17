@@ -36,7 +36,9 @@ The PDF guide (`public/luminescent-mastering-mix-guide.pdf`) isn't edited in the
 - DNS for luminescentmastering.com is at LuaDNS (the domain is registered at ALL-INKL).
 
 Pushes don't deploy on their own, because the Railway GitHub App isn't installed for this repo.
-After pushing, deploy the latest commit of the `website` service in Railway.
+The service's source is **pinned to a commit** of this branch: without the pin, a redeploy (after a
+variable or volume change) builds the repo's default branch, which is the Gear shop. To publish a new
+commit, connect the service to this branch again with the new commit's SHA.
 
 ## Files
 
