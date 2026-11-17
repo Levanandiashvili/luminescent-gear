@@ -19,6 +19,18 @@ const PORT = Number(process.env.PORT || 8080);
 // When set (to luminescentmastering.com), www.luminescentmastering.com forwards there.
 const CANONICAL_HOST = (process.env.CANONICAL_HOST || '').trim().toLowerCase();
 
+// On 17 Nov 2026 a mix-up ran the Luminescent Gear shop on this service for about two minutes, and it left
+// its database and catalog photos on this volume. This removes exactly those files (all written before
+// 23:50 UTC that night); anything newer is left alone, and after the first start there is nothing to do.
+for (const name of ['store.db', 'store.db-wal', 'store.db-shm', 'uploads']) {
+  const p = path.join(DATA_DIR, name);
+  let st;
+  try { st = fs.statSync(p); } catch { continue; }
+  if (st.mtimeMs > Date.parse('2026-11-17T23:50:00Z')) continue;
+  fs.rmSync(p, { recursive: true, force: true });
+  console.log('[cleanup] removed', p);
+}
+
 const TYPES = {
   '.css': 'text/css; charset=utf-8', '.js': 'text/javascript; charset=utf-8', '.png': 'image/png', '.webp': 'image/webp',
   '.svg': 'image/svg+xml', '.woff': 'font/woff', '.woff2': 'font/woff2', '.pdf': 'application/pdf', '.txt': 'text/plain; charset=utf-8',
