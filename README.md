@@ -9,4 +9,6 @@ the Gear site.
   www.luminescentmastering.com to the bare domain.
 - DNS for luminescentmastering.com is at LuaDNS (the domain is registered at ALL-INKL).
 
-To update the site, replace `index.html` and push to this branch.
+To update the site, replace `index.html`, push to this branch, then deploy the latest commit of the
+`website` service in Railway's `luminescent-mastering` project. Pushes don't deploy on their own,
+because the Railway GitHub App isn't installed for this repo.
