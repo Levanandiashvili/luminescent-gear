@@ -1,15 +1,58 @@
 # Luminescent Mastering website
 
-The one-page site for luminescentmastering.com. This branch is separate from the Luminescent Gear
-code on `main`: Railway's `luminescent-mastering` project deploys it, and pushes here don't touch
-the Gear site.
+The one-page site for luminescentmastering.com, with an admin panel at `/admin`. This branch is
+separate from the Luminescent Gear code on `main`: Railway's `luminescent-mastering` project deploys
+it, and pushes here don't touch the Gear site.
 
-- `index.html` is the whole site, with the logo and icons inlined.
-- `luminescent-mastering-mix-guide.pdf` is the mix and submission guide linked from Send your music.
-- `nginx.conf` serves it on port 8080, with a `/healthz` check for Railway, and sends
-  www.luminescentmastering.com to the bare domain.
+It's a small Node.js server (Node 22, no packages to install), built the same way as the Gear site.
+
+## Admin panel
+
+Open luminescentmastering.com/admin and sign in with the admin password. There you can:
+
+- change every text on the page: the intro, services, equipment, rates, the artist list,
+  Send your music, contact details, the footer, the menu labels and the Google description;
+- add, reorder and remove services, equipment groups, prices, blocks and links;
+- switch between the two designs, **Rack** (the dark front panel with knobs) and **Clean**
+  (dark and simple, in the style of the Luminescent Gear site, with the big splash logo);
+- preview changes before saving, and go back to any of the last 30 saved versions.
+
+Changes show on the site as soon as you save. An empty section (no services, no prices…) is left
+off the page, with its menu link.
+
+The PDF guide (`public/luminescent-mastering-mix-guide.pdf`) isn't edited in the admin.
+
+## Railway setup
+
+- Service `website` in the project `luminescent-mastering`, built from this branch's `Dockerfile`.
+- A **volume mounted at `/data`** keeps the saved texts (`/data/content.json`) and earlier versions
+  (`/data/history/`). Without it, changes would be lost at the next deploy.
+- Variables:
+  - `ADMIN_PASSWORD`: the admin password. Changing it signs everyone out.
+  - `CANONICAL_HOST=luminescentmastering.com` (optional): sends www.luminescentmastering.com to the
+    bare domain.
+  - `PORT=8080`.
+- Health check: `/healthz`.
 - DNS for luminescentmastering.com is at LuaDNS (the domain is registered at ALL-INKL).
 
-To update the site, replace `index.html`, push to this branch, then deploy the latest commit of the
-`website` service in Railway's `luminescent-mastering` project. Pushes don't deploy on their own,
-because the Railway GitHub App isn't installed for this repo.
+Pushes don't deploy on their own, because the Railway GitHub App isn't installed for this repo.
+After pushing, deploy the latest commit of the `website` service in Railway.
+
+## Files
+
+- `server.js`: the web server (page, static files, `/healthz`, the www forwarding).
+- `src/content.js`: loading, checking and saving the texts; `content/default.json` holds the
+  starting texts.
+- `src/admin.js`, `src/auth.js`: the admin panel and its sign-in (signed cookie, form tokens, a limit
+  on wrong passwords).
+- `src/designs/rack.*` and `src/designs/clean.*`: the two designs.
+- `public/`: logos, icons, fonts (IBM Plex Sans and Instrument Serif, both under the SIL Open Font
+  License, see `public/fonts/`), the admin's styles and script, and the PDF guide.
+
+## Run it on your computer
+
+```bash
+ADMIN_PASSWORD=choose-one npm start
+```
+
+Then open http://localhost:8080 and http://localhost:8080/admin. Saved texts go to `./data`.

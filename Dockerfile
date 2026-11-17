@@ -1,11 +1,11 @@
-# Luminescent Mastering website: one static page served by nginx on Railway.
-FROM nginx:stable-alpine
-
-# One worker is plenty for a one-page site; "auto" starts one per host CPU (dozens on Railway),
-# and every worker costs memory, which Railway bills.
-RUN sed -i 's/^worker_processes .*/worker_processes 1;/' /etc/nginx/nginx.conf
-
-COPY nginx.conf /etc/nginx/conf.d/default.conf
-COPY index.html luminescent-mastering-mix-guide.pdf /usr/share/nginx/html/
-
+# Luminescent Mastering website: a small Node.js server (no packages) with an admin panel at /admin.
+FROM node:22-alpine
+WORKDIR /app
+COPY package.json server.js ./
+COPY src ./src
+COPY content ./content
+COPY public ./public
+# The texts Levan saves live on Railway's volume, mounted at /data.
+ENV NODE_ENV=production DATA_DIR=/data PORT=8080
 EXPOSE 8080
+CMD ["node", "--max-old-space-size=96", "server.js"]
