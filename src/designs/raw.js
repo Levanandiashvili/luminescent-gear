@@ -73,7 +73,7 @@ ${v.clients ? html`  <section class="sec" id="clients" aria-labelledby="clients-
 ${raw(shuffled(c.artists.names).map((n) => html`<li>${n}</li>`).join('\n'))}
     </ul>
     ${c.artists.more ? html`<p class="more">${c.artists.more}</p>` : ''}
-    ${artistsScript({ glow: false })}
+    ${artistsScript({ glow: true, radius: 100, touch: true })}
   </section>
 ` : ''}
 ${v.send ? html`  <section class="sec" id="send" aria-labelledby="send-title">

@@ -68,10 +68,17 @@ main { min-width: 0; }
 .toggle:hover, .toggle[aria-pressed="true"] { background: var(--text); color: var(--bg); }
 .toggle[hidden] { display: none; }
 .lineup { list-style: none; padding: 0; color: var(--grey); line-height: 1.85; }
-.lineup li { display: inline; }
-.lineup li::after { content: "\00a0/ "; color: var(--dim); }
+/* Names come up softly near the pointer or a finger: from grey towards the paper white, with a faint haze. */
+.lineup li {
+  --lit: 0;
+  display: inline; color: var(--grey);
+  color: color-mix(in srgb, var(--text) calc(var(--lit) * 88%), var(--grey));
+  text-shadow: 0 0 calc(var(--lit) * 10px) rgba(228, 225, 216, calc(var(--lit) * 0.3));
+  transition: color .6s ease-out, text-shadow .6s ease-out;
+}
+.lineup li::after { content: "\00a0/ "; color: var(--dim); text-shadow: none; }
 .lineup li:last-child::after { content: ""; }
-.lineup li:hover { color: var(--text); }
+.lineup li:hover { --lit: 1; }
 .more { margin-top: 14px; color: var(--text); }
 
 /* Send your music */

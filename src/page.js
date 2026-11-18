@@ -79,9 +79,10 @@ export function previewBar(opts) {
 
 /**
  * The artist list's behaviour: a new shuffle on every visit and an A–Z switch.
- * With glow on, names near the mouse pointer light up (the rack design).
+ * With glow on, names near the mouse pointer light up (radius in pixels); with touch on, they also light up
+ * under a finger on a phone and fade out when it lifts.
  */
-export function artistsScript({ glow }) {
+export function artistsScript({ glow, radius = 120, touch = false }) {
   return raw(`<script>
 (function () {
   var list = document.getElementById("artists");
@@ -105,11 +106,14 @@ export function artistsScript({ glow }) {
     });
   }
   ${glow ? `
-  var R = 120, centers = [], box = null, lit = [], cx = -1e4, cy = -1e4;
+  var R = ${Number(radius) || 120}, parts = [], box = null, lit = [], cx = -1e4, cy = -1e4;
   function measure() {
     var sx = window.scrollX, sy = window.scrollY, b = list.getBoundingClientRect();
     box = { l: b.left + sx - R, r: b.right + sx + R, t: b.top + sy - R, b: b.bottom + sy + R };
-    centers = items.map(function (li) { var r = li.getBoundingClientRect(); return [r.left + sx + r.width / 2, r.top + sy + r.height / 2, r.width / 2]; });
+    // A name that wraps onto two lines has two boxes; measure each.
+    parts = items.map(function (li) {
+      return Array.prototype.map.call(li.getClientRects(), function (r) { return [r.left + sx + r.width / 2, r.top + sy + r.height / 2, r.width / 2]; });
+    });
   }
   function clear() { lit.forEach(function (i) { items[i].style.removeProperty("--lit"); }); lit = []; }
   function paint() {
@@ -117,7 +121,11 @@ export function artistsScript({ glow }) {
     if (!box || px < box.l || px > box.r || py < box.t || py > box.b) { clear(); return; }
     var next = [];
     for (var i = 0; i < items.length; i++) {
-      var c = centers[i], dx = Math.max(Math.abs(px - c[0]) - c[2], 0), dy = py - c[1], d = Math.sqrt(dx * dx + dy * dy);
+      var d = 1e9;
+      for (var p = 0; p < parts[i].length; p++) {
+        var c = parts[i][p], dx = Math.max(Math.abs(px - c[0]) - c[2], 0), dy = py - c[1];
+        d = Math.min(d, Math.sqrt(dx * dx + dy * dy));
+      }
       if (d < R) { var k = 1 - d / R; items[i].style.setProperty("--lit", (k * k).toFixed(3)); next.push(i); }
     }
     lit.forEach(function (i) { if (next.indexOf(i) < 0) items[i].style.removeProperty("--lit"); });
@@ -133,7 +141,14 @@ export function artistsScript({ glow }) {
     if (e.pointerType && e.pointerType !== "mouse") return;
     cx = e.clientX; cy = e.clientY; paint();
   }, { passive: true });
-  document.documentElement.addEventListener("mouseleave", function () { cx = cy = -1e4; clear(); });` : ''}
+  document.documentElement.addEventListener("mouseleave", function () { cx = cy = -1e4; clear(); });${touch ? `
+  var touching = false, fade = 0;
+  function at(e) { var t = e.touches[0]; if (t) { cx = t.clientX; cy = t.clientY; paint(); } }
+  list.addEventListener("touchstart", function (e) { touching = true; clearTimeout(fade); measure(); at(e); }, { passive: true });
+  document.addEventListener("touchmove", function (e) { if (touching) at(e); }, { passive: true });
+  function lift() { if (!touching) return; touching = false; fade = setTimeout(function () { cx = cy = -1e4; clear(); }, 500); }
+  document.addEventListener("touchend", lift, { passive: true });
+  document.addEventListener("touchcancel", lift, { passive: true });` : ''}` : ''}
 })();
 </script>`);
 }
