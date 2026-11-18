@@ -4,7 +4,7 @@ The one-page site for luminescentmastering.com, with an admin panel at `/admin`.
 separate from the Luminescent Gear code on `main`: Railway's `luminescent-mastering` project deploys
 it, and pushes here don't touch the Gear site.
 
-It's a small Node.js server (Node 22, no packages to install), built the same way as the Gear site.
+It's a small Node.js server (Node 22, no packages to install).
 
 ## Admin panel
 
@@ -14,7 +14,7 @@ Open luminescentmastering.com/admin and sign in with the admin password. There y
   Send your music, contact details, the footer, the menu labels and the Google description;
 - add, reorder and remove services, equipment groups, prices, blocks and links;
 - switch between the two designs, **Rack** (the dark front panel with knobs) and **Clean**
-  (dark and simple, in the style of the Luminescent Gear site, with the big splash logo);
+  (black and minimal, opening with the big splash logo);
 - preview changes before saving, and go back to any of the last 30 saved versions.
 
 Changes show on the site as soon as you save. An empty section (no services, no prices…) is left
@@ -48,8 +48,8 @@ commit, connect the service to this branch again with the new commit's SHA.
 - `src/admin.js`, `src/auth.js`: the admin panel and its sign-in (signed cookie, form tokens, a limit
   on wrong passwords).
 - `src/designs/rack.*` and `src/designs/clean.*`: the two designs.
-- `public/`: logos, icons, fonts (IBM Plex Sans and Instrument Serif, both under the SIL Open Font
-  License, see `public/fonts/`), the admin's styles and script, and the PDF guide.
+- `public/`: logos, icons, fonts (Inter and Inter Display, under the SIL Open Font License, see
+  `public/fonts/`), the admin's styles and script, and the PDF guide.
 
 ## Run it on your computer
 

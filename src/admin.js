@@ -16,7 +16,7 @@ const page = (res, status, body, headers = {}) => send(res, status, body, { ...A
 
 const DESIGN_NOTES = {
   rack: 'The dark front panel with silver knobs.',
-  clean: 'Dark and simple, in the style of the Luminescent Gear site, with the big splash logo.',
+  clean: 'Black and minimal, opening with your big splash logo.',
 };
 
 // ---- Page frame ----
@@ -132,9 +132,9 @@ ${flash.map((f) => html`<p class="flash ${f.kind || ''}" role="status">${f.text}
 
 <fieldset>
   <legend>Top of the page</legend>
-  ${field('Intro', 'intro', c.intro, { rows: 3, hint: 'next to the logo; a blank line starts a new paragraph' })}
+  ${field('Intro', 'intro', c.intro, { rows: 3, hint: 'by the logo at the top; a blank line starts a new paragraph' })}
   <div class="f-row f-row-3">
-    ${field('Button', 'cta', c.cta, { hint: 'the button at the top; leave empty to hide it' })}
+    ${field('Button', 'cta', c.cta, { hint: 'empty hides it' })}
     <label class="f"><span>Button goes to</span><select name="ctaTarget">${Object.entries(SECTIONS).map(([k, label]) => html`<option value="${k}" ${c.ctaTarget === k ? raw('selected') : ''}>${label}</option>`)}</select></label>
     ${field('Site name', 'seo.title', c.seo.title, { hint: 'browser tab and Google' })}
   </div>

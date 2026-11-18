@@ -1,16 +1,16 @@
-/* Admin panel. Same family as the Luminescent Gear admin: aluminium ground, white cards, green-black ink. */
-@font-face { font-family: "IBM Plex Sans"; src: url("/static/fonts/plex-400.woff") format("woff"); font-weight: 400; font-display: swap; }
-@font-face { font-family: "IBM Plex Sans"; src: url("/static/fonts/plex-500.woff") format("woff"); font-weight: 500 700; font-display: swap; }
-@font-face { font-family: "Instrument Serif"; src: url("/static/fonts/serif-400.woff") format("woff"); font-weight: 400; font-display: swap; }
+/* Admin panel: light, plain and roomy, so long texts are easy to edit. */
+@font-face { font-family: "Inter"; src: url("/static/fonts/inter-400.woff") format("woff"); font-weight: 400; font-display: swap; }
+@font-face { font-family: "Inter"; src: url("/static/fonts/inter-500.woff") format("woff"); font-weight: 500 700; font-display: swap; }
+@font-face { font-family: "Inter Display"; src: url("/static/fonts/inter-display-300.woff") format("woff"); font-weight: 300; font-display: swap; }
 :root {
   --ground: #eceee9; --paper: #fff; --ink: #16201b; --graphite: #5b635e; --rule: #d5d8d1; --panel: #2c574b; --oak: #a06c41; --err: #9b2a17;
-  --sans: "IBM Plex Sans", system-ui, sans-serif; --serif: "Instrument Serif", Georgia, serif;
+  --sans: "Inter", system-ui, sans-serif; --serif: "Inter Display", "Inter", system-ui, sans-serif;
   color-scheme: light;
 }
 * { box-sizing: border-box; }
 body { margin: 0; background: var(--ground); color: var(--ink); font: 400 14px/1.5 var(--sans); -webkit-font-smoothing: antialiased; }
 a { color: var(--panel); }
-h1, h2 { font-weight: 400; font-family: var(--serif); letter-spacing: -.01em; }
+h1, h2 { font-weight: 300; font-family: var(--serif); letter-spacing: -.02em; }
 h2 { font-size: 30px; margin: 0 0 10px; }
 .muted { color: var(--graphite); } .small { font-size: 12.5px; }
 code { font: 12.5px ui-monospace, Menlo, monospace; background: rgba(0, 0, 0, .06); padding: 1px 5px; border-radius: 4px; }
@@ -38,14 +38,14 @@ code { font: 12.5px ui-monospace, Menlo, monospace; background: rgba(0, 0, 0, .0
 /* Top bar */
 .bar { position: sticky; top: 0; z-index: 10; background: color-mix(in srgb, var(--ground) 90%, transparent); backdrop-filter: blur(10px); border-bottom: 1px solid var(--rule); }
 .bar-in { max-width: 980px; margin: 0 auto; padding: 10px clamp(14px, 3vw, 28px); display: flex; align-items: center; justify-content: space-between; gap: 10px 18px; flex-wrap: wrap; }
-.bar-name { font: 400 24px/1.1 var(--serif); color: var(--ink); text-decoration: none; letter-spacing: -.01em; }
+.bar-name { font: 300 24px/1.1 var(--serif); color: var(--ink); text-decoration: none; letter-spacing: -.01em; }
 .bar-name span { font: 500 11px var(--sans); letter-spacing: .14em; text-transform: uppercase; color: var(--graphite); margin-left: 6px; vertical-align: 3px; }
 .bar-actions { display: flex; gap: 8px; flex-wrap: wrap; }
 .main { max-width: 980px; margin: 0 auto; padding: 22px clamp(14px, 3vw, 28px) 60px; }
 
 /* Form */
 .form fieldset { border: 1px solid var(--rule); background: var(--paper); border-radius: 10px; padding: 18px 20px 20px; margin: 0 0 16px; display: grid; gap: 14px; min-width: 0; }
-.form legend { font: 400 26px/1 var(--serif); padding: 0 8px; margin-left: -8px; letter-spacing: -.01em; }
+.form legend { font: 300 26px/1 var(--serif); padding: 0 8px; margin-left: -8px; letter-spacing: -.02em; }
 .f { display: grid; gap: 5px; font-weight: 500; font-size: 13.5px; min-width: 0; }
 .f em { font-style: normal; font-weight: 400; color: var(--graphite); font-size: 12.5px; }
 .f input, .f textarea, .f select { font: 400 15px/1.45 var(--sans); padding: 8px 10px; border: 1px solid var(--rule); border-radius: 6px; background: #fff; color: var(--ink); width: 100%; }
