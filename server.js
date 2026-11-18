@@ -10,7 +10,7 @@ import { load, DATA_DIR, savedFile } from './src/content.js';
 import { adminRoutes } from './src/admin.js';
 import { configured } from './src/auth.js';
 import * as rack from './src/designs/rack.js';
-import * as clean from './src/designs/clean.js';
+import * as raw from './src/designs/raw.js';
 import { PDF_PATH } from './src/page.js';
 
 const ROOT = path.dirname(fileURLToPath(import.meta.url));
@@ -47,7 +47,7 @@ const V = (() => {
 })();
 const opts = { v: V };
 
-const DESIGN_RENDERERS = { rack, clean };
+const DESIGN_RENDERERS = { rack, raw };
 export const renderPage = (content, o = opts) => (DESIGN_RENDERERS[content.design] || rack).render(content, o);
 
 // The page is rendered once and kept until the texts or the design change.

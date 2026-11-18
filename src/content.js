@@ -11,7 +11,7 @@ const KEEP_VERSIONS = 30;
 
 export const DESIGNS = {
   rack: 'Rack',
-  clean: 'Clean',
+  raw: 'Raw',
 };
 
 /** The page's sections, by their anchor on the page. */
@@ -93,7 +93,7 @@ export function normalize(input = {}) {
   names.sort(byName);
 
   const content = {
-    design: Object.hasOwn(DESIGNS, c.design) ? c.design : 'rack',
+    design: Object.hasOwn(DESIGNS, c.design) ? c.design : c.design === 'clean' ? 'raw' : 'rack',
     seo: {
       title: line(sec('seo').title, 120) || 'Luminescent Mastering',
       description: line(sec('seo').description, 320),

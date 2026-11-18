@@ -13,8 +13,8 @@ Open luminescentmastering.com/admin and sign in with the admin password. There y
 - change every text on the page: the intro, services, equipment, rates, the artist list,
   Send your music, contact details, the footer, the menu labels and the Google description;
 - add, reorder and remove services, equipment groups, prices, blocks and links;
-- switch between the two designs, **Rack** (the dark front panel with knobs) and **Clean**
-  (black and minimal, opening with the big splash logo);
+- switch between the two designs, **Rack** (the dark front panel with knobs) and **Raw**
+  (black and plain: typewriter text and the splash logo, like a photocopied flyer);
 - preview changes before saving, and go back to any of the last 30 saved versions.
 
 Changes show on the site as soon as you save. An empty section (no services, no prices…) is left
@@ -47,9 +47,9 @@ commit, connect the service to this branch again with the new commit's SHA.
   starting texts.
 - `src/admin.js`, `src/auth.js`: the admin panel and its sign-in (signed cookie, form tokens, a limit
   on wrong passwords).
-- `src/designs/rack.*` and `src/designs/clean.*`: the two designs.
-- `public/`: logos, icons, fonts (Inter and Inter Display, under the SIL Open Font License, see
-  `public/fonts/`), the admin's styles and script, and the PDF guide.
+- `src/designs/rack.*` and `src/designs/raw.*`: the two designs.
+- `public/`: logos, icons, fonts (Latin Modern Mono for the Raw design and Inter for the admin; see
+  `public/fonts/README.txt` for their licences), the admin's styles and script, and the PDF guide.
 
 ## Run it on your computer
 

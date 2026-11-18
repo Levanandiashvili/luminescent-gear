@@ -16,7 +16,7 @@ const page = (res, status, body, headers = {}) => send(res, status, body, { ...A
 
 const DESIGN_NOTES = {
   rack: 'The dark front panel with silver knobs.',
-  clean: 'Black and minimal, opening with your big splash logo.',
+  raw: 'Black and plain, typewriter text and your splash logo, like a photocopied flyer.',
 };
 
 // ---- Page frame ----
