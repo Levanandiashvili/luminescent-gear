@@ -2,13 +2,14 @@
 import fs from 'node:fs';
 import { html, raw, esc } from '../http.js';
 import { inline, paras, lines, shuffled } from '../text.js';
-import { asset, visible, nav, head, previewBar, artistsScript, PDF_PATH } from '../page.js';
+import { asset, visible, nav, cta, head, previewBar, artistsScript, PDF_PATH } from '../page.js';
 
 const CSS = fs.readFileSync(new URL('./rack.css', import.meta.url), 'utf8');
 
 export function render(c, opts = {}) {
   const v = visible(c);
   const knobs = nav(c);
+  const button = cta(c);
   return `<!DOCTYPE html>
 <html lang="en">
 <head>
@@ -31,14 +32,14 @@ ${previewBar(opts)}
         </div>` : ''}
       </div>
     </div>
-    ${knobs.length || (v.send && c.cta) ? html`<div class="unit-bottom">
+    ${knobs.length || button ? html`<div class="unit-bottom">
       ${knobs.length ? html`<nav aria-label="Sections">
         <ul class="knobs">
           ${knobs.map((k) => html`<li><a class="k" href="#${k.id}"><span class="dial"><span class="knob"></span></span>${k.label}</a></li>
           `)}
         </ul>
       </nav>` : raw('<span></span>')}
-      ${v.send && c.cta ? html`<a class="btn" href="#send"><span class="led" aria-hidden="true"></span>${c.cta}</a>` : ''}
+      ${button ? html`<a class="btn" href="${button.href}"><span class="led" aria-hidden="true"></span>${button.label}</a>` : ''}
     </div>` : ''}
   </section>
 </header>
@@ -86,7 +87,7 @@ ${raw(shuffled(c.artists.names).map((n) => html`        <li>${n}</li>`).join('\n
   </section>
 ` : ''}
 ${v.send ? html`  <section class="sec" id="send" aria-labelledby="send-title">
-    <div class="head"><h2 id="send-title">${c.send.title || c.cta}</h2></div>
+    <div class="head"><h2 id="send-title">${c.send.title || c.send.nav || 'Send your music'}</h2></div>
     ${c.send.blocks.length ? html`<div class="send">
       ${c.send.blocks.map((b, i) => html`<div class="module">
         ${b.title ? html`<h3>${b.title}</h3>` : ''}

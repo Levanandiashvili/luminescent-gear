@@ -91,7 +91,7 @@ h1, h2, h3 { text-wrap: balance; margin: 0; }
 @media (max-width: 520px) {
   .unit { padding-left: 20px; padding-right: 20px; }
   .unit-bottom nav { width: 100%; }
-  .knobs { display: grid; grid-template-columns: repeat(5, minmax(0, 1fr)); gap: 0; }
+  .knobs { display: grid; grid-auto-flow: column; grid-auto-columns: minmax(0, 1fr); gap: 0; }
   .k { font-size: 8.5px; letter-spacing: 0.1em; }
   .dial { --d: 54px; --kn: 38px; }
 }

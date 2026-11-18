@@ -2,7 +2,7 @@
 import fs from 'node:fs';
 import { html, raw, esc } from '../http.js';
 import { inline, paras, paragraphs, lines, shuffled } from '../text.js';
-import { asset, visible, nav, head, previewBar, artistsScript, PDF_PATH } from '../page.js';
+import { asset, visible, nav, cta, head, previewBar, artistsScript, PDF_PATH } from '../page.js';
 
 const CSS = fs.readFileSync(new URL('./clean.css', import.meta.url), 'utf8');
 
@@ -14,6 +14,7 @@ const fonts = (opts) => `@font-face { font-family: "Instrument Serif"; src: url(
 export function render(c, opts = {}) {
   const v = visible(c);
   const links = nav(c);
+  const button = cta(c);
   const intro = paragraphs(c.intro);
   return `<!DOCTYPE html>
 <html lang="en">
@@ -33,7 +34,7 @@ ${previewBar(opts)}
     ${links.length ? html`<nav class="main-nav" aria-label="Sections">
       ${links.map((l) => html`<a href="#${l.id}">${l.label}</a>`)}
     </nav>` : raw('<span style="flex:1"></span>')}
-    ${v.send && c.cta ? html`<a class="btn btn-small" href="#send">${c.cta}</a>` : ''}
+    ${button ? html`<a class="btn btn-small" href="${button.href}">${button.label}</a>` : ''}
   </div>
 </header>
 
@@ -43,8 +44,8 @@ ${previewBar(opts)}
       <div>
         ${intro.length ? html`<p class="display">${inline(intro[0])}</p>` : ''}
         ${intro.slice(1).map((p) => html`<p class="lede">${inline(p)}</p>`)}
-        ${(v.send && c.cta) || v.rates ? html`<div class="hero-actions">
-          ${v.send && c.cta ? html`<a class="btn" href="#send">${c.cta}</a>` : ''}
+        ${button || v.rates ? html`<div class="hero-actions">
+          ${button ? html`<a class="btn" href="${button.href}">${button.label}</a>` : ''}
           ${v.rates && c.rates.nav ? html`<a class="link" href="#rates">${c.rates.nav}</a>` : ''}
         </div>` : ''}
       </div>
@@ -99,7 +100,7 @@ ${raw(shuffled(c.artists.names).map((n) => html`      <li>${n}</li>`).join('\n')
 ${v.send ? html`  <section class="section" id="send" aria-labelledby="send-title">
     <div class="split">
       <div>
-        <h2 id="send-title">${c.send.title || c.cta}</h2>
+        <h2 id="send-title">${c.send.title || c.send.nav || 'Send your music'}</h2>
         ${c.send.guideButton ? html`<div class="guide">
           <a class="btn" href="${PDF_PATH}">${c.send.guideButton}</a>
           ${c.send.guideText ? html`<p>${inline(c.send.guideText)}</p>` : ''}

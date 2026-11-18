@@ -5,7 +5,8 @@
     "description": "Luminescent Mastering is Levan Andiashvili's studio, specialized in mixing, mastering, stem mastering & audio restoration services."
   },
   "intro": "Luminescent Mastering is Levan Andiashvili's studio, which is specialized in mixing, mastering, stem mastering & audio restoration services.",
-  "cta": "Send your music",
+  "cta": "Contact",
+  "ctaTarget": "contact",
   "services": {
     "nav": "Services",
     "title": "Services",
@@ -458,6 +459,7 @@
     ]
   },
   "send": {
+    "nav": "",
     "title": "Send your music",
     "blocks": [
       {

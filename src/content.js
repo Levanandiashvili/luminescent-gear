@@ -14,6 +14,16 @@ export const DESIGNS = {
   clean: 'Clean',
 };
 
+/** The page's sections, by their anchor on the page. */
+export const SECTIONS = {
+  services: 'Services',
+  equipment: 'Equipment',
+  rates: 'Rates',
+  clients: 'Artists',
+  send: 'Send your music',
+  contact: 'Contact',
+};
+
 export const DEFAULTS = JSON.parse(fs.readFileSync(path.join(ROOT, 'content', 'default.json'), 'utf8'));
 
 fs.mkdirSync(HISTORY, { recursive: true });
@@ -90,6 +100,7 @@ export function normalize(input = {}) {
     },
     intro: str(c.intro, 1500),
     cta: line(c.cta, 60),
+    ctaTarget: Object.hasOwn(SECTIONS, c.ctaTarget) ? c.ctaTarget : 'contact',
     services: {
       nav: line(sec('services').nav, 40),
       title: line(sec('services').title, 120),
@@ -115,6 +126,7 @@ export function normalize(input = {}) {
       names: names.slice(0, 3000),
     },
     send: {
+      nav: line(sec('send').nav, 40),
       title: line(sec('send').title, 120),
       blocks: list(sec('send').blocks, 16, (r) => ({ title: line(r?.title, 120), text: str(r?.text, 4000) })),
       guideButton: line(sec('send').guideButton, 60),

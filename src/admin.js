@@ -1,7 +1,7 @@
 // The admin panel at /admin: sign in, edit every text on the page, pick the design, go back to an earlier version.
 import crypto from 'node:crypto';
 import { html, raw, esc, send, redirect, readForm, clientIp, sameOrigin, SECURITY_HEADERS } from './http.js';
-import { load, save, normalize, history, restore, DESIGNS } from './content.js';
+import { load, save, normalize, history, restore, DESIGNS, SECTIONS } from './content.js';
 import {
   configured, checkPassword, makeSession, session, sessionCookie, csrfToken, csrfOk,
   tooManyAttempts, noteFailure, clearFailures,
@@ -133,8 +133,9 @@ ${flash.map((f) => html`<p class="flash ${f.kind || ''}" role="status">${f.text}
 <fieldset>
   <legend>Top of the page</legend>
   ${field('Intro', 'intro', c.intro, { rows: 3, hint: 'next to the logo; a blank line starts a new paragraph' })}
-  <div class="f-row">
-    ${field('Button', 'cta', c.cta, { hint: 'jumps to the Send your music section' })}
+  <div class="f-row f-row-3">
+    ${field('Button', 'cta', c.cta, { hint: 'the button at the top; leave empty to hide it' })}
+    <label class="f"><span>Button goes to</span><select name="ctaTarget">${Object.entries(SECTIONS).map(([k, label]) => html`<option value="${k}" ${c.ctaTarget === k ? raw('selected') : ''}>${label}</option>`)}</select></label>
     ${field('Site name', 'seo.title', c.seo.title, { hint: 'browser tab and Google' })}
   </div>
   ${field('Google description', 'seo.description', c.seo.description, { rows: 2, hint: 'the short text under the link in Google results' })}
@@ -178,7 +179,10 @@ ${flash.map((f) => html`<p class="flash ${f.kind || ''}" role="status">${f.text}
 
 <fieldset>
   <legend>Send your music</legend>
-  ${field('Heading', 'send.title', c.send.title)}
+  <div class="f-row">
+    ${field('Menu label', 'send.nav', c.send.nav, { hint: 'leave empty: no knob or link for this section' })}
+    ${field('Heading', 'send.title', c.send.title)}
+  </div>
   ${rows('send.blocks', withBlank(c.send.blocks, ['title', 'text']), (r, n) => html`
     ${field('Title', n('title'), r.title)}
     ${field('Text', n('text'), r.text, { rows: 5, hint: 'a blank line starts a new paragraph' })}`, 'Add a block')}
@@ -243,8 +247,8 @@ ${flash.map((f) => html`<p class="flash ${f.kind || ''}" role="status">${f.text}
 
 // ---- Form → content ----
 
-const ALLOWED = new RegExp('^(?:design|intro|cta|footer|seo\\.(?:title|description)'
-  + '|(?:services|equipment|rates|artists|contact)\\.nav|(?:services|equipment|rates|artists|send|contact)\\.title'
+const ALLOWED = new RegExp('^(?:design|intro|cta|ctaTarget|footer|seo\\.(?:title|description)'
+  + '|(?:services|equipment|rates|artists|send|contact)\\.nav|(?:services|equipment|rates|artists|send|contact)\\.title'
   + '|rates\\.terms|artists\\.(?:more|names)|send\\.(?:guideButton|guideText)|contact\\.(?:emailLabel|email|linksLabel)'
   + '|services\\.items\\.\\d{1,3}\\.(?:title|text)|equipment\\.rows\\.\\d{1,3}\\.(?:label|items)'
   + '|rates\\.rows\\.\\d{1,3}\\.(?:name|note|price|unit)|send\\.blocks\\.\\d{1,3}\\.(?:title|text)'

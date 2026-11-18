@@ -48,10 +48,10 @@ code { font: 12.5px ui-monospace, Menlo, monospace; background: rgba(0, 0, 0, .0
 .form legend { font: 400 26px/1 var(--serif); padding: 0 8px; margin-left: -8px; letter-spacing: -.01em; }
 .f { display: grid; gap: 5px; font-weight: 500; font-size: 13.5px; min-width: 0; }
 .f em { font-style: normal; font-weight: 400; color: var(--graphite); font-size: 12.5px; }
-.f input, .f textarea { font: 400 15px/1.45 var(--sans); padding: 8px 10px; border: 1px solid var(--rule); border-radius: 6px; background: #fff; color: var(--ink); width: 100%; }
+.f input, .f textarea, .f select { font: 400 15px/1.45 var(--sans); padding: 8px 10px; border: 1px solid var(--rule); border-radius: 6px; background: #fff; color: var(--ink); width: 100%; }
 .f textarea { resize: vertical; min-height: 44px; }
 .f textarea.mono { font: 13px/1.55 ui-monospace, Menlo, monospace; }
-.f input:focus, .f textarea:focus { outline: 2px solid color-mix(in srgb, var(--panel) 35%, transparent); border-color: var(--panel); }
+.f input:focus, .f textarea:focus, .f select:focus { outline: 2px solid color-mix(in srgb, var(--panel) 35%, transparent); border-color: var(--panel); }
 .f-row { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 14px; }
 .f-row-4 { grid-template-columns: 1.3fr 1.3fr .8fr 1fr; }
 @media (max-width: 720px) { .f-row-4 { grid-template-columns: 1fr 1fr; } }

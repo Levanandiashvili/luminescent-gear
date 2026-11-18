@@ -27,8 +27,14 @@ export function nav(c) {
     ['equipment', c.equipment.nav],
     ['rates', c.rates.nav],
     ['clients', c.artists.nav],
+    ['send', c.send.nav],
     ['contact', c.contact.nav],
   ].filter(([id, label]) => v[id] && label).map(([id, label]) => ({ id, label }));
+}
+
+/** The button at the top: its label and where it goes, or null when that section isn't on the page. */
+export function cta(c) {
+  return c.cta && visible(c)[c.ctaTarget] ? { label: c.cta, href: `#${c.ctaTarget}` } : null;
 }
 
 export function head(c, opts, { themeColor }) {
