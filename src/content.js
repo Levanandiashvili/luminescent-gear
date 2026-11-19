@@ -27,7 +27,7 @@ export const SECTIONS = {
 export const DEFAULTS = JSON.parse(fs.readFileSync(path.join(ROOT, 'content', 'default.json'), 'utf8'));
 // The longer texts the site started with, before they were cut down to a rider (texts version 2).
 const DEFAULTS_V1 = JSON.parse(fs.readFileSync(path.join(ROOT, 'content', 'default-v1.json'), 'utf8'));
-export const TEXTS_VERSION = 2;
+export const TEXTS_VERSION = 3;
 
 fs.mkdirSync(HISTORY, { recursive: true });
 
@@ -155,7 +155,9 @@ let current = null;
 
 /**
  * Texts saved before the rider version: every field that still has the old default text gets the new, shorter
- * text; fields Levan changed himself stay as they are. The version before is kept in the history.
+ * text; fields Levan changed himself stay as they are (version 2). Send your music in the old four-block shape
+ * becomes the rider list (version 3); his one edit there, the stem groups, is part of the new Stems line.
+ * The version before is kept in the history.
  */
 function upgrade(saved) {
   if (Number(saved.textsVersion) >= TEXTS_VERSION) return saved;
@@ -163,11 +165,20 @@ function upgrade(saved) {
   const next = JSON.parse(JSON.stringify(saved));
   const swaps = [['services', 'items'], ['rates', 'terms'], ['send', 'blocks'], ['send', 'guideText']];
   const changed = [];
-  for (const [sec, key] of swaps) {
-    if (next[sec] && same(next[sec][key], DEFAULTS_V1[sec][key])) {
-      next[sec][key] = DEFAULTS[sec][key];
-      changed.push(`${sec}.${key}`);
+  if (!(Number(saved.textsVersion) >= 2)) {
+    for (const [sec, key] of swaps) {
+      if (next[sec] && same(next[sec][key], DEFAULTS_V1[sec][key])) {
+        next[sec][key] = DEFAULTS[sec][key];
+        changed.push(`${sec}.${key}`);
+      }
     }
+  }
+  // Version 3: Send your music still in the old four long blocks (even with small edits) becomes the rider.
+  const oldTitles = DEFAULTS_V1.send.blocks.map((b) => b.title);
+  const titles = (next.send && Array.isArray(next.send.blocks) ? next.send.blocks : []).map((b) => b && b.title);
+  if (same(titles, oldTitles) && !same(next.send.blocks, DEFAULTS.send.blocks)) {
+    next.send.blocks = DEFAULTS.send.blocks;
+    changed.push('send.blocks (rider)');
   }
   console.log('[content] shorter texts for', changed.length ? changed.join(', ') : 'nothing (all edited)');
   return next;

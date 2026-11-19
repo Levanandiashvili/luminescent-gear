@@ -1,5 +1,5 @@
 {
-  "textsVersion": 2,
+  "textsVersion": 3,
   "design": "rack",
   "seo": {
     "title": "Luminescent Mastering",
@@ -481,7 +481,7 @@
       },
       {
         "title": "Stems",
-        "text": "6–8 groups, effects printed, same start and length. Add the stereo mix. One folder per song."
+        "text": "6–8 groups (kick, bass, drums, percussion, FX, vocals), effects printed, same start and length. Add the stereo mix. One folder per song."
       },
       {
         "title": "Vinyl",
