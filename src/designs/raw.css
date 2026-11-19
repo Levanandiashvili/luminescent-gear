@@ -1,6 +1,6 @@
 /* Raw: black, typewriter text, the splash logo. Built like a typed sheet or a photocopied flyer: small type,
    plain lists, dotted price leaders, links that invert on hover. Laid out compactly, like a flyer: a header,
-   three columns of facts, the send steps side by side, then the line-up across the full width. */
+   three columns of facts, Send your music as a rider, then the line-up across the full width. */
 :root {
   --bg: #0b0b0a;
   --text: #e4e1d8;
@@ -40,7 +40,7 @@ a:hover { background: var(--text); color: var(--bg); text-decoration: none; }
 .stamp { display: inline-block; padding: 5px 10px 4px; background: var(--text); color: var(--bg); text-decoration: none; text-transform: uppercase; letter-spacing: 0.1em; font-size: 13px; }
 .stamp:hover { background: transparent; color: var(--text); box-shadow: inset 0 0 0 1px var(--text); }
 
-/* Body: three columns of facts (contact sits under the prices), then the send steps and the line-up across */
+/* Body: three columns of facts (contact sits under the prices), then the rider and the line-up across */
 .grid {
   display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); align-items: start;
   grid-template-areas: "services equipment rates" "services equipment contact" "send send send" "clients clients clients";
@@ -72,16 +72,14 @@ a:hover { background: var(--text); color: var(--bg); text-decoration: none; }
 .prices .amt { white-space: nowrap; }
 .terms { margin-top: 14px; color: var(--grey); display: grid; gap: 8px; }
 
-/* Send your music: the steps side by side */
-.steps { list-style: none; padding: 0; counter-reset: s; display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 22px clamp(22px, 2.4vw, 36px); }
-.steps li { counter-increment: s; display: grid; grid-template-columns: 24px minmax(0, 1fr); }
-.steps li::before { content: counter(s) "."; color: var(--grey); }
-.steps > li > div { min-width: 0; }
-.steps h3 { font-size: inherit; text-transform: uppercase; letter-spacing: 0.06em; margin-bottom: 4px; }
-.steps p { color: var(--grey); font-size: 13.5px; line-height: 1.5; }
-.steps p.lead { color: var(--text); }
-.steps p + p { margin-top: 0.5em; }
-.guide { margin-top: 18px; color: var(--grey); }
+/* Send your music: a rider, key on the left and the spec on the right, in two columns */
+.rider { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 0 clamp(26px, 2.8vw, 44px); }
+.rider > div { display: grid; grid-template-columns: 76px minmax(0, 1fr); gap: 2px 16px; padding: 7px 0; border-top: 1px dotted var(--line); }
+.rider > div:nth-child(-n+2) { border-top: 0; padding-top: 0; }
+.rider dt { color: var(--grey); text-transform: uppercase; letter-spacing: 0.08em; font-size: 12.5px; padding-top: 1px; }
+.rider dd { color: var(--text); }
+.rider dd p + p { margin-top: 0.4em; }
+.guide { margin-top: 14px; color: var(--grey); }
 .guide a { color: var(--text); }
 
 /* Artists: one long line-up across the page, like a flyer */
@@ -100,7 +98,9 @@ a:hover { background: var(--text); color: var(--bg); text-decoration: none; }
 .lineup li::after { content: "\00a0/ "; color: var(--dim); text-shadow: none; }
 .lineup li:last-child::after { content: ""; }
 .lineup li:hover { --lit: 1; }
-.more { margin-top: 10px; color: var(--text); }
+/* Folded: the first lines of the (shuffled) line-up, fading out, until "all" is pressed */
+.lineup.folded { max-height: calc(1.72em * 4); overflow: hidden; -webkit-mask-image: linear-gradient(#000 55%, transparent); mask-image: linear-gradient(#000 55%, transparent); }
+.more { display: flex; flex-wrap: wrap; gap: 4px 18px; margin-top: 8px; color: var(--text); }
 
 /* Contact */
 .contact-line { display: grid; gap: 4px; }
@@ -116,14 +116,14 @@ footer a { text-decoration: none; padding: 0 3px; }
 /* Narrower screens: two columns, then one */
 @media (max-width: 1100px) {
   .grid { grid-template-columns: repeat(2, minmax(0, 1fr)); grid-template-areas: "services equipment" "rates contact" "send send" "clients clients"; }
-  .steps { grid-template-columns: repeat(2, minmax(0, 1fr)); }
 }
 @media (max-width: 720px) {
   .top { grid-template-columns: minmax(0, 1fr); }
   .logo { width: 180px; margin: -6px 0 -6px -8px; }
   .grid { grid-template-columns: minmax(0, 1fr); grid-template-areas: none; }
   #services, #equipment, #rates, #contact, #send, #clients { grid-area: auto; }
-  .steps { grid-template-columns: minmax(0, 1fr); }
+  .rider { grid-template-columns: minmax(0, 1fr); }
+  .rider > div:nth-child(2) { border-top: 1px dotted var(--line); padding-top: 7px; }
 }
 @media (max-width: 460px) {
   .kv > div { grid-template-columns: minmax(0, 1fr); }

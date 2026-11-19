@@ -72,13 +72,10 @@ ${v.rates ? html`  <section class="sec" id="rates" aria-labelledby="rates-title"
 ` : ''}
 ${v.send ? html`  <section class="sec wide" id="send" aria-labelledby="send-title">
     <h2 id="send-title">${c.send.title || c.send.nav || 'Send your music'}</h2>
-    ${c.send.blocks.length ? html`<ol class="steps">
-      ${c.send.blocks.map((b, i) => html`<li><div>
-        ${b.title ? html`<h3>${b.title}</h3>` : ''}
-        ${paras(b.text, i === 0 ? 'lead' : '')}
-      </div></li>
+    ${c.send.blocks.length ? html`<dl class="rider">
+      ${c.send.blocks.map((b) => html`<div><dt>${b.title}</dt><dd>${paras(b.text)}</dd></div>
       `)}
-    </ol>` : ''}
+    </dl>` : ''}
     ${c.send.guideButton ? html`<p class="guide"><a href="${PDF_PATH}">${c.send.guideButton}</a>${c.send.guideText ? html` ${inline(c.send.guideText)}` : ''}</p>` : ''}
   </section>
 ` : ''}
@@ -87,8 +84,24 @@ ${v.clients ? html`  <section class="sec wide" id="clients" aria-labelledby="cli
     <ul class="lineup" id="artists">
 ${raw(shuffled(c.artists.names).map((n) => html`<li>${n}</li>`).join('\n'))}
     </ul>
-    ${c.artists.more ? html`<p class="more">${c.artists.more}</p>` : ''}
+    <p class="more">${c.artists.more ? html`<span>${c.artists.more}</span>` : ''}<button class="toggle" type="button" id="unfold" aria-expanded="false" aria-controls="artists" hidden>[+ all ${c.artists.names.length}]</button></p>
     ${artistsScript({ glow: true, radius: 100, touch: true })}
+    <script>
+(function () {
+  var list = document.getElementById("artists"), btn = document.getElementById("unfold");
+  if (!list || !btn) return;
+  list.classList.add("folded");
+  if (list.scrollHeight <= list.clientHeight + 4) { list.classList.remove("folded"); return; }
+  var label = btn.textContent;
+  btn.hidden = false;
+  btn.addEventListener("click", function () {
+    var open = list.classList.toggle("folded") === false;
+    btn.setAttribute("aria-expanded", open ? "true" : "false");
+    btn.textContent = open ? "[− fewer]" : label;
+    window.dispatchEvent(new Event("resize"));
+  });
+})();
+    </script>
   </section>
 ` : ''}
 ${v.contact ? html`  <section class="sec" id="contact" aria-labelledby="contact-title">

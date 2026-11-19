@@ -1,4 +1,5 @@
 {
+  "textsVersion": 2,
   "design": "rack",
   "seo": {
     "title": "Luminescent Mastering",
@@ -13,19 +14,19 @@
     "items": [
       {
         "title": "Mastering",
-        "text": "Stereo masters for streaming and download, delivered as 24‑bit WAV, with 16‑bit/44.1 kHz versions on request."
+        "text": "Stereo masters for streaming and download. 24‑bit WAV, 16‑bit/44.1 kHz on request."
       },
       {
         "title": "Stem mastering",
-        "text": "Mastering from grouped stems rather than one stereo file, for finer control over each part of the mix. The balance stays as you set it."
+        "text": "Mastered from grouped stems for finer control. Your balance stays."
       },
       {
         "title": "Mixing",
-        "text": "Mixing from your multitrack session, with the master included."
+        "text": "From your multitrack session, master included."
       },
       {
         "title": "Vinyl master",
-        "text": "A dedicated master for the cut, with a centred low end, controlled sibilance and gentler limiting, sent straight to your cutting engineer or pressing plant. We don't cut lacquers."
+        "text": "A dedicated master for the cut, sent to your cutting engineer or pressing plant. No lacquer cutting."
       }
     ]
   },
@@ -90,7 +91,7 @@
         "unit": "per track"
       }
     ],
-    "terms": "A vinyl master adds €15 per track. One revisit is included.\n\nPayment is upfront by bank transfer and confirms your booking. Most masters are delivered within two weeks."
+    "terms": "Vinyl master +€15 per track. One revisit included.\n\nPaid upfront by bank transfer. Usually delivered within two weeks."
   },
   "artists": {
     "nav": "Artists",
@@ -463,24 +464,36 @@
     "title": "Send your music",
     "blocks": [
       {
-        "title": "How it works",
-        "text": "Email the artist name, release title, number of tracks, release date and format, with one download link to your mixes, one or two reference tracks and any notes.\n\nPut all files for the release into one folder and zip it. Masters come back as a download, and vinyl masters go straight to your cutting engineer or pressing plant."
+        "title": "Send",
+        "text": "Email artist, release title, track count, release date and format. One download link: all mixes in one zipped folder, 1–2 references, notes."
       },
       {
-        "title": "Preparing your mixes",
-        "text": "Stereo WAV or AIFF at 24‑bit or 32‑bit float, at the sample rate of your session. No sample rate conversion, normalising or dither.\n\nPeaks between −10 and −4 dBFS and never above −3 dBFS, set with channel and group faders. No limiters or clippers on the mix bus. A bus compressor that is part of the sound can stay; mention it in your notes.\n\nA second or two of silence at each end, fades printed, files named with track number, artist and title."
+        "title": "Format",
+        "text": "Stereo WAV or AIFF, 24‑bit or 32‑bit float, session sample rate. No SRC, normalising or dither."
       },
       {
-        "title": "Stem mastering",
-        "text": "Start from a finished mix and split it into six to eight groups, such as kick, bass, drums, percussion, music, effects and vocals, with every effect printed.\n\nAll stems start at the same point and run the same length. Played together, they should sound exactly like your stereo mix, so send that too, one folder per song."
+        "title": "Levels",
+        "text": "Peaks −10 to −4 dBFS, never above −3. No limiter or clipper on the mix bus. A bus compressor that's part of the sound can stay; note it."
+      },
+      {
+        "title": "Files",
+        "text": "1–2 s of silence at each end, fades printed. Named: track number, artist, title."
+      },
+      {
+        "title": "Stems",
+        "text": "6–8 groups, effects printed, same start and length. Add the stereo mix. One folder per song."
       },
       {
         "title": "Vinyl",
-        "text": "De-ess vocals carefully. Sharp esses distort on vinyl and are hard to remove from a finished mix. If you're unsure, send the vocal as a separate stem.\n\nAdd the side split and running order with the time of each side, and book your cutting engineer or pressing plant in advance."
+        "text": "De-ess vocals, or send them as a stem. Side split and running order with side times. Book the cut early."
+      },
+      {
+        "title": "Return",
+        "text": "Masters as a download. Vinyl masters go straight to your cutting engineer or pressing plant."
       }
     ],
     "guideButton": "Full guide (PDF)",
-    "guideText": "Levels, formats, stems, vinyl and loudness in detail. Print it or pass it on to whoever mixes your music."
+    "guideText": "Levels, formats, stems, vinyl and loudness in detail."
   },
   "contact": {
     "nav": "Contact",

@@ -25,6 +25,9 @@ export const SECTIONS = {
 };
 
 export const DEFAULTS = JSON.parse(fs.readFileSync(path.join(ROOT, 'content', 'default.json'), 'utf8'));
+// The longer texts the site started with, before they were cut down to a rider (texts version 2).
+const DEFAULTS_V1 = JSON.parse(fs.readFileSync(path.join(ROOT, 'content', 'default-v1.json'), 'utf8'));
+export const TEXTS_VERSION = 2;
 
 fs.mkdirSync(HISTORY, { recursive: true });
 
@@ -93,6 +96,7 @@ export function normalize(input = {}) {
   names.sort(byName);
 
   const content = {
+    textsVersion: TEXTS_VERSION,
     design: Object.hasOwn(DESIGNS, c.design) ? c.design : c.design === 'clean' ? 'raw' : 'rack',
     seo: {
       title: line(sec('seo').title, 120) || 'Luminescent Mastering',
@@ -149,10 +153,32 @@ export function normalize(input = {}) {
 
 let current = null;
 
+/**
+ * Texts saved before the rider version: every field that still has the old default text gets the new, shorter
+ * text; fields Levan changed himself stay as they are. The version before is kept in the history.
+ */
+function upgrade(saved) {
+  if (Number(saved.textsVersion) >= TEXTS_VERSION) return saved;
+  const same = (a, b) => JSON.stringify(a) === JSON.stringify(b);
+  const next = JSON.parse(JSON.stringify(saved));
+  const swaps = [['services', 'items'], ['rates', 'terms'], ['send', 'blocks'], ['send', 'guideText']];
+  const changed = [];
+  for (const [sec, key] of swaps) {
+    if (next[sec] && same(next[sec][key], DEFAULTS_V1[sec][key])) {
+      next[sec][key] = DEFAULTS[sec][key];
+      changed.push(`${sec}.${key}`);
+    }
+  }
+  console.log('[content] shorter texts for', changed.length ? changed.join(', ') : 'nothing (all edited)');
+  return next;
+}
+
 export function load() {
   if (current) return current;
   try {
-    current = normalize(JSON.parse(fs.readFileSync(FILE, 'utf8'))).content;
+    const saved = JSON.parse(fs.readFileSync(FILE, 'utf8'));
+    if (Number(saved.textsVersion) >= TEXTS_VERSION) current = normalize(saved).content;
+    else current = save(upgrade(saved));
   } catch (e) {
     if (e.code !== 'ENOENT') console.error('[content] could not read', FILE, '-', e.message, '- using the defaults');
     current = normalize(DEFAULTS).content;
