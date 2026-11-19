@@ -77,15 +77,6 @@ ${v.rates ? html`  <section class="sec" id="rates" aria-labelledby="rates-title"
     </div>
   </section>
 ` : ''}
-${v.clients ? html`  <section class="sec" id="clients" aria-labelledby="clients-title">
-    <div class="head"><h2 id="clients-title">${c.artists.title || c.artists.nav}</h2><button class="sort" type="button" id="sort" aria-pressed="false" hidden><span class="led" aria-hidden="true"></span>A–Z</button></div>
-      <ul class="cloud" id="artists">
-${raw(shuffled(c.artists.names).map((n) => html`        <li>${n}</li>`).join('\n'))}
-      </ul>
-      ${c.artists.more ? html`<p class="more">${c.artists.more}</p>` : ''}
-      ${artistsScript({ glow: true })}
-  </section>
-` : ''}
 ${v.send ? html`  <section class="sec" id="send" aria-labelledby="send-title">
     <div class="head"><h2 id="send-title">${c.send.title || c.send.nav || 'Send your music'}</h2></div>
     ${c.send.blocks.length ? html`<div class="send">
@@ -99,6 +90,15 @@ ${v.send ? html`  <section class="sec" id="send" aria-labelledby="send-title">
       <a class="btn" href="${PDF_PATH}"><span class="led" aria-hidden="true"></span>${c.send.guideButton}</a>
       ${c.send.guideText ? html`<p>${inline(c.send.guideText)}</p>` : ''}
     </div>` : ''}
+  </section>
+` : ''}
+${v.clients ? html`  <section class="sec" id="clients" aria-labelledby="clients-title">
+    <div class="head"><h2 id="clients-title">${c.artists.title || c.artists.nav}</h2><button class="sort" type="button" id="sort" aria-pressed="false" hidden><span class="led" aria-hidden="true"></span>A–Z</button></div>
+      <ul class="cloud" id="artists">
+${raw(shuffled(c.artists.names).map((n) => html`        <li>${n}</li>`).join('\n'))}
+      </ul>
+      ${c.artists.more ? html`<p class="more">${c.artists.more}</p>` : ''}
+      ${artistsScript({ glow: true })}
   </section>
 ` : ''}
 ${v.contact ? html`  <section class="sec" id="contact" aria-labelledby="contact-title">

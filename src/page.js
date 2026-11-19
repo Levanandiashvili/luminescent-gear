@@ -26,8 +26,8 @@ export function nav(c) {
     ['services', c.services.nav],
     ['equipment', c.equipment.nav],
     ['rates', c.rates.nav],
-    ['clients', c.artists.nav],
     ['send', c.send.nav],
+    ['clients', c.artists.nav],
     ['contact', c.contact.nav],
   ].filter(([id, label]) => v[id] && label).map(([id, label]) => ({ id, label }));
 }

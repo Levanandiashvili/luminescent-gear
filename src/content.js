@@ -19,8 +19,8 @@ export const SECTIONS = {
   services: 'Services',
   equipment: 'Equipment',
   rates: 'Rates',
-  clients: 'Artists',
   send: 'Send your music',
+  clients: 'Artists',
   contact: 'Contact',
 };
 

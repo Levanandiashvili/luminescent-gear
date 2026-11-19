@@ -171,13 +171,6 @@ ${flash.map((f) => html`<p class="flash ${f.kind || ''}" role="status">${f.text}
 </fieldset>
 
 <fieldset>
-  <legend>Artists</legend>
-  ${sectionHead('artists', c)}
-  ${field('Names', 'artists.names', c.artists.names.join('\n'), { rows: 14, hint: html`one per line; the page shuffles them, so the order here doesn't matter. <b data-count-for="artists.names">${c.artists.names.length}</b> names`, attrs: 'spellcheck="false" class="mono"' })}
-  ${field('Line under the list', 'artists.more', c.artists.more)}
-</fieldset>
-
-<fieldset>
   <legend>Send your music</legend>
   <div class="f-row">
     ${field('Menu label', 'send.nav', c.send.nav, { hint: 'leave empty: no knob or link for this section' })}
@@ -190,6 +183,13 @@ ${flash.map((f) => html`<p class="flash ${f.kind || ''}" role="status">${f.text}
     ${field('Guide button', 'send.guideButton', c.send.guideButton, { hint: 'opens the PDF guide; leave empty to hide it' })}
     ${field('Text next to the guide button', 'send.guideText', c.send.guideText)}
   </div>
+</fieldset>
+
+<fieldset>
+  <legend>Artists</legend>
+  ${sectionHead('artists', c)}
+  ${field('Names', 'artists.names', c.artists.names.join('\n'), { rows: 14, hint: html`one per line; the page shuffles them, so the order here doesn't matter. <b data-count-for="artists.names">${c.artists.names.length}</b> names`, attrs: 'spellcheck="false" class="mono"' })}
+  ${field('Line under the list', 'artists.more', c.artists.more)}
 </fieldset>
 
 <fieldset>

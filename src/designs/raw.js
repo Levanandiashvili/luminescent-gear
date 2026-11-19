@@ -1,4 +1,4 @@
-// The raw design: black, typewriter text, the splash logo in a side column. Plain, small and handmade.
+// The raw design: black, typewriter text, the splash logo. Plain, small and handmade, laid out compactly like a flyer.
 import fs from 'node:fs';
 import { html, raw, esc } from '../http.js';
 import { inline, paras, paragraphs, lines, shuffled } from '../text.js';
@@ -29,20 +29,23 @@ ${previewBar(opts)}
 <a class="skip" href="#main">Skip to content</a>
 
 <div class="page" id="top">
-<header class="side">
+<header class="top">
   <h1><a class="logo" href="#top"><img src="${asset(opts, 'logo-dark.webp')}" alt="${esc(c.seo.title)}" width="960" height="683"></a></h1>
-  ${links.length ? html`<nav aria-label="Sections">
-    ${links.map((l) => html`<a href="#${l.id}">${l.label}</a>`)}
-  </nav>` : ''}
-  ${button ? html`<a class="stamp" href="${button.href}">${button.label}</a>` : ''}
+  <div class="top-text">
+    ${intro.map((p) => html`<p class="intro">${inline(p)}</p>`)}
+    ${links.length || button ? html`<div class="top-nav">
+      ${links.length ? html`<nav aria-label="Sections">
+        ${links.map((l) => html`<a href="#${l.id}">${l.label}</a>`)}
+      </nav>` : ''}
+      ${button ? html`<a class="stamp" href="${button.href}">${button.label}</a>` : ''}
+    </div>` : ''}
+  </div>
 </header>
 
-<main id="main">
-  ${intro.map((p) => html`<p class="intro">${inline(p)}</p>`)}
-
+<main class="grid" id="main">
 ${v.services ? html`  <section class="sec" id="services" aria-labelledby="services-title">
     <h2 id="services-title">${c.services.title || c.services.nav}</h2>
-    <dl class="kv">
+    <dl class="svc">
       ${c.services.items.map((s) => html`<div><dt>${s.title}</dt><dd>${paras(s.text)}</dd></div>
       `)}
     </dl>
@@ -50,7 +53,7 @@ ${v.services ? html`  <section class="sec" id="services" aria-labelledby="servic
 ` : ''}
 ${v.equipment ? html`  <section class="sec" id="equipment" aria-labelledby="equipment-title">
     <h2 id="equipment-title">${c.equipment.title || c.equipment.nav}</h2>
-    <dl class="kv gear">
+    <dl class="kv">
       ${c.equipment.rows.map((r) => html`<div><dt>${r.label}</dt><dd>${raw(lines(r.items).map((l) => inline(l)).join('<br>'))}</dd></div>
       `)}
     </dl>
@@ -67,16 +70,7 @@ ${v.rates ? html`  <section class="sec" id="rates" aria-labelledby="rates-title"
     </div>` : ''}
   </section>
 ` : ''}
-${v.clients ? html`  <section class="sec" id="clients" aria-labelledby="clients-title">
-    <h2><span id="clients-title">${c.artists.title || c.artists.nav}</span><button class="toggle" type="button" id="sort" aria-pressed="false" hidden>[a–z]</button></h2>
-    <ul class="lineup" id="artists">
-${raw(shuffled(c.artists.names).map((n) => html`<li>${n}</li>`).join('\n'))}
-    </ul>
-    ${c.artists.more ? html`<p class="more">${c.artists.more}</p>` : ''}
-    ${artistsScript({ glow: true, radius: 100, touch: true })}
-  </section>
-` : ''}
-${v.send ? html`  <section class="sec" id="send" aria-labelledby="send-title">
+${v.send ? html`  <section class="sec wide" id="send" aria-labelledby="send-title">
     <h2 id="send-title">${c.send.title || c.send.nav || 'Send your music'}</h2>
     ${c.send.blocks.length ? html`<ol class="steps">
       ${c.send.blocks.map((b, i) => html`<li><div>
@@ -88,9 +82,18 @@ ${v.send ? html`  <section class="sec" id="send" aria-labelledby="send-title">
     ${c.send.guideButton ? html`<p class="guide"><a href="${PDF_PATH}">${c.send.guideButton}</a>${c.send.guideText ? html` ${inline(c.send.guideText)}` : ''}</p>` : ''}
   </section>
 ` : ''}
+${v.clients ? html`  <section class="sec wide" id="clients" aria-labelledby="clients-title">
+    <h2><span id="clients-title">${c.artists.title || c.artists.nav}</span><button class="toggle" type="button" id="sort" aria-pressed="false" hidden>[a–z]</button></h2>
+    <ul class="lineup" id="artists">
+${raw(shuffled(c.artists.names).map((n) => html`<li>${n}</li>`).join('\n'))}
+    </ul>
+    ${c.artists.more ? html`<p class="more">${c.artists.more}</p>` : ''}
+    ${artistsScript({ glow: true, radius: 100, touch: true })}
+  </section>
+` : ''}
 ${v.contact ? html`  <section class="sec" id="contact" aria-labelledby="contact-title">
     <h2 id="contact-title">${c.contact.title || c.contact.nav}</h2>
-    <dl class="kv">
+    <dl class="contact-line">
       ${c.contact.email ? html`<div><dt>${c.contact.emailLabel || 'Email'}</dt><dd><a href="mailto:${c.contact.email}">${c.contact.email}</a></dd></div>` : ''}
       ${c.contact.links.length ? html`<div><dt>${c.contact.linksLabel || 'Elsewhere'}</dt><dd>${raw(c.contact.links.map((l) => html`<a href="${l.url}">${l.label}</a>`.toString()).join(' / '))}</dd></div>` : ''}
     </dl>
